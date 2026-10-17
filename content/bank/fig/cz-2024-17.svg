@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img" aria-label="标枪落点图：扇形场地，顶点为投掷点，虚线弧标出 20m 与 30m，前 9 次落点（圆点）大多落在 20m 弧线附近，其中一次明显更远">
+  <title>前 9 次标枪落点（20m / 30m 距离线）</title>
+  <!-- 顶点(170,235)，20m=100px；9 个落点由公开原图量测后整体平移，使平均距离恰为 20m -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 270 L85.4 65.1"/>
+    <path d="M160 270 L234.6 65.1"/>
+    <circle cx="160" cy="270" r="9"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M115.5 147.8 A130 130 0 0 1 204.5 147.8"/>
+    <path d="M93.3 86.8 A195 195 0 0 1 226.7 86.8"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <circle cx="191.1" cy="118.1" r="3.1"/>
+    <circle cx="161.8" cy="138.1" r="3.1"/>
+    <circle cx="178.2" cy="143.1" r="3.1"/>
+    <circle cx="150.9" cy="140.0" r="3.1"/>
+    <circle cx="136.3" cy="140.0" r="3.1"/>
+    <circle cx="132.7" cy="146.8" r="3.1"/>
+    <circle cx="123.6" cy="148.6" r="3.1"/>
+    <circle cx="143.6" cy="150.6" r="3.1"/>
+    <circle cx="155.2" cy="151.0" r="3.1"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="89" y="161" text-anchor="end">20m</text>
+    <text x="231" y="161" text-anchor="start">20m</text>
+    <text x="57" y="105" text-anchor="end">30m</text>
+    <text x="264" y="105" text-anchor="start">30m</text>
+  </g>
+</svg>

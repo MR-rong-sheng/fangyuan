@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" role="img" aria-label="抛物线向下平移 5 个单位后与 x 轴交于点 P、Q（示意）">
+  <title>抛物线向下平移 5 个单位后与 x 轴交于 P、Q</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 170 H322"/>
+    <path d="M56 214 V40"/>
+    <path d="M322 170 l-9 -5 v10 z" fill="currentColor" stroke="none"/>
+    <path d="M56 40 l-5 9 h10 z" fill="currentColor" stroke="none"/>
+    <path d="M130 214.4 Q170 195 210 214.4"/>
+    <path d="M130 154.4 Q170 135 210 154.4" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M172 141 V166" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M172 166 l-4 -8 h8 z" fill="currentColor" stroke="none"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="48" y="186" text-anchor="middle">O</text>
+    <text x="316" y="186" text-anchor="middle">x</text>
+    <text x="48" y="34" text-anchor="middle">y</text>
+    <text x="130" y="186" text-anchor="middle">P</text>
+    <text x="210" y="186" text-anchor="middle">Q</text>
+    <text x="180" y="152" text-anchor="start">5</text>
+  </g>
+</svg>

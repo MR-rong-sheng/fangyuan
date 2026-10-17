@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="矩形 ABCD 中，对角线 BD 的垂直平分线分别交 AB、CD 于点 E、F">
+  <title>矩形 ABCD：BD 的垂直平分线交 AB 于 E、交 CD 于 F</title>
+  <!-- 按 AD=8、AB=16，取 10px/单位：A(60,60) B(220,60) C(220,140) D(60,140) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="60" y="60" width="160" height="80"/>
+    <!-- 对角线 BD -->
+    <path d="M220 60 L60 140"/>
+    <!-- 垂直平分线：过 BD 中点 M(140,100)，斜率 2（与 BD 垂直），交 AB 于 E(120,60)、CD 于 F(160,140)，两端稍作延长 -->
+    <path d="M116 52 L164 148"/>
+    <!-- 直角标记（M 处，跟着垂直平分线的方向） -->
+    <path d="M132.3 84.7 L142.5 89.8 L147.7 79.6"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="62" y="50" text-anchor="middle">A</text>
+    <text x="220" y="50" text-anchor="middle">B</text>
+    <text x="232" y="146" text-anchor="middle">C</text>
+    <text x="48" y="146" text-anchor="middle">D</text>
+    <text x="120" y="48" text-anchor="middle">E</text>
+    <text x="163" y="163" text-anchor="middle">F</text>
+    <text x="144" y="98" text-anchor="start">M</text>
+  </g>
+</svg>

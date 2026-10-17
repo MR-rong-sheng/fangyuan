@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="⊙O 内接四边形 ABCD，AC 为直径，AD=BC">
+  <title>⊙O 内接四边形 ABCD，AC 为直径，AD=BC</title>
+  <!-- 复算：A(-r,0) C(r,0) 为直径，B(rcos60,rsin60) D(-rcos60,-rsin60) 为另一直径
+       ⇒ 对角线互相平分且相等 ⇒ 矩形；AD=BC=95 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="180" cy="120" r="95"/>
+    <path d="M85 120 L227.5 37.7 L275 120 L132.5 202.3 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M85 120 H275" stroke-width="1.2"/>
+    <path d="M227.5 37.7 L132.5 202.3" stroke-width="1.2"/>
+    <path d="M217.1 43.7 L223.1 54.1 L233.5 48.1"/>
+
+    <path d="M142.9 196.3 L136.9 185.9 L126.5 191.9"/>
+
+    <path d="M153.8 74.5 L158.8 83.2" stroke-width="1.2"/>
+<path d="M255.6 76.4 L246.9 81.4" stroke-width="1.2"/>
+
+    <path d="M206.2 165.5 L201.2 156.8" stroke-width="1.2"/>
+<path d="M104.4 163.6 L113.1 158.6" stroke-width="1.2"/>
+
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="180" cy="120" r="2.2"/>
+    <text x="75" y="124" text-anchor="middle" font-size="13">A</text>
+    <text x="287" y="124" text-anchor="middle" font-size="13">C</text>
+    <text x="229.5" y="29.727586640478336" text-anchor="middle" font-size="13">B</text>
+    <text x="130.5" y="218.27241335952166" text-anchor="middle" font-size="13">D</text>
+    <text x="188" y="136" text-anchor="start" font-size="13">O</text>
+  </g>
+</svg>

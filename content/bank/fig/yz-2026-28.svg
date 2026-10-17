@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 340" role="img" aria-label="抛物线 y=ax²+bx+1 过点 (2,1) 与 (4,-7)">
+  <title>抛物线 y=ax²+bx+1 过点 (2,1) 与 (4,-7)</title>
+<line x1="29" y1="100" x2="251" y2="100" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="95" y1="346" x2="95" y2="4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<text x="259" y="112" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">x</text>
+<text x="85" y="16" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">y</text>
+<polyline points="47,242.8 49.32,230.89 51.65,219.34 53.97,208.15 56.3,197.32 58.62,186.85 60.95,176.75 63.27,167 65.6,157.61 67.92,148.59 70.25,139.92 72.58,131.61 74.9,123.67 77.22,116.08 79.55,108.86 81.88,101.99 84.2,95.49 86.53,89.34 88.85,83.56 91.17,78.14 93.5,73.08 95.83,68.37 98.15,64.03 100.47,60.05 102.8,56.43 105.12,53.17 107.45,50.27 109.78,47.73 112.1,45.55 114.42,43.73 116.75,42.27 119.08,41.17 121.4,40.43 123.72,40.05 126.05,40.04 128.38,40.38 130.7,41.08 133.03,42.15 135.35,43.57 137.68,45.36 140,47.5 142.32,50.01 144.65,52.87 146.98,56.1 149.3,59.68 151.62,63.63 153.95,67.94 156.28,72.6 158.6,77.63 160.93,83.02 163.25,88.77 165.57,94.88 167.9,101.35 170.22,108.18 172.55,115.37 174.88,122.92 177.2,130.83 179.53,139.1 181.85,147.73 184.18,156.72 186.5,166.08 188.82,175.79 191.15,185.86 193.48,196.29 195.8,207.09 198.12,218.24 200.45,229.76 202.78,241.63 205.1,253.87 207.43,266.46 209.75,279.42 212.07,292.74 214.4,306.41 216.73,320.45 219.05,334.85 221.38,349.6 223.7,364.72 226.02,380.2 228.35,396.04 230.68,412.24 233,428.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="155" cy="70" r="2.2" fill="currentColor"/>
+<circle cx="215" cy="310" r="2.2" fill="currentColor"/>
+<circle cx="125" cy="40" r="2.2" fill="currentColor"/>
+<text x="165" y="74" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="start">(2,1)</text>
+<text x="225" y="308" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="start">(4,-7)</text>
+<text x="135" y="44" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="start">顶点(1,2)</text>
+</svg>

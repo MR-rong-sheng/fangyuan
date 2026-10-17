@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img" aria-label="直线 a 平行直线 b，直线 l 垂直 a 且与 a、b 分别交于一点；一条斜线过 l 上一点（在 a 上方）与 a、b 相交，斜线与 l 的夹角标为 ∠2，斜线与 b 的夹角标为 ∠1">
+  <title>a∥b、l⊥a，∠1=120° 求 ∠2</title>
+  <!-- 坐标按题干算：a: y=80，b: y=200（a∥b）；l: x=230（l⊥a）。
+       斜线取 P(230,38)（l 上、a 上方），与 l 向下方向成 30°（即 ∠2=30°），
+       交 b 于 R(136.47,200)，延长到 (127.8,215)。
+       复算：∠2 = 30°，∠1（R 处 b 向左与斜线的夹角）= 120° — 与题干一致。 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 80 H325"/>
+    <path d="M50 200 H325"/>
+    <path d="M230 36 V228"/>
+    <path d="M230 38 L127.8 215"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+    <path d="M230 62 A24 24 0 0 1 218 58.8"/>
+    <path d="M110.47 200 A26 26 0 0 1 149.5 177.5"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 80 h9 v9"/>
+    <path d="M230 200 h9 v-9"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="330" y="84" text-anchor="start">a</text>
+    <text x="330" y="204" text-anchor="start">b</text>
+    <text x="230" y="28" text-anchor="middle">l</text>
+    <text x="219" y="72" text-anchor="middle">2</text>
+    <text x="116" y="170" text-anchor="middle">1</text>
+  </g>
+</svg>

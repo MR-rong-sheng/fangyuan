@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 260" role="img" aria-label="二次函数 y=ax^2+bx+c（a>0）与一次函数 y=mx+n 的图象交于 A、B 两点，B 在 y 轴上">
+  <title>抛物线与直线交于 A、B 两点，B 在 y 轴上</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 190 H188"/>
+    <path d="M120 250 V32"/>
+    <path d="40.0 150.0 L50.0 185.0 L60.0 210.0 L70.0 225.0 L80.0 230.0 L90.0 225.0 L100.0 210.0 L110.0 185.0 L120.0 150.0 L130.0 105.0 L140.0 50.0"/>
+    <path d="40.0 230.0 L60.0 210.0 L120.0 150.0 L140.0 130.0"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="120" y="208" text-anchor="middle">O</text>
+    <text x="54" y="226" text-anchor="middle">A</text>
+    <text x="106" y="150" text-anchor="middle">B</text>
+    <circle cx="60" cy="210" r="2.2"/>
+    <circle cx="120" cy="150" r="2.2"/>
+  </g>
+</svg>

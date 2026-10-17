@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 260" role="img" aria-label="⊙O 中 AB 为直径，C 是圆上一点，D 在弧 BC 上，∠ABC=20°">
+  <title>⊙O 中 AB 为直径，C 是圆上一点，D 在弧 BC 上，∠ABC=20°</title>
+<circle cx="170" cy="130" r="80" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<polyline points="90,130 250,130" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="90,130 108.72,78.58" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="250,130 108.72,78.58" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="108.72,78.58 142.64,205.18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="142.64,205.18 250,130" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="170" cy="130" r="2.2" fill="currentColor"/>
+<text x="166" y="148" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">O</text>
+<text x="78" y="134" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">A</text>
+<text x="262" y="134" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">B</text>
+<text x="96.72" y="74.58" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">C</text>
+<text x="130.64" y="211.18" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">D</text>
+</svg>

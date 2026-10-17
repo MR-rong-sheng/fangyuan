@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 280" role="img" aria-label="坐标系中 ⊙A（圆心 A(3,0)，半径 √13），弦 BC 过定点 P(3,2)">
+  <title>⊙A：A(3,0)、半径 √13，弦 BC 过 P(3,2)</title>
+  <!-- 30px/单位，原点(80,150)：A(170,150) r=108.2，P(3,2)=(170,90)
+       最短弦 BC 为过 P 且 ⊥AP 的水平弦，B(80,90) C(260,90)，BC=180px=6 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 150 H322"/>
+    <path d="M80 150 V28"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="170" cy="150" r="108.2"/>
+    <path d="M80 90 H260"/>
+    <path d="M170 150 L170 90" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M159.0 90.0 L159.0 101.0 L170.0 101.0"/>
+
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="170" cy="150" r="2.2"/>
+    <circle cx="170" cy="90" r="2.2"/>
+    <text x="316" y="164" text-anchor="start" font-size="13">x</text>
+    <text x="86" y="24" text-anchor="start" font-size="13">y</text>
+    <text x="70" y="164" text-anchor="middle" font-size="13">O</text>
+    <text x="178" y="158" text-anchor="start" font-size="13">A</text>
+    <text x="178" y="92" text-anchor="start" font-size="13">P</text>
+    <text x="74" y="84" text-anchor="middle" font-size="13">B</text>
+    <text x="266" y="84" text-anchor="middle" font-size="13">C</text>
+  </g>
+</svg>

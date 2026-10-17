@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 250" role="img" aria-label="△ABC 中 D、E 是 AB、AC 的中点，F 在 DE 的延长线上，连 BF、CF">
+  <title>△ABC 中 D、E 是 AB、AC 的中点，F 在 DE 的延长线上，连 BF、CF</title>
+<polygon points="198,30 54,222 342,222" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="126,126 351.6,126" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="54,222 351.6,126" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="342,222 351.6,126" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="126" cy="126" r="2.2" fill="currentColor"/>
+<circle cx="270" cy="126" r="2.2" fill="currentColor"/>
+<text x="198" y="20" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">A</text>
+<text x="42" y="228" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">B</text>
+<text x="354" y="228" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">C</text>
+<text x="114" y="122" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">D</text>
+<text x="270" y="116" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">E</text>
+<text x="363.6" y="130" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">F</text>
+</svg>

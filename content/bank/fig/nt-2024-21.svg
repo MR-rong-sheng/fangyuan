@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 240" role="img" aria-label="△ABC 中 D 在 AB 上，E 为 AC 中点，D、E、F 共线且 EF=DE">
+  <title>D 在 AB 上，E 为 AC 中点，EF=DE，DF 过 E</title>
+  <!-- A(110,50) B(60,190) C(280,190)；E=AC 中点(195,120)，D(85,120)，F=2E-D(305,120) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 50 L60 190 L280 190 Z"/>
+    <path d="M85 120 L305 120"/>
+    <path d="M280 190 L305 120"/>
+    <path d="M110 50 L195 120"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M155.7 81.1 L149.3 88.9" stroke-width="1.2"/>
+<path d="M240.7 151.1 L234.3 158.9" stroke-width="1.2"/>
+    <path d="M140.0 115.0 L140.0 125.0" stroke-width="1.2"/>
+<path d="M250.0 115.0 L250.0 125.0" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="110" y="40" text-anchor="middle" font-size="13">A</text>
+    <text x="48" y="200" text-anchor="middle" font-size="13">B</text>
+    <text x="286" y="200" text-anchor="middle" font-size="13">C</text>
+    <text x="78" y="112" text-anchor="middle" font-size="13">D</text>
+    <text x="196" y="110" text-anchor="middle" font-size="13">E</text>
+    <text x="312" y="120" text-anchor="start" font-size="13">F</text>
+  </g>
+</svg>

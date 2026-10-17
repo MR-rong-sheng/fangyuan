@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-label="正八边形转盘被中心 O 与 8 个顶点的连线分成 8 块等面积三角形，其中 3 块涂阴影">
+  <title>正八边形转盘被中心 O 与 8 个顶点的连线分成 8 块等面积三角形，其中 3 块涂阴影</title>
+<polygon points="140,140 232.39,178.27 178.27,232.39" fill="currentColor" fill-opacity="0.22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="140,140 178.27,232.39 101.73,232.39" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="140,140 101.73,232.39 47.61,178.27" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="140,140 47.61,178.27 47.61,101.73" fill="currentColor" fill-opacity="0.22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="140,140 47.61,101.73 101.73,47.61" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="140,140 101.73,47.61 178.27,47.61" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="140,140 178.27,47.61 232.39,101.73" fill="currentColor" fill-opacity="0.22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="140,140 232.39,101.73 232.39,178.27" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="140" cy="140" r="2.2" fill="currentColor"/>
+<text x="128" y="156" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">O</text>
+</svg>

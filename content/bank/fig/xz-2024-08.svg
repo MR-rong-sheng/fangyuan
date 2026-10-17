@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-label="速度 v 随时间 t 变化的图象：先有一段非零速度，中间速度为 0，最后又有一段非零速度">
+  <title>速度与时间的函数关系图象</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 180 H338"/>
+    <path d="M50 180 V60"/>
+    <path d="M338 180 l-9 -5 v10 z" fill="currentColor" stroke="none"/>
+    <path d="M50 60 l-5 9 h10 z" fill="currentColor" stroke="none"/>
+    <path d="M50 180 L64 104 L150 104 L150 180 L248 180 L262 132 L320 132 L320 180"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="44" y="196" text-anchor="middle">O</text>
+    <text x="330" y="196" text-anchor="middle">t</text>
+    <text x="42" y="56" text-anchor="middle">v</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="菱形 ABCD，对角线 AC、BD 相交于 O">
+  <title>菱形 ABCD：对角线 AC、BD 交于 O</title>
+  <!-- AB=5 取 20px/单位；∠ABD=30° ⇒ AO=2.5、BO=5cos30°≈4.33
+       故 AC=100px（A(120,110) C(220,110)），BD=173px（B(170,23) D(170,197)） -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 110 L170 23 L220 110 L170 197 Z"/>
+    <path d="M120 110 L220 110"/>
+    <path d="M170 23 L170 197"/>
+    <!-- O 处直角标记 -->
+    <path d="M170 100 L180 100 L180 110"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="170" cy="110" r="2.2"/>
+    <text x="106" y="114" text-anchor="middle">A</text>
+    <text x="170" y="15" text-anchor="middle">B</text>
+    <text x="234" y="114" text-anchor="middle">C</text>
+    <text x="170" y="215" text-anchor="middle">D</text>
+    <text x="182" y="124" text-anchor="start">O</text>
+  </g>
+</svg>

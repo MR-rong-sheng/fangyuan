@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 290" role="img" aria-label="正方形 ABCD，AB、BC 分别是 ⊙E、⊙F 的直径，⊙B 过点 F，G、H、K 为三圆两两的公共点">
+  <title>正方形与三个圆的 LOGO：G、H、K 是三个圆两两的公共点</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 100 L180 100 L180 260 L20 260 L20 100"/>
+    <circle cx="100" cy="100" r="80"/>
+    <circle cx="180" cy="180" r="80"/>
+    <circle cx="180" cy="100" r="80"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="100" cy="100" r="2.2"/>
+    <circle cx="180" cy="180" r="2.2"/>
+    <circle cx="249.3" cy="140" r="2.2"/>
+    <circle cx="140" cy="30.7" r="2.2"/>
+    <circle cx="100" cy="180" r="2.2"/>
+    <text x="12" y="92" text-anchor="end">A</text>
+    <text x="168" y="90" text-anchor="middle">B</text>
+    <text x="190" y="268" text-anchor="start">C</text>
+    <text x="12" y="270" text-anchor="end">D</text>
+    <text x="100" y="88" text-anchor="middle">E</text>
+    <text x="196" y="170" text-anchor="start">F</text>
+    <text x="252" y="132" text-anchor="middle">G</text>
+    <text x="140" y="22" text-anchor="middle">H</text>
+    <text x="108" y="190" text-anchor="start">K</text>
+  </g>
+</svg>

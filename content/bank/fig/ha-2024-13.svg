@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" role="img" aria-label="⊙O 的内接三角形 ABC，∠BAC=50°，半径 3">
+  <title>△ABC 内接于 ⊙O，∠BAC=50°</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="170" cy="120" r="82"/>
+    <path d="M170 202 L117.3 57.2 L241 79 L170 202"/>
+    <path d="M161.1 177.6 A26 26 0 0 1 183 179.5" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="170" cy="120" r="2.2"/>
+    <text x="170" y="222" text-anchor="middle">A</text>
+    <text x="107" y="44" text-anchor="middle">B</text>
+    <text x="254" y="74" text-anchor="start">C</text>
+    <text x="170" y="175" text-anchor="middle" font-size="12">50°</text>
+    <text x="160" y="112" text-anchor="end">O</text>
+  </g>
+</svg>

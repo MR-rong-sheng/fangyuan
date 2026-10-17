@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 320" role="img" aria-label="平面直角坐标系中，到两个坐标轴的距离都小于或等于k的点组成正方形区域W">
+  <title>“k阶近轴点”组成的图形 W：|x|≤k 且 |y|≤k 的正方形区域</title>
+  <!-- 原点 O(160,160)，正方形 W 的四个顶点为 (±k,±k)，按 100px 画；点 P 到两轴距离均 ≤ k -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 160 H300"/>
+    <path d="M294 155 L300 160 L294 165"/>
+    <path d="M160 296 V24"/>
+    <path d="M155 30 L160 24 L165 30"/>
+    <path d="M60 60 H260 V260 H60 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round">
+    <path d="M205 105 H160"/>
+    <path d="M205 105 V160"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M205 150 L215 150 L215 160"/>
+    <path d="M170 105 L170 95 L160 95"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="205" cy="105" r="2.2"/>
+    <text x="308" y="172" text-anchor="start">x</text>
+    <text x="168" y="20" text-anchor="start">y</text>
+    <text x="150" y="176" text-anchor="end">O</text>
+    <text x="260" y="178" text-anchor="middle">k</text>
+    <text x="60" y="178" text-anchor="middle">-k</text>
+    <text x="148" y="64" text-anchor="end">k</text>
+    <text x="148" y="264" text-anchor="end">-k</text>
+    <text x="212" y="100" text-anchor="start">P</text>
+    <text x="74" y="244" text-anchor="start">W</text>
+  </g>
+</svg>

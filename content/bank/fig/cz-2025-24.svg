@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 245" role="img" aria-label="△ABC 中 AB=AC，点 D、E 在 BC 上且 BD=CE，连接 AD、AE；BD 与 CE 上各有一道等长刻线">
+  <title>△ABC 中 AB=AC，D、E 在 BC 上，BD=CE</title>
+  <!-- B(-5,0) C(5,0) D(-3,0) E(3,0) A(0,3.5)，1 单位 = 28px；BD=CE=2 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180.0 102.0 L40.0 200.0"/>
+    <path d="M180.0 102.0 L320.0 200.0"/>
+    <path d="M40.0 200.0 L320.0 200.0"/>
+    <path d="M180.0 102.0 L96.0 200.0"/>
+    <path d="M180.0 102.0 L264.0 200.0"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M-4.0 -4.0 L-4.0 4.0"/>
+    <path d="M4.0 4.0 L4.0 -4.0"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="180.0" y="92.0" text-anchor="middle">A</text>
+    <text x="31.0" y="218.0" text-anchor="end">B</text>
+    <text x="329.0" y="218.0" text-anchor="start">C</text>
+    <text x="96.0" y="220.0" text-anchor="middle">D</text>
+    <text x="264.0" y="220.0" text-anchor="middle">E</text>
+  </g>
+</svg>

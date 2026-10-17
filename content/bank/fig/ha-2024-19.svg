@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="矩形 ABCD，E、F 在 BD 上，BE=DF，连 AE、CF">
+  <title>矩形 ABCD 中 E、F 在对角线 BD 上，BE=DF</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 60 L220 60 L220 180 L60 180 L60 60"/>
+    <path d="M220 60 L60 180"/>
+    <path d="M60 60 L180 90"/>
+    <path d="M220 180 L100 150"/>
+    <path d="M203 79 L197 71" stroke-width="1.2"/>
+    <path d="M77 161 L83 169" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="180" cy="90" r="2.2"/>
+    <circle cx="100" cy="150" r="2.2"/>
+    <text x="50" y="52" text-anchor="middle">A</text>
+    <text x="230" y="52" text-anchor="middle">B</text>
+    <text x="232" y="188" text-anchor="start">C</text>
+    <text x="48" y="188" text-anchor="end">D</text>
+    <text x="190" y="84" text-anchor="start">E</text>
+    <text x="90" y="152" text-anchor="end">F</text>
+  </g>
+</svg>

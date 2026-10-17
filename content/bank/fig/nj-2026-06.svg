@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 250" role="img" aria-label="菱形 ABCD（∠B=54°）绕点 B 逆时针旋转 16° 得菱形 A′BC′D′，连接 DD′">
+  <title>菱形 ABCD 绕 B 逆时针旋转 16° 得 A′BC′D′，连接 DD′</title>
+  <!-- 复算：∠ABC=54°，绕 B 逆时针 16°；∠D′DC=109°（=82°+27°）
+       B(80,140) A(186.9,85.5) C(186.9,194.5) D(293.8,140)
+       A′(167.7,58.2) C′(197.8,162.9) D′(285.6,81.1) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M186.9 85.5 L80.0 140.0 L186.9 194.5 L293.8 140.0 Z"/>
+    <path d="M293.8 140.0 L285.6 81.1"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4">
+    <path d="M167.8 58.2 L80.0 140.0 L197.8 162.9 L285.6 81.1 Z"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="188.92078290260415" y="77.52114003125439" text-anchor="middle" font-size="13">A</text>
+    <text x="68.0" y="144.0" text-anchor="end" font-size="13">B</text>
+    <text x="190.92078290260415" y="208.4788599687456" text-anchor="start" font-size="13">C</text>
+    <text x="305.8415658052083" y="146.0" text-anchor="start" font-size="13">D</text>
+    <text x="153.76244419430049" y="56.16019679250019" text-anchor="end" font-size="13">A′</text>
+    <text x="209.79526201371968" y="170.89707944518537" text-anchor="start" font-size="13">C′</text>
+    <text x="291.55770620802014" y="71.05727623768556" text-anchor="start" font-size="13">D′</text>
+  </g>
+</svg>

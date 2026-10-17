@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 310" role="img" aria-label="△ABC 中 AB=3、AC=4、BC=5，⊙A 与 BC 相切于 D">
+  <title>△ABC：AB=3 AC=4 BC=5，⊙A 与 BC 相切于 D</title>
+  <!-- 40px/单位：A(180,120) B(60,120) C(180,280)；∠A=90°，r=AD=AB·AC/BC=2.4→96px
+       D 为 A 到 BC 的垂足=(103.2,177.6) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 120 L180 120 L180 280 Z"/>
+    <circle cx="180" cy="120" r="96"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180 120 L103.2 177.6" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M166.0 120.0 L166.0 134.0 L180.0 134.0"/>
+
+    <path d="M112.8 170.4 L120.0 180.0 L110.4 187.2"/>
+
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="180" cy="120" r="2.2"/>
+    <text x="196" y="116" text-anchor="start" font-size="13">A</text>
+    <text x="48" y="124" text-anchor="middle" font-size="13">B</text>
+    <text x="180" y="296" text-anchor="middle" font-size="13">C</text>
+    <text x="88" y="182" text-anchor="middle" font-size="13">D</text>
+    <text x="96" y="236" text-anchor="middle" font-size="13">⊙A</text>
+  </g>
+</svg>

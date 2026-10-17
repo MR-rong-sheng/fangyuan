@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 240" role="img" aria-label="⊙O 中 AB 为直径，△ACD 内接于圆，AB、CD 的延长线交于 E，且 DE=AD">
+  <title>⊙O：AB 为直径，△ACD 内接，AB 与 CD 延长交于 E</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="160" cy="120" r="70"/>
+    <path d="M90.0 120.0 L230.0 120.0"/>
+    <path d="M90.0 120.0 L209.5 70.5"/>
+    <path d="M90.0 120.0 L160.0 50.0"/>
+    <path d="M160.0 50.0 L209.5 70.5"/>
+    <path d="M230.0 120.0 L329.0 120.0"/>
+    <path d="M209.5 70.5 L329.0 120.0"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="80" y="124" text-anchor="middle">A</text>
+    <text x="232" y="110" text-anchor="middle">B</text>
+    <text x="223.497" y="72.5025" text-anchor="middle">D</text>
+    <text x="146" y="54" text-anchor="middle">C</text>
+    <text x="339" y="128" text-anchor="middle">E</text>
+    <text x="150" y="138" text-anchor="middle">O</text>
+    <circle cx="209.497" cy="70.5025" r="2.2"/>
+    <circle cx="160" cy="120" r="2.2"/>
+  </g>
+</svg>

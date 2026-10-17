@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 240" role="img" aria-label="坐标系中一次函数 y=1.5x+1.5 与反比例函数 y=3/x 的图像，A(-1,0)、B(0,1.5)、C(1,3)、D(0,6/7)、E(-3/7,6/7)、F(3.5,6/7)">
+  <title>一次函数与反比例函数的图像及点 A、B、C、D、E、F</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 200 L318 200" stroke-width="1.4"/>
+    <path d="M90 212 L90 16" stroke-width="1.4"/>
+    <path d="M40 200 L156.7 25"/>
+    <path d="M133 25.6 L136.3 37.9 L139.5 48.6 L142.8 58 L146.1 66.3 L149.4 73.6 L152.6 80.2 L155.9 86.2 L159.2 91.6 L162.4 96.5 L165.7 100.9 L169 105 L172.2 108.8 L175.5 112.3 L178.8 115.5 L182.1 118.5 L185.3 121.3 L188.6 123.9 L191.9 126.4 L195.1 128.7 L198.4 130.8 L201.7 132.8 L205 134.8 L208.2 136.6 L211.5 138.3 L214.8 139.9 L218 141.4 L221.3 142.9 L224.6 144.3 L227.9 145.6 L231.1 146.9 L234.4 148.1 L237.7 149.2 L240.9 150.3 L244.2 151.4 L247.5 152.4 L250.8 153.3 L254 154.3 L257.3 155.2 L260.6 156 L263.8 156.9 L267.1 157.7 L270.4 158.4 L273.6 159.2 L276.9 159.9 L280.2 160.6 L283.5 161.2 L286.7 161.9 L290 162.5"/>
+    <path d="M68.6 157.1 L265 157.1" stroke-dasharray="4 3"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="40" cy="200" r="2.2"/>
+    <circle cx="90" cy="125" r="2.2"/>
+    <circle cx="140" cy="50" r="2.2"/>
+    <circle cx="90" cy="157.1" r="2.2"/>
+    <circle cx="68.6" cy="157.1" r="2.2"/>
+    <circle cx="265" cy="157.1" r="2.2"/>
+    <text x="36" y="215" text-anchor="middle">A</text>
+    <text x="80" y="118" text-anchor="end">B</text>
+    <text x="148" y="44" text-anchor="start">C</text>
+    <text x="82" y="152" text-anchor="end">D</text>
+    <text x="60" y="150" text-anchor="end">E</text>
+    <text x="266" y="148" text-anchor="middle">F</text>
+    <text x="80" y="214" text-anchor="end">O</text>
+    <text x="323" y="206" text-anchor="middle" font-size="14">x</text>
+    <text x="84" y="26" text-anchor="end" font-size="14">y</text>
+  </g>
+</svg>

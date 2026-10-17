@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 220" role="img" aria-label="点 A(0,6) 绕原点顺时针旋转 45° 得到点 A′（示意）">
+  <title>点 A(0,6) 绕原点顺时针旋转 45° 得 A′</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 190 H232"/>
+    <path d="M90 210 V28"/>
+    <path d="M232 190 l-9 -5 v10 z" fill="currentColor" stroke="none"/>
+    <path d="M90 28 l-5 9 h10 z" fill="currentColor" stroke="none"/>
+    <path d="M90.0 190.0 L90.0 40.0" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M90.0 190.0 L196.1 83.9" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M90.0 40.0 A150 150 0 0 1 196.1 83.9" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="80" y="206" text-anchor="middle">O</text>
+    <text x="80" y="32" text-anchor="middle">A</text>
+    <text x="212.066" y="81.934" text-anchor="middle">A′</text>
+    <circle cx="196.066" cy="83.934" r="2.2"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="月均用水量频数分布直方图：A组7户，B组20户，C组15户，D组6户，E组2户">
+  <title>月均用水量频数分布直方图：A组7户，B组20户，C组15户，D组6户，E组2户</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 200 H336"/>
+    <path d="M60 200 V60.0"/>
+    <rect x="60" y="154.5" width="40" height="45.5"/>
+    <rect x="114" y="70.0" width="40" height="130.0"/>
+    <rect x="168" y="102.5" width="40" height="97.5"/>
+    <rect x="222" y="161.0" width="40" height="39.0"/>
+    <rect x="276" y="187.0" width="40" height="13.0"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M56 200.0 H60"/>
+    <path d="M56 167.5 H60"/>
+    <path d="M56 135.0 H60"/>
+    <path d="M56 102.5 H60"/>
+    <path d="M56 70.0 H60"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="52" y="204.0" text-anchor="end" font-size="11">0</text>
+    <text x="52" y="171.5" text-anchor="end" font-size="11">5</text>
+    <text x="52" y="139.0" text-anchor="end" font-size="11">10</text>
+    <text x="52" y="106.5" text-anchor="end" font-size="11">15</text>
+    <text x="52" y="74.0" text-anchor="end" font-size="11">20</text>
+<text x="80.0" y="215" text-anchor="middle" font-size="12">A</text><text x="134.0" y="215" text-anchor="middle" font-size="12">B</text><text x="188.0" y="215" text-anchor="middle" font-size="12">C</text><text x="242.0" y="215" text-anchor="middle" font-size="12">D</text><text x="296.0" y="215" text-anchor="middle" font-size="12">E</text>    <text x="26" y="64" text-anchor="middle" font-size="12">频数</text>
+  </g>
+</svg>

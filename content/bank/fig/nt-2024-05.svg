@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" role="img" aria-label="直线 a∥b，矩形 ABCD 的顶点 A 在直线 b 上，∠2=41°，求 ∠1">
+  <title>直线 a∥b，矩形 ABCD 顶点 A 在 b 上，∠2=41°</title>
+  <!-- 复算：A(0,0) B(1.443,1.660) C(-0.972,3.759) D(-2.415,2.099)，b:y=0 a:y=2
+       过 B 作 BE∥a，∠1=∠ABE=49°，∠2=∠CBE=41°，∠1+∠2=∠ABC=90° -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 210 H270"/>
+    <path d="M30 126 H270"/>
+    <path d="M150 210 L211 140 L109 52 L49 122 Z"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="272" y="214" text-anchor="start" font-size="13">b</text>
+    <text x="272" y="130" text-anchor="start" font-size="13">a</text>
+    <text x="150" y="228" text-anchor="middle" font-size="13">A</text>
+    <text x="215" y="138" text-anchor="start" font-size="13">B</text>
+    <text x="102" y="46" text-anchor="middle" font-size="13">C</text>
+    <text x="38" y="120" text-anchor="middle" font-size="13">D</text>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180.0 210.0 A30 30 0 0 0 169.7 187.4" stroke-width="1.2"/>
+    <path d="M168.0 126.0 A26 26 0 0 1 191.6 100.1" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="178" y="200" text-anchor="middle" font-size="13">1</text>
+    <text x="176" y="116" text-anchor="middle" font-size="13">2</text>
+  </g>
+</svg>

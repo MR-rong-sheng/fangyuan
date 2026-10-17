@@ -1,0 +1,341 @@
+{
+  "province": "江苏",
+  "city": "常州",
+  "year": 2025,
+  "paper": "2025年江苏省常州市中考数学试卷",
+  "source": "https://www.renrendoc.com/paper/533059506.html",
+  "coverage": "已收 20 题 / 全卷 28 题（8 选择 + 10 填空 + 10 解答）",
+  "note": "第 1、2、3、4、5、8 题与第 27、28 题的条件式/选项在公开原文里是图片或残缺，未能收全（第 6、7 题原文清晰）。全卷选择题答案为 A A D C C B B A。来源为公开全文预览页，并与 21 世纪教育网的同卷图片版原卷文字互校；第 16～18 题原卷只给出条件，答案由笔者按条件独立计算。",
+  "questions": [
+    {
+      "id": "cz-2025-06",
+      "no": 6,
+      "kind": "选择",
+      "stem": "如图，在菱形 ABCD 中，AC、BD 是对角线，AB=5。若 ∠ABD=30°，则 AC 的长是",
+      "choices": [
+        "A．4",
+        "B．5",
+        "C．6",
+        "D．10"
+      ],
+      "answer": "B",
+      "solution": "菱形的对角线互相垂直平分，故 AO=CO 且 ∠AOD=90°。在 Rt△AOB 中 ∠ABO=∠ABD=30°，AB=5，所以 AO=AB·sin30°=5×\\frac{1}{2}=\\frac{5}{2}，AC=2AO=5。",
+      "unit": "u8",
+      "level": 2,
+      "tags": [
+        "菱形",
+        "含 30° 角的直角三角形"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-6.svg",
+      "figAlt": "菱形 ABCD：对角线 AC、BD 交于 O"
+    },
+    {
+      "id": "cz-2025-07",
+      "no": 7,
+      "kind": "选择",
+      "stem": "如图，将两块相同的直角三角尺按图示摆放，则 AB 与 CD 平行。这一判断过程体现的数学依据是",
+      "choices": [
+        "A．垂线段最短",
+        "B．内错角相等，两直线平行",
+        "C．两点确定一条直线",
+        "D．平行于同一条直线的两条直线平行"
+      ],
+      "answer": "B",
+      "solution": "摆放时形成的两个角是内错角且相等，于是两直线平行，依据是“内错角相等，两直线平行”。",
+      "unit": "",
+      "level": 1,
+      "tags": [
+        "平行线的判定"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-07.svg",
+      "figAlt": "两块相同的直角三角尺按图摆放：上块的长直角边（带刻度）为 AB，下块为 CD，两块三角尺的斜边同在一条直线 AD 上，∠A=∠D=30°，故 AB∥CD"
+    },
+    {
+      "id": "cz-2025-09",
+      "no": 9,
+      "kind": "填空",
+      "stem": "4 的算术平方根是____",
+      "answer": "2",
+      "solution": "算术平方根取非负的平方根。因为 2^2=4 且 2≥0，所以 4 的算术平方根是 2。",
+      "unit": "u1",
+      "level": 1,
+      "tags": [
+        "算术平方根"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-10",
+      "no": 10,
+      "kind": "填空",
+      "stem": "计算：(a^2)^3=____",
+      "answer": "a^6",
+      "solution": "幂的乘方，底数不变、指数相乘，(a^2)^3=a^{2×3}=a^6。",
+      "unit": "u2",
+      "level": 1,
+      "tags": [
+        "幂的乘方"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-11",
+      "no": 11,
+      "kind": "填空",
+      "stem": "分解因式：x^2-9y^2=____",
+      "answer": "(x-3y)(x+3y)",
+      "solution": "利用平方差公式 a^2-b^2=(a+b)(a-b)，得 x^2-9y^2=x^2-(3y)^2=(x-3y)(x+3y)。",
+      "unit": "u2",
+      "level": 1,
+      "tags": [
+        "因式分解",
+        "平方差公式"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-12",
+      "no": 12,
+      "kind": "填空",
+      "stem": "太阳的半径约为 700000 千米，数据 700000 用科学记数法表示为____",
+      "answer": "7×10^5",
+      "solution": "700000=7×100000=7×10^5。",
+      "unit": "u1",
+      "level": 1,
+      "tags": [
+        "科学记数法"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-13",
+      "no": 13,
+      "kind": "填空",
+      "stem": "若 \\frac{x}{3}>\\frac{y}{3}，则 x-y____0。（填“>”“<”或“=”）",
+      "answer": ">",
+      "solution": "不等式两边同乘正数 3，不等号方向不变，得 x>y，所以 x-y>0。",
+      "unit": "u4",
+      "level": 1,
+      "tags": [
+        "不等式性质"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-14",
+      "no": 14,
+      "kind": "填空",
+      "stem": "若关于 x 的一元二次方程 x^2-2x+m=0 有两个相等的实数根，则实数 m 的值为____",
+      "answer": "1",
+      "solution": "两个相等实数根等价于判别式 Δ=0。Δ=(-2)^2-4×1×m=4-4m=0，解得 m=1。",
+      "unit": "",
+      "level": 1,
+      "tags": [
+        "根的判别式",
+        "一元二次方程"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-15",
+      "no": 15,
+      "kind": "填空",
+      "stem": "如图，AB∥CD，AC⊥AD，∠ACD=50°，则 ∠α=____°",
+      "answer": "40",
+      "solution": "因为 AB∥CD，所以 ∠BAC+∠ACD=180°，得 ∠BAC=180°-50°=130°。又 AC⊥AD，即 ∠CAD=90°，故 ∠α=∠BAC-∠CAD=130°-90°=40°。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "平行线性质",
+        "垂直"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-15.svg",
+      "figAlt": "AB∥CD，AC⊥AD，∠ACD=50°，求 ∠α"
+    },
+    {
+      "id": "cz-2025-16",
+      "no": 16,
+      "kind": "填空",
+      "stem": "如图，在平行四边形 ABCD 中，E 是 AD 上一点，DE=2AE，CE、BA 的延长线相交于点 F。若 AB=2，则 AF=____",
+      "answer": "1",
+      "solution": "由 DE=2AE 得 AD=3AE。平行四边形中 AD=BC，故 BC=3AE。因为 AE∥BC，所以 △FAE∽△FBC，得 AF÷BF=AE÷BC=1÷3。设 AF=x，则 x÷(x+2)=1÷3，解得 x=1。",
+      "unit": "u8",
+      "level": 2,
+      "tags": [
+        "平行四边形",
+        "相似三角形"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-16.svg",
+      "figAlt": "平行四边形 ABCD 中 E 在 AD 上且 DE=2AE，CE 的延长线与 BA 的延长线交于点 F，AB=2（AE 上一道刻线、ED 上两道刻线）"
+    },
+    {
+      "id": "cz-2025-17",
+      "no": 17,
+      "kind": "填空",
+      "stem": "如图，AB 是 ⊙O 的直径，CD 是 ⊙O 的弦。若 ∠DCB=45°，AD=1，则 AB=____",
+      "answer": "√(2)",
+      "solution": "AB 是直径，故 ∠ADB=90°。同弧 DB 所对圆周角相等，得 ∠DAB=∠DCB=45°。于是 △ABD 是等腰直角三角形，BD=AD=1，AB=√(AD^2+BD^2)=√(1+1)=√(2)。",
+      "unit": "u8",
+      "level": 2,
+      "tags": [
+        "圆周角定理",
+        "等腰直角三角形"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-17.svg",
+      "figAlt": "⊙O 中 AB 是直径，C、D 在圆上，连接 AD、BD、AC、BC；∠DCB=45°、AD=1"
+    },
+    {
+      "id": "cz-2025-18",
+      "no": 18,
+      "kind": "填空",
+      "stem": "如图，在 △ABC 中，tanC=\\frac{4}{3}，D 是边 BC 上一点，将 △ACD 沿 AD 翻折得到 △AED，使线段 AE、BC 相交于点 F。若 CF=5，EF=2，则 AC=____",
+      "answer": "\\frac{21}{2}",
+      "solution": "过 F 作 FG⊥AC 于 G。在 Rt△CFG 中 ∠C 满足 tanC=FG÷CG=4÷3，设 FG=4x、CG=3x，由 CF=5 得 (3x)^2+(4x)^2=25，解得 x=1，故 FG=4、CG=3。由翻折 AE=AC，设 AC=AE=y，则 AG=AC-CG=y-3，AF=AE-EF=y-2。在 Rt△AFG 中 AF^2=AG^2+FG^2，即 (y-2)^2=(y-3)^2+16，解得 y=\\frac{21}{2}，即 AC=\\frac{21}{2}。",
+      "unit": "u7",
+      "level": 3,
+      "tags": [
+        "折叠问题",
+        "锐角三角函数",
+        "勾股定理"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-18.svg",
+      "figAlt": "△ABC 中 tanC=4/3，D 在 BC 上，把 △ACD 沿 AD 翻折得到 △AED，AE 与 BC 交于点 F；实线为翻折后的位置，虚线为翻折前的 AC 与底边 F→C"
+    },
+    {
+      "id": "cz-2025-19",
+      "no": 19,
+      "kind": "解答",
+      "stem": "先化简，再求值：x(x+2)+(x-1)^2，其中 x=√(3)。",
+      "answer": "7",
+      "solution": "原式 =x^2+2x+x^2-2x+1=2x^2+1。当 x=√(3) 时，原式 =2×(√(3))^2+1=2×3+1=7。",
+      "unit": "u2",
+      "level": 1,
+      "tags": [
+        "整式化简求值",
+        "完全平方公式"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-20",
+      "no": 20,
+      "kind": "解答",
+      "stem": "解不等式组 {x+2≥0，2x-3<-3}，并把解集在数轴上表示出来。",
+      "answer": "-2≤x<0",
+      "solution": "由 x+2≥0 得 x≥-2；由 2x-3<-3 得 2x<0，即 x<0。取公共部分得 -2≤x<0，在数轴上从 -2 的实心点到 0 的空心点之间的部分即为解集。",
+      "unit": "u4",
+      "level": 1,
+      "tags": [
+        "一元一次不等式组",
+        "数轴表示解集"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-21",
+      "no": 21,
+      "kind": "解答",
+      "stem": "甲、乙两人在相同条件下各射击 10 次，成绩（单位：环）如下。甲：6，7，6，8，7，6，8，6，9，7；乙：5，7，5，10，5，8，6，9，8，7。整理成表：甲的平均数为 x_甲、中位数 7、众数 m、方差 1；乙的平均数 7、中位数 n、众数 5、方差 2.8。（1）填空：x_甲=____，m=____，n=____；（2）根据以上数据，评价甲、乙两人射击成绩的稳定性，并说明理由。",
+      "answer": "（1）x_甲=7，m=6，n=7；（2）甲的成绩更稳定，因为甲的方差 1 小于乙的方差 2.8。",
+      "solution": "（1）x_甲=(6+7+6+8+7+6+8+6+9+7)÷10=70÷10=7。甲的 10 个成绩中 6 环出现 4 次为最多，故众数 m=6。乙的成绩从小到大排列为 5，5，5，6，7，7，8，8，9，10，中位数是中间两个数 7 与 7 的平均数，即 n=7。（2）两人平均数相同，而甲的方差 1<2.8，说明甲的成绩波动更小、更稳定。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "平均数",
+        "中位数",
+        "众数",
+        "方差"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-22",
+      "no": 22,
+      "kind": "解答",
+      "stem": "在 5 张相同的小纸条上，分别写有：①-1；②0；③1；④正数；⑤负数。将这 5 张小纸条做成 5 支签，①②③放在不透明的盒子 A 中搅匀，④⑤放在不透明的盒子 B 中搅匀。（1）从盒子 A 中任意抽出 1 支签，抽到 0 的概率是____；（2）先从盒子 A 中任意抽出 1 支签，再从盒子 B 中任意抽出 1 支签，求抽到的数与文字描述相符合的概率。",
+      "answer": "（1）\\frac{1}{3}；（2）\\frac{1}{3}",
+      "solution": "（1）盒子 A 中有①②③共 3 支签，抽到 0 的概率为 \\frac{1}{3}。（2）从 A、B 各抽 1 支，共 3×2=6 种等可能结果：（-1，④）、（-1，⑤）、（0，④）、（0，⑤）、（1，④）、（1，⑤）。其中数与文字描述相符合的是（-1，⑤）和（1，④）共 2 种，概率为 \\frac{2}{6}=\\frac{1}{3}。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "概率",
+        "树状图"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-23",
+      "no": 23,
+      "kind": "解答",
+      "stem": "某块绿地改进浇水方式，将漫灌方式全部改为喷灌方式，平均每天用水量减少 1 吨，20 吨水可以使用的天数是原来的 2 倍。问浇水方式改进后平均每天用水多少吨？",
+      "answer": "1 吨",
+      "solution": "设改进后平均每天用水 x 吨，则改进前平均每天用水 (x+1) 吨。由“20 吨水的可用天数是原来的 2 倍”得 \\frac{20}{x}=2×\\frac{20}{x+1}，化简得 x+1=2x，解得 x=1。经检验 x=1 是原方程的解且符合实际，故改进后平均每天用水 1 吨。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "分式方程的应用"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html"
+    },
+    {
+      "id": "cz-2025-24",
+      "no": 24,
+      "kind": "解答",
+      "stem": "如图，在 △ABC 中，AB=AC，点 D、E 在 BC 上，BD=CE。（1）求证：△ABD≌△ACE；（2）用直尺和圆规作 ∠DAE 的平分线 AF（保留作图痕迹，不要求写作法）。",
+      "answer": "（1）△ABD≌△ACE（SAS）；（2）作图略",
+      "solution": "（1）因为 AB=AC，所以 ∠B=∠C；又 BD=CE，AB=AC，由 SAS 得 △ABD≌△ACE。（2）以 A 为圆心、适当长为半径画弧交 AD、AE 于两点，再分别以这两点为圆心、大于其一半的长为半径画弧，两弧交于一点，过该点与 A 作射线即为 ∠DAE 的平分线 AF。",
+      "unit": "u7",
+      "level": 2,
+      "tags": [
+        "全等三角形",
+        "尺规作图",
+        "角平分线"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-24.svg",
+      "figAlt": "△ABC 中 AB=AC，D、E 在 BC 上，BD=CE，连接 AD、AE（BD 与 CE 上各有一道等长刻线）"
+    },
+    {
+      "id": "cz-2025-25",
+      "no": 25,
+      "kind": "解答",
+      "stem": "如图，在平面直角坐标系 xOy 中，一次函数 y=kx+b 的图象与反比例函数 y=\\frac{m}{x} 的图象相交于点 A(1,n)、B(-3,-2)，且与 y 轴交于点 C。（1）求一次函数、反比例函数的表达式；（2）连接 OA，求 △OAC 的面积。",
+      "answer": "（1）y=2x+4，y=\\frac{6}{x}；（2）2",
+      "solution": "（1）把 B(-3,-2) 代入 y=\\frac{m}{x} 得 m=6，故反比例函数为 y=\\frac{6}{x}；把 A(1,n) 代入得 n=6，即 A(1,6)。把 A(1,6)、B(-3,-2) 代入 y=kx+b，得 k+b=6、-3k+b=-2，解得 k=2、b=4，故一次函数为 y=2x+4。（2）令 x=0 得 y=4，即 C(0,4)，OC=4。△OAC 以 OC 为底、A 的横坐标 1 为高，面积 =\\frac{1}{2}×4×1=2。",
+      "unit": "u5",
+      "level": 2,
+      "tags": [
+        "一次函数",
+        "反比例函数",
+        "待定系数法"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-25.svg",
+      "figAlt": "平面直角坐标系 xOy 中，一次函数 y=2x+4 的图象与反比例函数 y=6/x 的图象交于 A(1,6)、B(-3,-2)，直线与 y 轴交于 C(0,4)，连接 OA"
+    },
+    {
+      "id": "cz-2025-26",
+      "no": 26,
+      "kind": "解答",
+      "stem": "在四边形 ABCD 中，对角线 AC、BD 相交于点 O，AB=2，AD=1。（1）若 △ABD 是等腰三角形，则 BD=____；（2）已知 OB=OD，AC=BD。①若 OA=OC，判断四边形 ABCD 是怎样的特殊四边形，并说明理由；②如图，在 △ACD 中，CD^2=AD^2+AC^2，求 AC 的长。",
+      "answer": "（1）2；（2）①矩形；②AC=√(7)",
+      "solution": "（1）分别在 BD=AB=2、BD=AD=1 两种情形下检验三角形三边关系：BD=1 时 1+1=2 与 AD+AB=2 相等，不能构成三角形，舍去；BD=2 时 1+2>2 成立。故 BD=2。（2）①由 OA=OC、OB=OD 得四边形 ABCD 是平行四边形；又 AC=BD，对角线相等的平行四边形是矩形。②由 CD^2=AD^2+AC^2 得 ∠DAC=90°。过 B 作 BE⊥AC 于 E，由 AD∥BC（平行四边形）可证 △AOD≌△EOB，得 BE=AD=1、AO=EO。在 Rt△ABE 中 AE=√(AB^2-BE^2)=√(4-1)=√(3)，故 AO=EO=\\frac{√(3)}{2}。在 Rt△AOD 中 OD=√(AD^2+AO^2)=√(1+\\frac{3}{4})=\\frac{√(7)}{2}，所以 BD=2OD=√(7)，从而 AC=BD=√(7)。",
+      "unit": "u8",
+      "level": 3,
+      "tags": [
+        "平行四边形",
+        "矩形的判定",
+        "勾股定理"
+      ],
+      "src": "https://www.renrendoc.com/paper/533059506.html",
+      "fig": "content/bank/fig/cz-2025-26.svg",
+      "figAlt": "四边形 ABCD 中，对角线 AC、BD 相交于点 O，AB=2、AD=1，OB=OD、AC=BD，且 ∠DAC=90°（CD²=AD²+AC²）"
+    }
+  ]
+}

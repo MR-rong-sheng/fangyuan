@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" role="img" aria-label="四个几何体：A 圆柱、B 正三棱柱、C 球、D 圆锥">
+  <title>四个几何体 A 圆柱、B 正三棱柱、C 球、D 圆锥</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="55" cy="42" rx="24" ry="9"/>
+    <path d="M31 42 V118"/>
+    <path d="M79 42 V118"/>
+    <path d="M31 118 A24 9 0 0 0 79 118"/>
+    <path d="M128 52 L172 52 L150 36 Z"/>
+    <path d="M128 128 L172 128 L150 112 Z"/>
+    <path d="M128 52 V128"/>
+    <path d="M172 52 V128"/>
+    <path d="M150 36 V112"/>
+    <circle cx="245" cy="82" r="36"/>
+    <path d="M335 40 L307 120 L363 120 Z"/>
+    <path d="M307 120 A28 9 0 0 0 363 120"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="55" y="155" text-anchor="middle" font-size="13">A</text>
+    <text x="150" y="155" text-anchor="middle" font-size="13">B</text>
+    <text x="245" y="155" text-anchor="middle" font-size="13">C</text>
+    <text x="335" y="155" text-anchor="middle" font-size="13">D</text>
+  </g>
+</svg>

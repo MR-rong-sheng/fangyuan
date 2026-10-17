@@ -1,0 +1,193 @@
+/* ==========================================================================
+   方圆 · cyber.css —— 赛博朋克层
+   在液态玻璃之上加「霓虹 HUD」：深底 + 网格 + 扫描线 + 霓虹细边与辉光。
+   原则：仍然只有一个强调色（--accent），洋红 --neon-2 由同一色相推导出来，
+        不作为第二强调色使用；文字对比度优先，辉光只做边缘，不进正文。
+   用法：<html data-theme="cyber">（日间/夜间不受影响）
+   ========================================================================== */
+
+html[data-theme="cyber"]{
+  /* 墨色（冷调、偏青） */
+  --ink:   #e4f6ff;
+  --ink-2: #a9c6d6;
+  --ink-3: #708a9b;
+  --ink-4: #4b5c6a;
+
+  /* 唯一强调色：霓虹青 */
+  --h: 186; --s: 92%; --l: 58%;
+  --accent:      hsl(var(--h) var(--s) var(--l));
+  --accent-soft: hsl(var(--h) var(--s) var(--l) / .14);
+  --accent-line: hsl(var(--h) var(--s) var(--l) / .48);
+  /* 同色相推导的副霓虹（+120°）与暖色警示，只用于辉光/描边 */
+  --neon-2: hsl(calc(var(--h) + 120) 92% 64%);
+  --neon-warm: hsl(calc(var(--h) - 40) 95% 62%);
+  --glow: 0 0 0 1px hsl(var(--h) var(--s) var(--l) / .35),
+          0 0 18px hsl(var(--h) var(--s) var(--l) / .22),
+          0 0 60px hsl(var(--h) calc(var(--s) - 20%) var(--l) / .12);
+
+  /* 纸面 */
+  --paper-1: #04060b;
+  --paper-2: #0a1018;
+  --wash-1: hsl(var(--h) 90% 20% / .55);
+  --wash-2: hsl(calc(var(--h) + 120) 85% 18% / .42);
+
+  /* 玻璃：极薄的青色雾 + 更亮的边 */
+  --glass-tint:  rgba(150,240,255,.055);
+  --glass-tint2: rgba(150,240,255,.018);
+  --glass-line:  rgba(150,240,255,.26);
+  --glass-hl:    rgba(200,250,255,.55);
+  --blur: 18px;
+
+  /* 阴影：霓虹底光代替灰色投影 */
+  --shadow-1: 0 0 0 1px hsl(var(--h) var(--s) var(--l) / .10), 0 6px 24px rgba(0,0,0,.6);
+  --shadow-2: 0 0 0 1px hsl(var(--h) var(--s) var(--l) / .16), 0 18px 50px rgba(0,0,0,.7),
+              0 0 40px hsl(var(--h) var(--s) var(--l) / .10);
+
+  --font-mono: ui-monospace, "JetBrains Mono", Consolas, "Cascadia Mono", monospace;
+}
+
+/* ---------- 底：网格 + 扫描线 + 暗角 ---------- */
+/* 用 background-color + background-image（不用简写：简写会把兜底色重置成透明，
+   于是页面比视口高时下面会露白 —— 打卡页就是这么翻车的）。 */
+html[data-theme="cyber"] body{
+  background-color: var(--paper-1);
+  background-image:
+    radial-gradient(1100px 780px at 88% -12%, var(--wash-1), transparent 62%),
+    radial-gradient(900px 700px at -10% 104%, var(--wash-2), transparent 66%),
+    linear-gradient(180deg, var(--paper-1), var(--paper-2));
+  background-attachment: fixed;
+}
+html[data-theme="cyber"] body::before{
+  content:""; position:fixed; inset:0; z-index:-3; pointer-events:none;
+  background-image:
+    linear-gradient(to right, hsl(var(--h) var(--s) var(--l) / .07) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--h) var(--s) var(--l) / .07) 1px, transparent 1px);
+  background-size:44px 44px;
+  mask-image:radial-gradient(120vw 100vh at 50% 0%, #000 20%, transparent 82%);
+  -webkit-mask-image:radial-gradient(120vw 100vh at 50% 0%, #000 20%, transparent 82%);
+}
+html[data-theme="cyber"] body::after{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.5;
+  background:repeating-linear-gradient(to bottom, rgba(160,240,255,.045) 0 1px, transparent 1px 3px);
+}
+html[data-theme="cyber"] .grain{ display:none }              /* 扫描线代替纸纹 */
+html[data-theme="cyber"] .bg{ filter:blur(70px) saturate(150%); opacity:.75 }
+
+/* ---------- 顶栏 / 导航 ---------- */
+html[data-theme="cyber"] .topbar{ border-bottom:1px solid hsl(var(--h) var(--s) var(--l) / .18) }
+html[data-theme="cyber"] .brand__mark{
+  color:#02060a; background:linear-gradient(160deg, var(--accent), var(--neon-2));
+  box-shadow:0 0 14px hsl(var(--h) var(--s) var(--l) / .5);
+}
+html[data-theme="cyber"] .brand__text i{ color:var(--ink-3); letter-spacing:.06em }
+html[data-theme="cyber"] .nav a{
+  font-family:var(--font-mono); letter-spacing:.06em;
+  border:1px solid transparent;
+}
+html[data-theme="cyber"] .nav a[aria-current="page"],
+html[data-theme="cyber"] .nav a.is-active{
+  color:var(--accent); border-color:var(--accent-line);
+  box-shadow:0 0 12px hsl(var(--h) var(--s) var(--l) / .22), inset 0 0 12px hsl(var(--h) var(--s) var(--l) / .10);
+  background:hsl(var(--h) var(--s) var(--l) / .08);
+}
+
+/* ---------- 玻璃卡：霓虹细边 + 四角括号 ---------- */
+html[data-theme="cyber"] .glass{
+  border:1px solid var(--glass-line);
+  box-shadow:var(--shadow-2), inset 0 1px 0 var(--glass-hl),
+             inset 0 0 30px hsl(var(--h) var(--s) var(--l) / .05);
+}
+html[data-theme="cyber"] .glass::after{
+  background:linear-gradient(180deg, color-mix(in srgb, var(--glass-hl) 30%, transparent), transparent 38%);
+  opacity:.6;
+}
+html[data-theme="cyber"] .card.glass{ position:relative }
+html[data-theme="cyber"] .card.glass::before{
+  content:""; position:absolute; inset:6px; border-radius:calc(var(--r) - 4px); pointer-events:none;
+  background:
+    linear-gradient(var(--accent), var(--accent)) left top/12px 1px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) left top/1px 12px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) right top/12px 1px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) right top/1px 12px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) left bottom/12px 1px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) left bottom/1px 12px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) right bottom/12px 1px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) right bottom/1px 12px no-repeat;
+  opacity:.55;
+}
+
+/* ---------- 标签与标题：等宽 + 前导刻度 ---------- */
+html[data-theme="cyber"] .card__label{
+  font-family:var(--font-mono); letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); display:flex; align-items:center; gap:8px;
+}
+html[data-theme="cyber"] .card__label::before{
+  content:""; width:14px; height:2px; background:var(--accent);
+  box-shadow:0 0 8px hsl(var(--h) var(--s) var(--l) / .7);
+}
+html[data-theme="cyber"] .kicker{ font-family:var(--font-mono); letter-spacing:.12em; color:var(--ink-3) }
+html[data-theme="cyber"] h2, html[data-theme="cyber"] h3{ letter-spacing:.02em }
+html[data-theme="cyber"] .metric .n, html[data-theme="cyber"] .player__times,
+html[data-theme="cyber"] .kv span, html[data-theme="cyber"] .buffer__txt{
+  font-family:var(--font-mono); font-variant-numeric:tabular-nums;
+}
+html[data-theme="cyber"] .metric .n{ color:var(--accent); text-shadow:0 0 14px hsl(var(--h) var(--s) var(--l) / .45) }
+html[data-theme="cyber"] .metric .k{ letter-spacing:.08em; color:var(--ink-3) }
+
+/* ---------- 按钮：描边霓虹，主按钮实心 ---------- */
+html[data-theme="cyber"] .btn{
+  font-family:var(--font-mono); letter-spacing:.04em;
+  border:1px solid hsl(var(--h) var(--s) var(--l) / .30);
+  background:hsl(var(--h) var(--s) var(--l) / .06);
+  color:var(--ink);
+}
+html[data-theme="cyber"] .btn:hover{ box-shadow:0 0 14px hsl(var(--h) var(--s) var(--l) / .28) }
+html[data-theme="cyber"] .btn--primary{
+  background:linear-gradient(160deg, var(--accent), hsl(var(--h) var(--s) 46%));
+  color:#02060a; border-color:transparent;
+  box-shadow:0 0 18px hsl(var(--h) var(--s) var(--l) / .38);
+}
+html[data-theme="cyber"] .btn--ghost{ border-color:hsl(var(--h) var(--s) var(--l) / .18); background:transparent }
+
+/* ---------- 输入 / 进度 / 分隔 ---------- */
+html[data-theme="cyber"] .field input, html[data-theme="cyber"] .field textarea,
+html[data-theme="cyber"] input[type="text"], html[data-theme="cyber"] textarea{
+  font-family:var(--font-mono);
+  background:rgba(4,10,16,.72); border-color:hsl(var(--h) var(--s) var(--l) / .28); color:var(--ink);
+}
+html[data-theme="cyber"] input:focus, html[data-theme="cyber"] textarea:focus{
+  outline:none; border-color:var(--accent);
+  box-shadow:0 0 0 3px hsl(var(--h) var(--s) var(--l) / .14), 0 0 16px hsl(var(--h) var(--s) var(--l) / .22);
+}
+html[data-theme="cyber"] .progress{ background:hsl(var(--h) var(--s) var(--l) / .12) }
+html[data-theme="cyber"] .progress > i{
+  background:linear-gradient(90deg, hsl(var(--h) var(--s) 40%), var(--accent));
+  box-shadow:0 0 10px hsl(var(--h) var(--s) var(--l) / .55);
+}
+html[data-theme="cyber"] .hr{ background:linear-gradient(90deg, hsl(var(--h) var(--s) var(--l) / .35), transparent) }
+
+/* ---------- 抽屉 / 提示 / 页脚 ---------- */
+html[data-theme="cyber"] .drawer.glass{ border-left:1px solid var(--accent-line) }
+html[data-theme="cyber"] .toast{
+  font-family:var(--font-mono);
+  border:1px solid var(--accent-line); background:rgba(4,10,16,.9);
+  box-shadow:0 0 22px hsl(var(--h) var(--s) var(--l) / .25);
+}
+html[data-theme="cyber"] .foot{ font-family:var(--font-mono); letter-spacing:.06em; color:var(--ink-4) }
+html[data-theme="cyber"] .drawer__title{ font-family:var(--font-mono); letter-spacing:.06em }
+
+/* ---------- 渲染出来的数式（若各模块用 .m-/公式类） ---------- */
+html[data-theme="cyber"] sup, html[data-theme="cyber"] sub{ color:var(--accent) }
+
+/* ---------- 克制的动效：只在“活着”的地方轻微闪动 ---------- */
+@keyframes cyberPulse{ 0%,100%{ opacity:1 } 50%{ opacity:.72 } }
+html[data-theme="cyber"] .card__label::before{ animation:cyberPulse 3.2s var(--ease) infinite }
+@media (prefers-reduced-motion: reduce){
+  html[data-theme="cyber"] .card__label::before{ animation:none !important }
+}
+
+/* ---------- 导航可横向滑动：右缘渐隐，提示“还能滑” ---------- */
+html[data-theme="cyber"] .nav{
+  -webkit-mask-image:linear-gradient(90deg, #000 0, #000 calc(100% - 26px), transparent 100%);
+  mask-image:linear-gradient(90deg, #000 0, #000 calc(100% - 26px), transparent 100%);
+}

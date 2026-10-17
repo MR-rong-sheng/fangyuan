@@ -1,0 +1,78 @@
+/* ==========================================================================
+   方圆 · streak.css —— 连续打卡页
+   只用设计令牌（--ink/--accent/--glass-*），日间 / 夜间 / 赛博三种主题都不穿帮。
+   30 天热力条在 430px 手机上仍排成一行、不产生横向溢出。
+   ========================================================================== */
+
+/* 今日状态（放在 .metric 卡里，字号介于 .n 与 .k 之间） */
+.streak-today{
+  font-family:var(--font-mono, var(--font-ui));
+  font-size:clamp(17px,2.4vw,21px); font-weight:600; letter-spacing:.02em;
+  color:var(--accent); line-height:1.5;
+  text-shadow:0 0 14px hsl(var(--h) var(--s) var(--l) / .45);
+}
+.streak-today[data-state="off"]{ color:var(--ink-3); text-shadow:none; font-weight:500 }
+
+/* 一句话小结 */
+.streak-headline{
+  font-size:14.5px; color:var(--ink-2); line-height:1.8; margin-bottom:14px;
+}
+.streak-headline b{ color:var(--accent); font-weight:600 }
+
+/* ---------- 最近 30 天热力条 ---------- */
+.streak-strip{
+  display:grid; grid-template-columns:repeat(30,minmax(0,1fr));
+  gap:clamp(2px,.7vw,5px); margin:2px 0 14px;
+}
+.streak-cell{
+  -webkit-appearance:none; appearance:none;
+  display:block; width:100%; padding:0; margin:0; border:0;
+  aspect-ratio:1 / 1; border-radius:4px; cursor:pointer;
+  font-size:0; line-height:0;
+  background:color-mix(in srgb, var(--ink) 10%, transparent);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--ink) 7%, transparent);
+  transition:transform .18s var(--ease), box-shadow .22s var(--ease), background .22s var(--ease);
+}
+.streak-cell[data-on]{
+  background:linear-gradient(160deg, color-mix(in srgb, var(--accent) 62%, transparent), var(--accent));
+  box-shadow:inset 0 0 0 1px var(--accent-line);
+}
+.streak-cell[data-on][data-lv="2"], .streak-cell[data-on][data-lv="3"]{
+  box-shadow:inset 0 0 0 1px var(--accent-line), 0 0 9px hsl(var(--h) var(--s) var(--l) / .5);
+}
+.streak-cell.is-today{ outline:2px solid var(--accent); outline-offset:2px }
+.streak-cell:hover{ transform:translateY(-2px) scale(1.14) }
+.streak-cell:focus-visible{ outline:2px solid var(--ink); outline-offset:2px; transform:translateY(-2px) }
+
+/* 图例 */
+.streak-legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:7px 16px;
+  font-size:12px; color:var(--ink-3); letter-spacing:.02em;
+}
+.streak-swatch{
+  display:inline-block; width:12px; height:12px; border-radius:3px; flex:0 0 auto;
+  background:color-mix(in srgb, var(--ink) 10%, transparent);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--ink) 7%, transparent);
+}
+.streak-swatch[data-on]{
+  background:linear-gradient(160deg, color-mix(in srgb, var(--accent) 62%, transparent), var(--accent));
+  box-shadow:inset 0 0 0 1px var(--accent-line);
+}
+.streak-swatch[data-on][data-lv="2"]{ box-shadow:inset 0 0 0 1px var(--accent-line), 0 0 9px hsl(var(--h) var(--s) var(--l) / .5) }
+.streak-span{ margin-left:auto; font-variant-numeric:tabular-nums }
+
+.streak-hint{ font-size:12.5px; color:var(--ink-3); line-height:1.9; margin-top:10px }
+
+/* ---------- 本月概览 ---------- */
+.streak-month{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px }
+.streak-month .metric .n{ color:var(--accent); font-size:24px }
+.streak-bar{ margin-top:12px }
+.streak-bar > i{ box-shadow:0 0 10px hsl(var(--h) var(--s) var(--l) / .45) }
+
+@media (max-width:520px){
+  .streak-month{ gap:8px }
+  .streak-month .metric .n{ font-size:21px }
+  .streak-month .metric .k{ font-size:11.5px }
+  .streak-legend{ gap:6px 12px }
+  .streak-span{ margin-left:0; width:100% }
+}

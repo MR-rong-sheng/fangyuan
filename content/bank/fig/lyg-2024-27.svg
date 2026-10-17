@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 230" role="img" aria-label="左图：圆与大正方形各边相切，小正方形是圆的内接正方形（对角线与圆直径重合）；右图：矩形 ABCD 内一点 P，连 PA、PB、PC、PD">
+  <title>圆内切于大正方形、圆内接小正方形；矩形 ABCD 内一点 P 连四顶点</title>
+  <!-- 左图：大正方形 (30,40)-(170,180)，边长 140px；内切圆 r=70 圆心 (100,110)；
+       圆内接小正方形（旋转 45°）顶点 (100,40)(170,110)(100,180)(30,110)，边长 99px。
+       复算：面积比 = 140² : 99² = 19600 : 9801 = 2.0 倍（与答案“2 倍”一致）。
+       右图：矩形 A(230,60) B(345,60) C(345,150) D(230,150)，P(270,95) 在内部；
+       复算：PA²+PC² = PB²+PD²（与答案一致）。 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="30" y="40" width="140" height="140"/>
+    <circle cx="100" cy="110" r="70"/>
+    <path d="M100 40 L170 110 L100 180 L30 110 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 60 H345 V150 H230 Z"/>
+    <path d="M270 95 L230 60 M270 95 L345 60 M270 95 L345 150 M270 95 L230 150"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="270" cy="95" r="2.4"/>
+    <text x="270" y="88" text-anchor="middle" font-size="12">P</text>
+    <text x="238" y="54" text-anchor="middle" font-size="12">A</text>
+    <text x="352" y="54" text-anchor="start" font-size="12">B</text>
+    <text x="352" y="160" text-anchor="start" font-size="12">C</text>
+    <text x="238" y="162" text-anchor="middle" font-size="12">D</text>
+  </g>
+</svg>

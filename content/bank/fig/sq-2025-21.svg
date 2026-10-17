@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 250" role="img" aria-label="图①条形统计图：A档2人、B档12人、C档18人、D档24人、E档4人；图②扇形统计图：A 3.3%、B 20%、C 30%、D 40%、E 6.7%">
+  <title>图① 条形统计图（人数）；图② 扇形统计图（百分比），样本容量 60</title>
+  <!-- 条形图：纵轴 6px/人，基线 y=212；扇形图：圆心(470,140)、半径 92
+       A2(12°)、B12(72°)、C18(108°)、D24(144°)、E4(24°)，合计 60 -->
+  <text x="165" y="20" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">图① 条形统计图</text>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M42 212 V52"/>
+    <path d="M38 212 H292"/>
+    <path d="M38 212 H42"/>
+    <path d="M38 176 H42"/>
+    <path d="M38 140 H42"/>
+    <path d="M38 104 H42"/>
+    <path d="M38 68 H42"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">
+    <text x="34" y="216">0</text>
+    <text x="34" y="180">6</text>
+    <text x="34" y="144">12</text>
+    <text x="34" y="108">18</text>
+    <text x="34" y="72">24</text>
+  </g>
+  <g fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="1.4">
+    <rect x="45" y="200" width="34" height="12"/>
+    <rect x="95" y="140" width="34" height="72"/>
+    <rect x="145" y="104" width="34" height="108"/>
+    <rect x="195" y="68" width="34" height="144"/>
+    <rect x="245" y="188" width="34" height="24"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">
+    <text x="62" y="195">2</text>
+    <text x="112" y="135">12</text>
+    <text x="162" y="99">18</text>
+    <text x="212" y="63">24</text>
+    <text x="262" y="183">4</text>
+    <text x="62" y="230">A</text>
+    <text x="112" y="230">B</text>
+    <text x="162" y="230">C</text>
+    <text x="212" y="230">D</text>
+    <text x="262" y="230">E</text>
+  </g>
+  <text x="470" y="18" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">图② 扇形统计图</text>
+  <g fill="currentColor" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round">
+    <path d="M470 140 L470 48 A92 92 0 0 1 489.128 50.01 Z" fill-opacity="0.10"/>
+    <path d="M470 140 L489.128 50.01 A92 92 0 0 1 561.496 130.383 Z" fill-opacity="0.18"/>
+    <path d="M470 140 L561.496 130.383 A92 92 0 0 1 450.872 229.99 Z" fill-opacity="0.26"/>
+    <path d="M470 140 L450.872 229.99 A92 92 0 0 1 432.58 55.954 Z" fill-opacity="0.34"/>
+    <path d="M470 140 L432.58 55.954 A92 92 0 0 1 470 48 Z" fill-opacity="0.42"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+    <path d="M477.317 70.383 L500 44"/>
+    <path d="M455.446 71.53 L440 44"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">
+    <text x="504" y="40" text-anchor="start">A 3.3%</text>
+    <text x="436" y="40" text-anchor="end">E 6.7%</text>
+    <text x="513.102" y="101.19" text-anchor="middle">B 20%</text>
+    <text x="508.81" y="183.102" text-anchor="middle">C 30%</text>
+    <text x="412.318" y="146.063" text-anchor="middle">D 40%</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" role="img" aria-label="⊙O 中 AB 为直径，C 在圆上，切线 l 过 C，AD⊥l 于 D，连接 AC、BC">
+  <title>AB 为 ⊙O 直径，C 在圆上，过 C 的切线 l，AD⊥l 于 D</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="130" cy="128" r="100"/>
+    <path d="M158 32 L102 224"/>
+    <path d="M158 32 L230 128"/>
+    <path d="M102 224 L230 128"/>
+    <path d="M230 14 L230 176"/>
+    <path d="M158 32 L230 32"/>
+    <path d="M220 32 L220 42 L230 42" stroke-width="1.2"/>
+    <path d="M224 120 L216 126 L222 134" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="130" cy="128" r="2.2"/>
+    <text x="146" y="26" text-anchor="end">A</text>
+    <text x="96" y="244" text-anchor="middle">B</text>
+    <text x="240" y="132" text-anchor="start">C</text>
+    <text x="238" y="22" text-anchor="start">D</text>
+    <text x="236" y="172" text-anchor="start">l</text>
+    <text x="124" y="120" text-anchor="end">O</text>
+  </g>
+</svg>

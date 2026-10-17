@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="坐标系中 △ABC 满足 AC=BC、∠ACB=90°，反比例函数 y=8/x 的图象与 AB 交于 D、与 BC 交于 E">
+  <title>坐标系中 △ABC 满足 AC=BC、∠ACB=90°，反比例函数 y=8/x 的图象与 AB 交于 D、与 BC 交于 E</title>
+<line x1="20" y1="254" x2="384" y2="254" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="98" y1="280" x2="98" y2="20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<text x="394" y="268" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">x</text>
+<text x="86" y="18" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">y</text>
+<text x="86" y="270" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">O</text>
+<polyline points="121.4,22.89 124.78,52.06 128.16,74.69 131.54,92.76 134.92,107.52 138.3,119.81 141.68,130.19 145.06,139.08 148.44,146.78 151.82,153.52 155.2,159.45 158.58,164.73 161.96,169.45 165.34,173.69 168.72,177.53 172.1,181.02 175.48,184.2 178.86,187.12 182.24,189.8 185.62,192.28 189,194.57 192.38,196.7 195.76,198.68 199.14,200.53 202.52,202.26 205.9,203.88 209.28,205.4 212.66,206.83 216.04,208.19 219.42,209.46 222.8,210.67 226.18,211.81 229.56,212.89 232.94,213.92 236.32,214.9 239.7,215.83 243.08,216.72 246.46,217.57 249.84,218.38 253.22,219.16 256.6,219.9 259.98,220.61 263.36,221.3 266.74,221.95 270.12,222.58 273.5,223.19 276.88,223.77 280.26,224.33 283.64,224.87 287.02,225.39 290.4,225.89 293.78,226.38 297.16,226.85 300.54,227.3 303.92,227.74 307.3,228.16 310.68,228.57 314.06,228.97 317.44,229.36 320.82,229.73 324.2,230.09 327.58,230.44 330.96,230.79 334.34,231.12 337.72,231.44 341.1,231.75 344.48,232.06 347.86,232.36 351.24,232.64 354.62,232.93 358,233.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="46,254 254,46" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="254,46 254,254" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="245,254 245,263 254,263" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="150" cy="150" r="2.2" fill="currentColor"/>
+<circle cx="254" cy="219.33" r="2.2" fill="currentColor"/>
+<text x="40" y="270" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">A</text>
+<text x="266" y="44" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">B</text>
+<text x="264" y="270" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">C</text>
+<text x="162" y="144" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">D</text>
+<text x="244" y="223.33" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">E</text>
+<text x="337.2" y="217.6" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">y=8/x</text>
+</svg>

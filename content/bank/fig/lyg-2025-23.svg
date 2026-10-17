@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="A 为岛，C 在 A 正东、AC=6 km，D 在 A 正北，B、D、C 三点共线，港口 B 在 A 的北偏西 37° 方向">
+  <title>港口 B 在岛 A 的北偏西 37°，灯塔 C 在 A 的正东，B、D、C 共线</title>
+<g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M140.0 205.0 L320.0 205.0"/>
+<path d="M140.0 205.0 L140.0 136.4"/>
+<path d="M68.0 109.0 L320.0 205.0"/>
+<path d="M140.0 205.0 L68.0 109.0"/>
+</g>
+<g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round">
+<path d="M68.0 109.0 L140.0 109.0"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+<circle cx="140.0" cy="205.0" r="2.2"/>
+<text x="132.0" y="221.0" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">A</text>
+<circle cx="68.0" cy="109.0" r="2.2"/>
+<text x="62.0" y="103.0" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">B</text>
+<circle cx="320.0" cy="205.0" r="2.2"/>
+<text x="328.0" y="221.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">C</text>
+<circle cx="140.0" cy="136.4" r="2.2"/>
+<text x="132.0" y="132.4" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">D</text>
+<circle cx="140.0" cy="109.0" r="2.2"/>
+<text x="132.0" y="113.0" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">M</text>
+<text x="118.0" y="157.0" text-anchor="middle" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">37°</text>
+</g>
+</svg>

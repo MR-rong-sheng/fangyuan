@@ -1,0 +1,195 @@
+/* ==========================================================================
+   方圆 · plot.css —— 函数图像（views/plot.js）的样式
+   类名一律 .plot- 前缀；外层 .card/.glass/.btn/.view-head 等公用类来自 app.css。
+   移动优先：滑块与按钮都按手指尺寸来。
+   ========================================================================== */
+
+.plot-card { display: flex; flex-direction: column; gap: 12px; }
+
+/* ---------- 表达式输入 ---------- */
+.plot-expr-row { display: flex; align-items: center; gap: 8px; }
+.plot-eq {
+  font-family: var(--font-serif); font-size: 20px; color: var(--ink-2);
+  flex: 0 0 auto; user-select: none;
+}
+.plot-input {
+  flex: 1 1 auto; min-width: 0;
+  font-family: var(--font-serif);
+  font-size: 19px; line-height: 1.4;
+  color: var(--ink);
+  padding: 10px 12px;
+  background: color-mix(in srgb, var(--paper-1) 60%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+  border-radius: var(--r-sm, 11px);
+  outline: none;
+  transition: border-color .18s var(--ease, ease), box-shadow .18s var(--ease, ease);
+}
+.plot-input:focus { border-color: var(--accent-line); box-shadow: 0 0 0 3px var(--accent-soft); }
+.plot-input.is-bad { border-color: hsl(6 60% 52% / .7); box-shadow: 0 0 0 3px hsl(6 60% 52% / .14); }
+html[data-theme="dark"], html[data-theme="cyber"] .plot-input { background: rgba(255,255,255,.05); }
+
+.plot-err {
+  min-height: 1.2em; margin: -4px 0 0;
+  font-size: 12.5px; color: hsl(6 62% 48%);
+  font-family: var(--font-ui);
+}
+html[data-theme="dark"], html[data-theme="cyber"] .plot-err { color: hsl(6 70% 66%); }
+
+/* ---------- 预设胶囊 ---------- */
+.plot-presets { display: flex; flex-wrap: wrap; gap: 8px; }
+.plot-chip {
+  font: inherit; font-size: 13.5px;
+  color: var(--ink-2);
+  padding: 7px 14px; min-height: 34px;
+  background: color-mix(in srgb, var(--paper-1) 55%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: 999px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .15s var(--ease, ease), border-color .18s, color .18s, background .18s;
+}
+.plot-chip:hover { color: var(--ink); border-color: var(--accent-line); }
+.plot-chip:active { transform: scale(.96); }
+html[data-theme="dark"], html[data-theme="cyber"] .plot-chip { background: rgba(255,255,255,.05); }
+
+/* ---------- 画布 ---------- */
+.plot-canvaswrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: 66vh;
+  border-radius: var(--r, 16px);
+  overflow: hidden;
+  background:
+    linear-gradient(155deg, color-mix(in srgb, var(--paper-1) 70%, transparent), color-mix(in srgb, var(--paper-2) 70%, transparent));
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+}
+html[data-theme="dark"], html[data-theme="cyber"] .plot-canvaswrap { background: rgba(255,255,255,.035); }
+
+.plot-svg {
+  display: block; width: 100%; height: 100%;
+  touch-action: none;              /* 手机上自己处理手势，别让页面滚走 */
+  cursor: grab;
+  -webkit-user-select: none; user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.plot-svg.is-grabbing { cursor: grabbing; }
+
+/* 网格：最淡的一层 */
+.plot-grid line {
+  stroke: color-mix(in srgb, var(--ink) 12%, transparent);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+html[data-theme="dark"], html[data-theme="cyber"] .plot-grid line { stroke: color-mix(in srgb, #fff 12%, transparent); }
+
+/* 坐标轴：比网格重一档 */
+.plot-axis .plot-axis-line {
+  stroke: color-mix(in srgb, var(--ink) 46%, transparent);
+  stroke-width: 1.4;
+  vector-effect: non-scaling-stroke;
+}
+html[data-theme="dark"], html[data-theme="cyber"] .plot-axis .plot-axis-line { stroke: color-mix(in srgb, #fff 44%, transparent); }
+.plot-axis .plot-tick {
+  stroke: color-mix(in srgb, var(--ink) 46%, transparent);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+.plot-axis .plot-ticktext {
+  fill: var(--ink-3);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.plot-axis .plot-origin { fill: var(--ink-3); }
+
+/* 曲线：全站唯一强调色 */
+.plot-curve {
+  stroke: var(--accent);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+/* 悬停：虚线十字 + 取点 */
+.plot-guide {
+  stroke: var(--accent);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+  opacity: .75;
+  vector-effect: non-scaling-stroke;
+}
+.plot-hdot { fill: var(--accent); stroke: var(--paper-1); stroke-width: 1.6; }
+html[data-theme="dark"], html[data-theme="cyber"] .plot-hdot { stroke: var(--paper-2); }
+.plot-hdot--curve { fill: var(--paper-1); stroke: var(--accent); stroke-width: 2; }
+html[data-theme="dark"], html[data-theme="cyber"] .plot-hdot--curve { fill: var(--paper-2); }
+
+/* ---------- 读数 ---------- */
+.plot-readout {
+  font-family: var(--font-ui);
+  font-size: 13.5px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+  min-height: 1.5em;
+  padding: 8px 12px;
+  border-radius: var(--r-sm, 11px);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+/* ---------- 参数滑块 ---------- */
+.plot-sliders { display: flex; flex-direction: column; gap: 4px; }
+.plot-slider {
+  display: grid; grid-template-columns: 22px 1fr 46px;
+  align-items: center; gap: 10px;
+  padding: 4px 0;
+}
+.plot-slider__k {
+  font-family: var(--font-serif); font-size: 17px; font-style: italic;
+  color: var(--accent); text-align: center;
+}
+.plot-slider__v {
+  font-family: var(--font-ui); font-size: 13px;
+  font-variant-numeric: tabular-nums; color: var(--ink-2); text-align: right;
+}
+
+.plot-slider input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  width: 100%; height: 26px; background: transparent; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.plot-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px; border-radius: 2px;
+  background: color-mix(in srgb, var(--ink) 16%, transparent);
+}
+.plot-slider input[type="range"]::-moz-range-track {
+  height: 4px; border-radius: 2px;
+  background: color-mix(in srgb, var(--ink) 16%, transparent);
+}
+.plot-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 22px; height: 22px; margin-top: -9px; border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--glass-hl, #fff);
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+}
+.plot-slider input[type="range"]::-moz-range-thumb {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--glass-hl, #fff);
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+}
+
+/* ---------- 工具行 ---------- */
+.plot-tools { align-items: center; margin-top: 2px; }
+.plot-hint {
+  font-family: var(--font-ui); font-size: 12px; color: var(--ink-3);
+  margin-left: auto; text-align: right;
+}
+
+@media (max-width: 420px) {
+  .plot-hint { font-size: 11.5px; }
+  .plot-slider { grid-template-columns: 18px 1fr 40px; gap: 8px; }
+}

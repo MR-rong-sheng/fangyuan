@@ -1,0 +1,143 @@
+/* ==========================================================================
+   方圆 · drill.css —— 计算练习 的样式
+   类名一律 .drill- 前缀，避免和别人撞车；所有取值走 glass.css 的设计令牌。
+   通用基元（.card/.btn/.field/.card__label/.view-head…）由 app.css 提供；
+   这里对它们只做 :where() 兜底（零特异性），app.css 在场时自动让位。
+   ========================================================================== */
+
+.drill { display: flex; flex-direction: column; gap: 16px; }
+/* app.css 的 .card + .card 也留了 16px 间距，和上面的 gap 叠加会变成 32px —— 在练习页里收掉 */
+.drill > .card + .card { margin-top: 0; }
+
+/* ---- 通用基元的零特异性兜底（app.css 缺席时也能看、能点） ---- */
+:where(.drill .view-head) { margin-bottom: 4px; }
+:where(.drill .view-head .kicker) { font-size: 12px; letter-spacing: .16em; color: var(--accent); }
+:where(.drill .view-head h2) { font-family: var(--font-serif); font-size: 24px; line-height: 1.4; color: var(--ink); margin: 4px 0 6px; }
+:where(.drill .view-head p) { font-size: 13.5px; color: var(--ink-3); line-height: 1.8; max-width: 54ch; }
+:where(.drill .drill-panel) { padding: 20px 18px; display: flex; flex-direction: column; gap: 14px; }
+:where(.drill .card__label) { font-size: 12px; letter-spacing: .14em; color: var(--ink-3); }
+
+/* ---- 一轮：顶部（题型 / 难度 / 计时） ---- */
+.drill-roundtop { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.drill-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.drill-chip {
+  font-size: 12.5px; color: var(--ink-2);
+  background: var(--accent-soft); border: 1px solid var(--accent-line);
+  padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+}
+.drill-timer {
+  font-weight: 600; font-size: 15px; color: var(--ink);
+  font-variant-numeric: tabular-nums; letter-spacing: .04em;
+}
+
+/* ---- 进度条 ---- */
+.drill-bar {
+  height: 6px; border-radius: 999px; overflow: hidden;
+  background: color-mix(in srgb, var(--ink) 9%, transparent);
+}
+.drill-bar > i {
+  display: block; height: 100%; width: 0%;
+  background: var(--accent); border-radius: 999px;
+  transition: width .3s var(--ease);
+}
+
+.drill-statsline { font-size: 12.5px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+/* ---- 题干 ---- */
+.drill-stem {
+  font-family: var(--font-serif);
+  font-size: 26px; line-height: 1.45; color: var(--ink);
+  letter-spacing: .01em; margin: 8px 0 4px; word-break: break-word;
+}
+@media (min-width: 520px) { .drill-stem { font-size: 31px; } }
+
+/* ---- 选择题 ---- */
+.drill-choices { display: grid; grid-template-columns: 1fr; gap: 8px; }
+@media (min-width: 520px) { .drill-choices { grid-template-columns: 1fr 1fr; } }
+.drill-choice {
+  display: flex; align-items: center; gap: 10px; text-align: left;
+  font: inherit; font-size: 15px; color: var(--ink); cursor: pointer;
+  padding: 12px 14px; border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  transition: background .2s var(--ease), border-color .2s var(--ease);
+}
+.drill-choice:hover { border-color: var(--accent-line); }
+.drill-choice b { color: var(--accent); font-weight: 600; }
+
+/* ---- 答题行 ---- */
+.drill-answer { display: flex; gap: 10px; align-items: stretch; }
+.drill-inputwrap { flex: 1 1 auto; display: flex; margin: 0; }
+.drill-input {
+  width: 100%; font: inherit; font-size: 17px; color: var(--ink);
+  padding: 11px 14px; border-radius: var(--r-sm); outline: none;
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+  transition: border-color .2s var(--ease), box-shadow .2s var(--ease);
+}
+.drill-input::placeholder { color: var(--ink-4); }
+.drill-input:focus { border-color: var(--accent-line); box-shadow: 0 0 0 3px var(--accent-soft); }
+.drill-input:disabled { opacity: .55; }
+
+/* ---- 判分结果 ---- */
+.drill-result { margin: 0; min-height: 1.5em; font-size: 14.5px; line-height: 1.75; color: var(--ink-2); }
+.drill-result.is-ok { color: var(--accent); }
+.drill-result.is-no { color: var(--ink); }
+
+.drill-row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ---- 出题设置 ---- */
+.drill-field { display: flex; flex-direction: column; gap: 7px; }
+.drill-label { font-size: 12.5px; color: var(--ink-3); }
+.drill-seg { display: flex; flex-wrap: wrap; gap: 8px; }
+.drill-seg button {
+  font: inherit; font-size: 13.5px; color: var(--ink-2); cursor: pointer;
+  padding: 8px 13px; border-radius: 999px; white-space: nowrap;
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  transition: color .2s var(--ease), background .2s var(--ease), border-color .2s var(--ease);
+}
+.drill-seg button:hover { border-color: var(--accent-line); }
+.drill-seg button[aria-pressed="true"] { color: #fff; background: var(--accent); border-color: var(--accent); }
+.drill-hint { font-size: 12.5px; color: var(--ink-3); margin: 0; line-height: 1.7; }
+
+/* ---- 累计 ---- */
+.drill-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.drill-kpi {
+  text-align: center; padding: 12px 6px; border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+}
+.drill-kpi .n { font-size: 24px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; line-height: 1.2; }
+.drill-kpi .n span { font-size: 13px; color: var(--ink-3); margin-left: 1px; }
+.drill-kpi .k { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+
+.drill-history { display: flex; flex-direction: column; }
+.drill-histrow {
+  display: grid; grid-template-columns: 1.1fr 1.1fr .7fr 1.3fr; gap: 8px;
+  font-size: 12.5px; color: var(--ink-2); padding: 7px 0;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent);
+  font-variant-numeric: tabular-nums;
+}
+.drill-histrow:first-child { border-top: 0; }
+.drill-dim { color: var(--ink-4); }
+
+/* ---- 错题本 ---- */
+.drill-wrongs { margin: 0; font-size: 13.5px; color: var(--ink-2); }
+.drill-wrongitem { padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent); }
+.drill-wrongitem:first-child { border-top: 0; }
+.drill-wrongstem { font-size: 14px; color: var(--ink); }
+.drill-wrongmeta { font-size: 12.5px; color: var(--ink-3); margin-top: 4px; }
+.drill-wrongwhy { font-size: 12.5px; color: var(--ink-3); margin-top: 4px; line-height: 1.75; }
+.drill-wrongitem .drill-btn { margin-top: 8px; }
+
+/* ---- 按钮兜底（零特异性；app.css 的 .btn 在场时接管外观） ---- */
+:where(.drill .drill-btn) {
+  font: inherit; font-size: 14px; cursor: pointer;
+  padding: 10px 16px; border-radius: var(--r-sm);
+  appearance: none; -webkit-appearance: none;
+}
+:where(.drill .drill-btn--primary) { color: #fff; background: var(--accent); border: 1px solid var(--accent); }
+:where(.drill .drill-btn:not(.drill-btn--primary)) {
+  color: var(--ink-2); background: transparent;
+  border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+}

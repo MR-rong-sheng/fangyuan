@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img" aria-label="长方形 ABCD 中 AB=8m、AD=5m，动点 P 沿 AB、BC 运动，DP 扫过三角形区域">
+  <title>长方形 ABCD：AB=8m、AD=5m，动点 P 在 AB 上，DP 扫过 △ADP</title>
+  <!-- 30px/单位：A(60,200) B(300,200) C(300,50) D(60,50)；P 在 AB 上(150,200)
+       扫过区域为 △ADP -->
+  <g fill="currentColor" fill-opacity="0.12" stroke="none">
+    <path d="M60 200 L60 50 L150 200 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 200 L300 200 L300 50 L60 50 Z"/>
+    <path d="M60 50 L150 200"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="52" y="216" text-anchor="middle" font-size="13">A</text>
+    <text x="300" y="216" text-anchor="middle" font-size="13">B</text>
+    <text x="308" y="46" text-anchor="start" font-size="13">C</text>
+    <text x="52" y="46" text-anchor="middle" font-size="13">D</text>
+    <text x="150" y="216" text-anchor="middle" font-size="13">P</text>
+    <text x="180" y="220" text-anchor="middle" font-size="12">8m</text>
+    <text x="46" y="130" text-anchor="end" font-size="12">5m</text>
+  </g>
+</svg>

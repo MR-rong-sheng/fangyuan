@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 260" role="img" aria-label="正五边形 ABCDE 内接于 ⊙O，连接 OA、OB、OC、OD、OE">
+  <title>正五边形 ABCDE 内接于 ⊙O</title>
+  <!-- 半径 100，中心 O(170,130)，顶点按 90°+k·72° 均匀分布 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="170" cy="130" r="100"/>
+    <path d="M170.0 30.0 L74.9 99.1 L111.2 210.9 L228.8 210.9 L265.1 99.1 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M170 130 L170.0 30.0" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <path d="M170 130 L74.9 99.1" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <path d="M170 130 L111.2 210.9" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <path d="M170 130 L228.8 210.9" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <path d="M170 130 L265.1 99.1" stroke-width="1.2" stroke-dasharray="3 3"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="170" cy="130" r="2.2"/>
+    <text x="170" y="18" text-anchor="middle" font-size="13">A</text>
+    <text x="63" y="105" text-anchor="middle" font-size="13">B</text>
+    <text x="105" y="227" text-anchor="middle" font-size="13">C</text>
+    <text x="235" y="227" text-anchor="middle" font-size="13">D</text>
+    <text x="277" y="105" text-anchor="middle" font-size="13">E</text>
+    <text x="180" y="144" text-anchor="start" font-size="13">O</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 232" role="img" aria-label="推水桶杠杆示意图：支点 O，在 A 处施加 F_1 与水平方向的 F_2，B 是 O 到 F_2 作用线的垂足，OB 是 F_2 的力臂">
+  <title>杠杆示意：F_1 的力臂 OA 大于 F_2 的力臂 OB</title>
+  <!-- 坐标由题干条件算出：O(190,195) 为支点；A(65.6,111.1)，OA=150px；
+       F_1 与 OA 垂直（力臂就是 OA）；F_2 过 A 沿水平方向，垂足 B(190,111.1) 在 F_2 作用线上，
+       OB=83.9px<OA。故依据“垂线段最短” -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M65.6 111.1 L190.0 195.0"/>
+    <path d="M190.0 111.1 L190.0 195.0"/>
+    <path d="M65.6 111.1 L117.1 34.8"/>
+    <path d="M65.6 111.1 L215.6 111.1"/>
+    <path d="M113.3 50.4 L117.1 34.8 L104.1 44.2"/>
+    <path d="M200.6 116.6 L215.6 111.1 L200.6 105.6"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M75.6 117.8 L82.3 107.9 L72.4 101.2"/>
+    <path d="M190.0 122.1 L201.0 122.1 L201.0 111.1"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M138.0 195.0 H238.0"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="190.0" cy="195.0" r="2.6"/>
+    <circle cx="65.6" cy="111.1" r="2.2"/>
+    <circle cx="190.0" cy="111.1" r="2.2"/>
+    <text x="59.6" y="105.1" text-anchor="end">A</text>
+    <text x="197.0" y="125.1" text-anchor="start">B</text>
+    <text x="198.0" y="210.0" text-anchor="start">O</text>
+    <text x="124.1" y="37.8" text-anchor="start">F_1</text>
+    <text x="177.6" y="102.1" text-anchor="start">F_2</text>
+  </g>
+</svg>

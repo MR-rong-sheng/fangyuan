@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220" role="img" aria-label="△ABC中，D、E、F分别是边BC、CA、AB的中点，连接DEF成中点三角形">
+  <title>△ABC 与中点三角形 DEF（D、E、F 为各边中点）</title>
+  <!-- A(150,50) B(70,190) C(280,170)，AB≠AC；
+       D(175,180) E(215,110) F(110,120) 分别为 BC、CA、AB 的中点 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 50 L70 190 L280 170 Z"/>
+    <path d="M110 120 L175 180 L215 110 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <path d="M134.341 87.481 L125.659 82.519"/>
+    <path d="M94.341 157.481 L85.659 152.519"/>
+    <path d="M122.026 180.023 L122.974 189.977"/>
+    <path d="M227.026 170.023 L227.974 179.977"/>
+    <path d="M244.109 143.674 L250.891 136.326"/>
+    <path d="M179.109 83.674 L185.891 76.326"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="150" y="40" text-anchor="middle">A</text>
+    <text x="60" y="197" text-anchor="end">B</text>
+    <text x="290" y="176" text-anchor="start">C</text>
+    <text x="172" y="201" text-anchor="middle">D</text>
+    <text x="228" y="104" text-anchor="start">E</text>
+    <text x="98" y="112" text-anchor="end">F</text>
+  </g>
+</svg>

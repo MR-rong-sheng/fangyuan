@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img" aria-label="直角△ABC 中 ∠ACB=90°、CB=5、CA=10，D∈AC、E∈AB 且 AE=√5·AD，△ADE 沿 DE 翻折得△FDE，连 CE、CF">
+  <title>直角△ABC 中 ∠ACB=90°、CB=5、CA=10，D∈AC、E∈AB 且 AE=√5·AD，△ADE 沿 DE 翻折得△FDE，连 CE、CF</title>
+<polygon points="55,145 315,145 55,15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="228.33,145 141.67,58.33" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="228.33,145 228.33,231.67" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="141.67,58.33 228.33,231.67" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="55,145 141.67,58.33" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="55,145 228.33,231.67" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="64,145 64,136 55,136" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="323" y="151" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">A</text>
+<text x="43" y="13" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">B</text>
+<text x="43" y="161" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">C</text>
+<text x="232.33" y="163" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">D</text>
+<text x="139.67" y="50.33" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">E</text>
+<text x="232.33" y="249.67" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">F</text>
+</svg>

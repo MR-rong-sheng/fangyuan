@@ -1,0 +1,290 @@
+{
+  "province": "江苏",
+  "city": "淮安",
+  "year": 2024,
+  "paper": "2024年江苏省淮安市中考数学试卷",
+  "source": "https://www.yeyulingfeng.com/wendang/331519.html",
+  "coverage": "已收 16 题 / 全卷 27 题（8选择+8填空+11解答）",
+  "note": "来源为公开可读的学科网解析版镜像（夜雨聆风）。纯图形题与题干/选项被图片截断者（如第3、7、8、15、16、17、18、22、26、27题等）未收；第24(2)、25(2) 答案按原文条件自行推演。",
+  "questions": [
+    {
+      "id": "ha-2024-01",
+      "no": 1,
+      "kind": "选择",
+      "stem": "下列实数中，比-2小的数是",
+      "answer": "D",
+      "solution": "负数比大小看绝对值：|-3|=3>|-2|=2，所以-3<-2；其余-1、0、2都大于-2。",
+      "unit": "u1",
+      "level": 1,
+      "tags": [
+        "实数比较大小"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "choices": [
+        "A．-1",
+        "B．0",
+        "C．2",
+        "D．-3"
+      ]
+    },
+    {
+      "id": "ha-2024-02",
+      "no": 2,
+      "kind": "选择",
+      "stem": "下列计算正确的是",
+      "answer": "A",
+      "solution": "同底数幂相乘指数相加，a·a^3=a^4，A正确；a^2与a^3不是同类项不能合并，B错；a^6÷a=a^5，C错；幂的乘方指数相乘，(a^3)^4=a^{12}，D错。",
+      "unit": "u2",
+      "level": 1,
+      "tags": [
+        "整式运算",
+        "幂的运算"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "choices": [
+        "A．a·a^3=a^4",
+        "B．a^2+a^3=a^5",
+        "C．a^6÷a=a^6",
+        "D．(a^3)^4=a^7"
+      ]
+    },
+    {
+      "id": "ha-2024-04",
+      "no": 4,
+      "kind": "选择",
+      "stem": "如图，AB∥CD，点E在直线AB上，点F、G在直线CD上，∠FEG=90°，∠EGF=28°，则∠AEF的度数是",
+      "answer": "C",
+      "solution": "在Rt△EFG中，∠EFG=180°-90°-28°=62°。因为AB∥CD，∠AEF与∠EFG是内错角，所以∠AEF=∠EFG=62°。",
+      "unit": "u7",
+      "level": 1,
+      "tags": [
+        "平行线性质",
+        "内错角",
+        "三角形内角和"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "choices": [
+        "A．46°",
+        "B．56°",
+        "C．62°",
+        "D．72°"
+      ],
+      "fig": "content/bank/fig/ha-2024-04.svg",
+      "figAlt": "AB∥CD，∠FEG=90°，∠EGF=28°，求 ∠AEF"
+    },
+    {
+      "id": "ha-2024-05",
+      "no": 5,
+      "kind": "选择",
+      "stem": "用一根小木棒与两根长度分别为3cm、5cm的小木棒组成三角形，则这根小木棒的长度可以是",
+      "answer": "B",
+      "solution": "设第三边为x，由三角形三边关系得5-3<x<5+3，即2<x<8，选项中只有7cm符合。",
+      "unit": "u7",
+      "level": 1,
+      "tags": [
+        "三角形三边关系"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "choices": [
+        "A．9cm",
+        "B．7cm",
+        "C．2cm",
+        "D．1cm"
+      ]
+    },
+    {
+      "id": "ha-2024-06",
+      "no": 6,
+      "kind": "选择",
+      "stem": "若关于x的一元二次方程 x^2-4x+k=0 有两个不相等的实数根，则k的取值范围是",
+      "answer": "D",
+      "solution": "Δ=(-4)^2-4×1×k=16-4k，方程有两个不相等的实数根需Δ>0，即16-4k>0，得k<4。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "一元二次方程根的判别式"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "choices": [
+        "A．k≥4",
+        "B．k>4",
+        "C．k≤4",
+        "D．k<4"
+      ]
+    },
+    {
+      "id": "ha-2024-10",
+      "no": 10,
+      "kind": "填空",
+      "stem": "分解因式：a^2-16=",
+      "answer": "(a+4)(a-4)",
+      "solution": "平方差公式 a^2-b^2=(a+b)(a-b)，a^2-16=a^2-4^2=(a+4)(a-4)。",
+      "unit": "u2",
+      "level": 1,
+      "tags": [
+        "因式分解",
+        "平方差公式"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html"
+    },
+    {
+      "id": "ha-2024-11",
+      "no": 11,
+      "kind": "填空",
+      "stem": "2024年5月3日嫦娥六号成功发射，它将在相距约380000km的地月之间完成月壤样品的“空中接力”．数据380000用科学记数法表示为",
+      "answer": "3.8×10^5",
+      "solution": "380000=3.8×100000=3.8×10^5。",
+      "unit": "u1",
+      "level": 1,
+      "tags": [
+        "科学记数法"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html"
+    },
+    {
+      "id": "ha-2024-12",
+      "no": 12,
+      "kind": "填空",
+      "stem": "一只不透明的袋中装有8个白球和若干个红球，这些球除颜色外都相同，搅匀后每次随机从袋中摸出一个球，记下颜色后放回袋中．通过大量重复摸球试验后发现，摸到白球的频率是0.4，则袋中约有红球　个",
+      "answer": "12",
+      "solution": "设球共n个，8÷n≈0.4，得n≈20，红球约为20-8=12（个）。",
+      "unit": "",
+      "level": 1,
+      "tags": [
+        "用频率估计概率"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html"
+    },
+    {
+      "id": "ha-2024-13",
+      "no": 13,
+      "kind": "填空",
+      "stem": "如图，△ABC是⊙O的内接三角形，∠BAC=50°，⊙O半径为3，则⌒BC的长为",
+      "answer": "\\frac{5π}{3}",
+      "solution": "圆周角∠BAC=50°所对的弧BC的圆心角∠BOC=100°，弧长=\\frac{100π×3}{180}=\\frac{5π}{3}。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "圆周角定理",
+        "弧长公式"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "fig": "content/bank/fig/ha-2024-13.svg",
+      "figAlt": "△ABC 内接于 ⊙O，∠BAC=50°"
+    },
+    {
+      "id": "ha-2024-14",
+      "no": 14,
+      "kind": "填空",
+      "stem": "一辆轿车从A地驶向B地，设出发x h后，这辆轿车离B地路程为y km，已知y与x之间的函数表达式为 y=200-80x，则轿车从A地到达B地所用时间是　h",
+      "answer": "2.5",
+      "solution": "到B地时y=0：200-80x=0，解得x=2.5（h）。",
+      "unit": "u5",
+      "level": 1,
+      "tags": [
+        "一次函数的应用"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html"
+    },
+    {
+      "id": "ha-2024-19",
+      "no": 19,
+      "kind": "解答",
+      "stem": "已知：如图，在矩形ABCD中，点E、F在BD上，BE=DF．求证：△ABE≌△CDF．",
+      "answer": "见解析",
+      "solution": "矩形ABCD中AB=CD且AB∥CD，所以∠ABE=∠CDF；又BE=DF，由SAS可得△ABE≌△CDF。",
+      "unit": "u7",
+      "level": 2,
+      "tags": [
+        "矩形性质",
+        "全等三角形SAS"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "fig": "content/bank/fig/ha-2024-19.svg",
+      "figAlt": "矩形 ABCD 中 E、F 在对角线 BD 上，BE=DF"
+    },
+    {
+      "id": "ha-2024-20",
+      "no": 20,
+      "kind": "解答",
+      "stem": "《张丘建算经》载：“今有客不知其数．两人共盘，少两盘；三人共盘，长三盘．问客及盘各几何？”即：若2人共用一个盘子，则少2个盘子；若3人共用一个盘子，则多出3个盘子．问客人和盘子各有多少？",
+      "answer": "客人30人，盘子13个",
+      "solution": "设有x名客人、y个盘子。由“2人一盘少2盘”得 x÷2=y+2；由“3人一盘多3盘”得 x÷3=y-3。两式相减得 x÷2-x÷3=5，即 x÷6=5，x=30；代回得 y=13。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "二元一次方程组应用",
+        "和差关系"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html"
+    },
+    {
+      "id": "ha-2024-21",
+      "no": 21,
+      "kind": "解答",
+      "stem": "历史文化名城淮安有着丰富的旅游资源．小明计划假期来淮安游玩，他打算从3个人文景点（A．周恩来纪念馆；B．吴承恩故居；C．河下古镇）中随机选取一个，再从2个自然景点（D．金湖水上森林；E．铁山寺国家森林公园）中随机选取一个．（1）小明从人文景点中选中河下古镇的概率是　　；（2）用树状图或列表的方法求小明恰好选中周恩来纪念馆和铁山寺国家森林公园的概率．",
+      "answer": "（1）\\frac{1}{3}；（2）\\frac{1}{6}",
+      "solution": "（1）3个人文景点等可能，选河下古镇的概率为\\frac{1}{3}。（2）从3个人文景点和2个自然景点各选一个有3×2=6种等可能结果，恰好选中A与E的只有1种，故概率为\\frac{1}{6}。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "概率",
+        "树状图"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html"
+    },
+    {
+      "id": "ha-2024-23",
+      "no": 23,
+      "kind": "解答",
+      "stem": "拉杆箱是外出旅行常用工具．箱体截面是矩形BCDE，BC=60cm，两节可调节的拉杆长度相等且与BC在同一直线上．如图1，当拉杆伸出一节(AB)时，AC与地面夹角∠ACG=53°；如图2，当拉杆伸出两节(AM、MB)时，AC与地面夹角∠ACG=37°，两种情况下拉杆把手A点距离地面高度相同．求每节拉杆的长度．(参考数据：sin53°≈0.8，sin37°≈0.6)",
+      "answer": "30cm",
+      "solution": "设每节拉杆长x cm。伸出一节时A到地面的高为(60+x)sin53°，伸出两节时为(60+2x)sin37°。两者相等：(60+x)×0.8=(60+2x)×0.6，整理得48+0.8x=36+1.2x，12=0.4x，x=30。答：每节拉杆长30cm。",
+      "unit": "",
+      "level": 3,
+      "tags": [
+        "解直角三角形",
+        "仰角俯角"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "fig": "content/bank/fig/ha-2024-23.svg",
+      "figAlt": "拉杆箱：图1 拉杆伸出一节、图2 伸出两节，两种情况 A 点离地高度相同"
+    },
+    {
+      "id": "ha-2024-24",
+      "no": 24,
+      "kind": "解答",
+      "stem": "如图，一次函数 y=k_1 x+b 的图像与x轴、y轴分别交于点A、B，与反比例函数 y=\\frac{k_2}{x}(x>0) 的图像交于点C．已知点A坐标为(-1，0)，点C坐标为(1，3)．（1）求反比例函数及一次函数的表达式；（2）点D在线段OB上，过点D且平行于x轴的直线交AB于点E，交反比例函数图像于点F．当DO=2ED时，求点F的坐标．",
+      "answer": "（1）y=\\frac{3}{x}，y=\\frac{3}{2}x+\\frac{3}{2}；（2）F(\\frac{7}{2}，\\frac{6}{7})",
+      "solution": "（1）把C(1，3)代入y=\\frac{k_2}{x}得k_2=3；把A(-1，0)、C(1，3)代入y=k_1 x+b，解得k_1=\\frac{3}{2}，b=\\frac{3}{2}。（2）设E(m，\\frac{3}{2}m+\\frac{3}{2})，则D(0，\\frac{3}{2}m+\\frac{3}{2})，OD=\\frac{3}{2}m+\\frac{3}{2}。此时ED的长度为-m，由DO=2ED得 \\frac{3}{2}m+\\frac{3}{2}=-2m，解得m=-\\frac{3}{7}，故OD=\\frac{6}{7}。点F的纵坐标为\\frac{6}{7}，代入y=\\frac{3}{x}得x=\\frac{7}{2}，所以F(\\frac{7}{2}，\\frac{6}{7})。",
+      "unit": "",
+      "level": 3,
+      "tags": [
+        "反比例函数",
+        "一次函数",
+        "函数图象交点"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "fig": "content/bank/fig/ha-2024-24.svg",
+      "figAlt": "一次函数与反比例函数的图像及点 A、B、C、D、E、F"
+    },
+    {
+      "id": "ha-2024-25",
+      "no": 25,
+      "kind": "解答",
+      "stem": "如图，在△ABC中，BA=BC，以AB为直径作⊙O交AC于点D，过点D作DE⊥BC，垂足为E，延长DE交AB的延长线于点F．（1）求证：DF为⊙O的切线；（2）若BE=1，BF=3，求sinC的值．",
+      "answer": "（1）见解析；（2）\\frac{√(3)}{3}",
+      "solution": "（1）连接OD、BD。AB是直径，所以∠ADB=90°，BD⊥AC；又BA=BC，故D是AC的中点，OD为△ABC的中位线，OD∥BC，得∠ODE=∠DEC=90°，OD⊥DF，所以DF是⊙O的切线。（2）Rt△BEF中EF=√(3^2-1^2)=2√(2)。由OD∥BE得△ODF∽△BEF，OD÷BE=OF÷BF，即r÷1=(r+3)÷3，解得r=1.5，故AB=2r=3，BC=2OD=3。又DF÷EF=OF÷BF=1.5，DF=3√(2)，DE=DF-EF=√(2)；Rt△BDE中BD=√(1^2+2)=√(3)。因BA=BC，∠A=∠C，所以sinC=sinA=BD÷AB=\\frac{√(3)}{3}。",
+      "unit": "",
+      "level": 3,
+      "tags": [
+        "圆的切线",
+        "相似三角形",
+        "锐角三角函数"
+      ],
+      "src": "https://www.yeyulingfeng.com/wendang/331519.html",
+      "fig": "content/bank/fig/ha-2024-25.svg",
+      "figAlt": "⊙O 中 AB 为直径，D 在圆上，DE⊥BC 并延长交 AB 的延长线于 F"
+    }
+  ]
+}

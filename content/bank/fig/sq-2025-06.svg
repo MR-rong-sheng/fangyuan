@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 230" role="img" aria-label="平面直角坐标系中，A(3,2)，线段OA绕原点O逆时针旋转90°得OA'，A'(-2,3)">
+  <title>坐标系中 A(3,2) 绕原点 O 逆时针旋转 90° 得 A′(-2,3)</title>
+  <!-- 30px/单位，原点 O(140,190)：A(230,130)、A′(80,100)；
+       OA=OA′ 且 OA⊥OA′（旋转 90°） -->
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round">
+    <path d="M230 130 V190"/>
+    <path d="M80 100 V190"/>
+    <path d="M230 130 H140"/>
+    <path d="M80 100 H140"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 190 H300"/>
+    <path d="M294 185 L300 190 L294 195"/>
+    <path d="M140 190 V40"/>
+    <path d="M135 46 L140 40 L145 46"/>
+    <path d="M140 190 L230 130"/>
+    <path d="M140 190 L80 100"/>
+    <path d="M151.649 182.234 L143.883 170.585 L132.234 178.351" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="236" y="126" text-anchor="start">A</text>
+    <text x="74" y="96" text-anchor="end">A′</text>
+    <text x="130" y="205" text-anchor="end">O</text>
+    <text x="306" y="204" text-anchor="start">x</text>
+    <text x="146" y="36" text-anchor="start">y</text>
+    <text x="230" y="205" text-anchor="middle">3</text>
+    <text x="135" y="147" text-anchor="end">2</text>
+    <text x="80" y="205" text-anchor="middle">-2</text>
+    <text x="135" y="117" text-anchor="end">3</text>
+  </g>
+</svg>

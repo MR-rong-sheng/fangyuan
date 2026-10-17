@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" role="img" aria-label="⊙O 中 AB 为直径，弦 CD 交 AB 于 E，∠ACD=60°、∠ADC=50°">
+  <title>AB 是 ⊙O 的直径，弦 CD 交 AB 于 E</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="150" cy="120" r="90"/>
+    <path d="M60 120 L240 120"/>
+    <path d="M165.6 31.4 L195 197.9"/>
+    <path d="M60 120 L165.6 31.4"/>
+    <path d="M60 120 L195 197.9"/>
+    <path d="M142.6 50.7 A30 30 0 0 0 170.8 60.9" stroke-width="1.2"/>
+    <path d="M169 182.9 A30 30 0 0 1 189.8 168.4" stroke-width="1.2"/>
+    <path d="M176.7 94.4 A26 26 0 0 1 207.3 120" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="150" cy="120" r="2.2"/>
+    <circle cx="181.3" cy="120" r="2.2"/>
+    <text x="50" y="126" text-anchor="end">A</text>
+    <text x="250" y="126" text-anchor="start">B</text>
+    <text x="158" y="20" text-anchor="middle">C</text>
+    <text x="202" y="216" text-anchor="middle">D</text>
+    <text x="186" y="112" text-anchor="start">E</text>
+    <text x="142" y="112" text-anchor="end">O</text>
+    <text x="176" y="52" text-anchor="middle" font-size="12">60°</text>
+    <text x="196" y="190" text-anchor="middle" font-size="12">50°</text>
+  </g>
+</svg>

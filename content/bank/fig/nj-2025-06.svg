@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="平面直角坐标系中直线 y=2x+4、y=x+2 与点 P(2,2)">
+  <title>坐标系中 y=2x+4、y=x+2 与点 P(2,2)</title>
+  <!-- 30px/单位，原点(140,190)：y=2x+4 过(-2,0)、(0,4)；y=x+2 过(-2,0)、(0,2)；P(2,2) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 190 H312"/>
+    <path d="M140 190 V26"/>
+    <path d="M80 190 L170 10"/>
+    <path d="M80 190 L236 34"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="200" cy="130" r="2.4"/>
+    <text x="306" y="204" text-anchor="start" font-size="13">x</text>
+    <text x="146" y="22" text-anchor="start" font-size="13">y</text>
+    <text x="130" y="204" text-anchor="middle" font-size="13">O</text>
+    <text x="206" y="126" text-anchor="start" font-size="13">P</text>
+    <text x="150" y="40" text-anchor="start" font-size="12">y=2x+4</text>
+    <text x="200" y="60" text-anchor="start" font-size="12">y=x+2</text>
+  </g>
+</svg>

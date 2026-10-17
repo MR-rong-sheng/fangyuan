@@ -1,0 +1,138 @@
+/* ==========================================================================
+   方圆 · print.css —— 一页纸（.printable）的屏幕预览与打印样式
+   --------------------------------------------------------------------------
+   屏幕上：.printable 是一张「白纸卡片」——固定在白底黑字，不受主题影响，
+           这样交卷后能一眼看到打出来是什么样。
+   打印时：A4、10mm 页边距、黑白；顶栏/导航/抽屉/toast/页脚/按钮等一律隐藏，
+           只留 .printable 及其祖先链（祖先去壳，把纸面拉到左上角）。
+   说明：这里显式写黑白是刻意的 —— 纸上不是屏幕；其余界面样式仍在 papers.css，
+        只用设计令牌。数式（.fx-frac/.fx-rad）沿用 formulas.css 的 currentColor。
+   ========================================================================== */
+
+/* ======================================================================
+   屏幕上的「白纸」预览
+   ====================================================================== */
+.printable {
+  --pp-ink: #14181d;
+  --pp-dim: #5b636c;
+  --pp-line: #c7cdd4;
+  margin-top: 16px;
+  padding: clamp(16px, 3.4vw, 30px) clamp(16px, 3.6vw, 34px);
+  background: #fff;
+  color: var(--pp-ink);
+  border-radius: var(--r-sm, 11px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .05), 0 12px 34px rgba(0, 0, 0, .13), inset 0 0 0 1px rgba(0, 0, 0, .06);
+  font-family: var(--font-serif, "Songti SC", serif);
+  font-size: 14.5px;
+  line-height: 1.95;
+  max-width: 840px;
+  overflow-wrap: break-word;
+}
+.printable * { color: inherit; }
+.printable sup, .printable sub { font-size: .72em; line-height: 0; }
+.printable .fx-frac, .printable .fx-rad { color: inherit; }
+
+.printable__head { border-bottom: 1.5px solid var(--pp-ink); padding-bottom: 8px; margin-bottom: 10px; }
+.printable__title { font-size: 19px; font-weight: 600; letter-spacing: .06em; line-height: 1.4; }
+.printable__sub { font-size: 12.5px; font-weight: 400; color: var(--pp-dim); margin-left: 10px; letter-spacing: .02em; }
+.printable__meta { font-size: 12px; color: var(--pp-dim); margin-top: 3px; }
+.printable__name { display: flex; gap: 8px 22px; flex-wrap: wrap; font-size: 13px; color: var(--pp-dim); margin-bottom: 12px; }
+.printable__name i { font-style: normal; }
+.printable__hint { font-size: 13px; color: var(--pp-dim); line-height: 1.9; }
+.printable__foot { margin-top: 14px; padding-top: 6px; border-top: 1px solid var(--pp-line); font-size: 10.5px; color: var(--pp-dim); letter-spacing: .04em; }
+
+/* ---- 卷面：题号 + 题干 + 留白 ---- */
+.printable__qs { list-style: none; padding: 0; margin: 0; }
+.printable__q { padding: 6px 0 10px; border-bottom: 1px dashed var(--pp-line); }
+.printable__q:last-child { border-bottom: 0; }
+.printable__stem { font-size: 14.5px; }
+.printable__stem b { font-weight: 600; margin-right: 3px; }
+.printable__choices { display: flex; flex-wrap: wrap; gap: 3px 20px; font-size: 14px; margin: 3px 0 0 1.5em; }
+.printable__space { border-bottom: 1px dashed var(--pp-line); margin: 6px 0 0 1.5em; }
+.printable__space--choice { height: 20px; margin-top: 4px; }
+.printable__space--fill { height: 28px; }
+.printable__space--solve { height: 92px; }
+.printable__key { font-size: 13px; color: var(--pp-dim); margin: 6px 0 0 1.5em; }
+.printable__key b { color: var(--pp-ink); }
+
+/* ---- 错题一页纸：一行一道 ---- */
+.printable__rows { list-style: none; padding: 0; margin: 0; }
+.printable__row {
+  display: grid;
+  grid-template-columns: 1.9em minmax(0, 2fr) auto auto minmax(0, 2.2fr);
+  gap: 1px 9px; align-items: baseline;
+  padding: 3px 0; border-bottom: 1px solid var(--pp-line);
+  font-size: 11.5px; line-height: 1.5;
+}
+.printable__row:last-child { border-bottom: 0; }
+.printable__no { color: var(--pp-dim); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.printable__row .printable__stem { min-width: 0; }
+.printable__mine { white-space: nowrap; color: #8a2b2b; }
+.printable__ans { white-space: nowrap; font-weight: 600; }
+.printable__why { color: var(--pp-dim); min-width: 0; }
+
+/* 窄屏下把「我的/正确/解析」折到题干下方，仍保持一块一块紧凑 */
+@media (max-width: 560px) {
+  .printable__row { grid-template-columns: 1.9em minmax(0, 1fr); }
+  .printable__mine, .printable__ans, .printable__why { grid-column: 2; white-space: normal; }
+}
+
+/* ======================================================================
+   打印：A4 / 10mm / 黑白 / 只留 .printable
+   ====================================================================== */
+@media print {
+  @page { size: A4; margin: 10mm; }
+
+  html, body { background: #fff !important; color: #000 !important; margin: 0 !important; padding: 0 !important; }
+
+  /* 1) 除了 .printable 与「装得下它的祖先链」，其余一切（顶栏/导航/抽屉/toast/页脚/
+        筛选栏/候选列表/按钮/背景…）整块 display:none —— 只隐藏不塌陷会留下空白页。
+        :not(:has(.printable)) 精确排除祖先；:not(.printable *) 排除纸面自身的内容。 */
+  body *:not(.printable):not(.printable *):not(:has(.printable)):not([hidden]):not([hidden] *) {
+    display: none !important;
+  }
+  /* 未激活的那个面板（带着另一张纸）始终不打印 */
+  body [data-papers-panel][hidden],
+  body [data-papers-panel][hidden] * { display: none !important; }
+
+  /* 2) 祖先去壳：不留内边距、不画玻璃，把纸面顶到左上角 */
+  *:has(.printable) {
+    display: block !important; position: static !important;
+    margin: 0 !important; padding: 0 !important; gap: 0 !important;
+    max-width: none !important; width: auto !important; min-height: 0 !important;
+    overflow: visible !important;
+    background: none !important; border: 0 !important;
+    box-shadow: none !important; border-radius: 0 !important;
+  }
+  *:has(.printable)::before, *:has(.printable)::after { display: none !important; }
+
+  /* 3) 黑白：纸上没有主题色 */
+  .printable {
+    margin: 0 !important; padding: 0 !important; max-width: none !important; width: auto !important;
+    background: #fff !important; color: #000 !important;
+    border: 0 !important; border-radius: 0 !important; box-shadow: none !important;
+    font-size: 11.5pt; line-height: 1.65;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .printable, .printable * {
+    color: #000 !important; background: transparent !important; box-shadow: none !important; text-shadow: none !important;
+  }
+  .printable__title { font-size: 14pt; }
+  .printable__sub, .printable__meta, .printable__hint, .printable__key, .printable__foot, .printable__why { color: #333 !important; }
+  .printable__key b { color: #000 !important; }
+  .printable__stem, .printable__choices { font-size: 11pt; }
+  .printable__q { border-color: #bbb !important; }
+  .printable__space { border-bottom: 1px dashed #999 !important; }
+  .printable__space--choice { height: 20px; }
+  .printable__space--fill { height: 28px; }
+  .printable__space--solve { height: 78pt; }
+  .printable__row { font-size: 9.5pt; border-bottom: 1px solid #999 !important; }
+  .printable__mine { color: #000 !important; text-decoration: line-through; }
+  .printable__ans { color: #000 !important; }
+  .fx-frac__d, .fx-rad__body { border-color: currentColor !important; }
+
+  /* 4) 分页：题干与选项不劈开 */
+  .printable__q, .printable__row { break-inside: avoid; page-break-inside: avoid; }
+  .printable__head, .printable__name { break-after: avoid; page-break-after: avoid; }
+  a[href]::after { content: "" !important; }
+}

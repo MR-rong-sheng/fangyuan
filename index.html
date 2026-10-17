@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="cyber" data-accent="qing" data-size="m">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>方圆 · 数学练习</title>
+<meta name="description" content="方圆 —— 一个安静的数学练习工具。每日一题、口算练习、公式速查与函数图像，全部在这台机器上。" />
+<!-- 首屏前应用偏好，避免闪烁 -->
+<script>
+  try{
+    var p = JSON.parse(localStorage.getItem('fangyuan:prefs')||'{}');
+    var h = document.documentElement;
+    if(p.theme) h.setAttribute('data-theme', p.theme);
+    if(p.accent) h.setAttribute('data-accent', p.accent);
+    if(p.size) h.setAttribute('data-size', p.size);
+  }catch(e){}
+</script>
+<link rel="stylesheet" href="assets/css/glass.css?v=20261007e" />
+<link rel="stylesheet" href="assets/css/app.css?v=20261007e" />
+<link rel="stylesheet" href="assets/css/admin.css?v=20261007e" />
+<link rel="stylesheet" href="assets/css/drill.css?v=20261007e" />
+<link rel="stylesheet" href="assets/css/formulas.css?v=20261007e" />
+<link rel="stylesheet" href="assets/css/plot.css?v=20261007e" />
+<link rel="stylesheet" href="assets/css/notebook.css?v=20261007f" />
+<link rel="stylesheet" href="assets/css/bank.css?v=20261007f" />
+<link rel="stylesheet" href="assets/css/papers.css?v=20261007f" />
+<link rel="stylesheet" href="assets/css/streak.css?v=20261011a" />
+<link rel="stylesheet" href="assets/css/fig.css?v=20261011a" />
+<link rel="stylesheet" href="assets/css/print.css?v=20261007f" />
+<link rel="stylesheet" href="assets/css/cyber.css?v=20261007f" />
+</head>
+<body>
+
+<!-- ===== 全局 SVG：折射滤镜 + 图标精灵（全部手绘，无外部依赖） ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="liquid" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="11" result="n" />
+    <feGaussianBlur in="n" stdDeviation="1.4" result="s" />
+    <feDisplacementMap in="SourceGraphic" in2="s" scale="7" xChannelSelector="R" yChannelSelector="G" />
+  </filter>
+
+  <symbol id="i-today" viewBox="0 0 24 24"><rect x="4.5" y="5" width="15" height="14" rx="3"/><path d="M4.5 10h15M9.5 10v9"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="2.4"/><path d="M8 7.5h8M8 12h2.5M13.5 12H16M8 16h2.5M13.5 16H16"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4.5 5.5A2 2 0 016.5 4H19v16H6.5a2 2 0 00-2 2V5.5z"/><path d="M19 4v16"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4.5 4.5v15h15"/><path d="M7 15.5c2.2-6 4-6 5.5-2.2S16 17 19.5 6.6"/></symbol>
+  <symbol id="i-notes" viewBox="0 0 24 24"><path d="M6.5 3.5h8.5a3 3 0 013 3V21H9a2.5 2.5 0 01-2.5-2.5V3.5z"/><path d="M6.5 18.5A2.5 2.5 0 019 21"/><path d="M10 8h5M10 12h5"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><path d="M4.5 7.5h9.5M19.5 7.5h0.5M4.5 16.5h4M13 16.5h7"/><circle cx="16.8" cy="7.5" r="2.3"/><circle cx="11" cy="16.5" r="2.3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M15.5 15.5L20 20"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.8l4.6 4.4L19 7.2"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5.5v13M5.5 12h13"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V5.2h5V7M6.6 7l.9 12.2h9l.9-12.2"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 19.5h14"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V9M7.5 13.5L12 9l4.5 4.5M5 4.5h14"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M5 12h13M13 7l5 5-5 5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.4A8.4 8.4 0 019.6 4a8.4 8.4 0 1010.4 10.4z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.8 5.8l1.4 1.4M16.8 16.8l1.4 1.4M18.2 5.8l-1.4 1.4M7.2 16.8l-1.4 1.4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 20c.7-3.6 3.7-5.6 7.2-5.6s6.5 2 7.2 5.6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8.5" r="3.2"/><path d="M3.5 19.5c.6-3.2 3.2-5 6-5s5.4 1.8 6 5"/><path d="M16.2 6.2a3 3 0 010 5.6M17.5 14.8c2 .5 3.4 2 3.9 4.4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5l7 2.4v5c0 4.4-2.9 7.9-7 9.6-4.1-1.7-7-5.2-7-9.6v-5z"/><path d="M9 12.2l2.2 2.2L15.4 10"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8.2" cy="12" r="3.7"/><path d="M11.9 12H20M17.4 12v3.2M14.8 12v2.4"/></symbol>
+  <symbol id="i-log" viewBox="0 0 24 24"><path d="M5 4.5h9M5 9.5h9M5 14.5h6M5 19.5h4"/><path d="M15.5 15.8l2.6 2.6 3.4-3.9"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="6.4" rx="7" ry="2.9"/><path d="M5 6.4v11.2c0 1.6 3.1 2.9 7 2.9s7-1.3 7-2.9V6.4"/><path d="M5 12c0 1.6 3.1 2.9 7 2.9s7-1.3 7-2.9"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M14 5.5H6.5v13H14"/><path d="M11.5 12h8.5M17 8.8l3.2 3.2-3.2 3.2"/></symbol>
+  <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5"/><path d="M6.8 17.2L17.2 6.8"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4.5 19.5h4L19.2 8.8a2.1 2.1 0 00-3-3L5.5 16.5z"/><path d="M15.4 6.6l2.9 2.9"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5"/><path d="M12 7.5V12l3.2 2"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.5 2.5L5.5 13.2h4.6L9.8 21.5l8.3-11.1h-4.8z"/></symbol>
+  <symbol id="i-sigma" viewBox="0 0 24 24"><path d="M17.5 5.5H7l5 6.5-5 6.5h10.5"/></symbol>
+</svg>
+
+<!-- ===== 背景：低饱和色雾（给玻璃折射用的结构） ===== -->
+<div class="bg" aria-hidden="true">
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+  <span class="blob b4"></span>
+  <span class="blob b5"></span>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===== 顶栏 ===== -->
+<header class="topbar">
+  <a class="brand" href="#/today" aria-label="方圆 首页">
+    <span class="brand__mark" aria-hidden="true">方</span>
+    <span class="brand__text"><b>方圆</b><i>不以规矩，不成方圆</i></span>
+  </a>
+
+  <nav class="nav glass" id="nav" aria-label="主导航"></nav>
+
+  <div class="tools">
+    <button class="icon-btn glass" id="btn-user" title="账号">
+      <svg class="ic"><use href="#i-user"/></svg>
+    </button>
+    <button class="icon-btn glass" id="btn-theme" title="切换日间 / 夜间" aria-label="切换主题">
+      <svg class="ic"><use href="#i-moon"/></svg>
+    </button>
+    <button class="icon-btn glass" id="btn-settings" title="设置" aria-label="打开设置">
+      <svg class="ic"><use href="#i-gear"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== 视图容器：所有模块渲染在这里 ===== -->
+<main class="stage" id="view" tabindex="-1"></main>
+
+<footer class="foot">
+  <span>方圆 · 数据只保存在这台机器上</span>
+  <span class="dot" aria-hidden="true">·</span>
+  <span id="foot-stat">—</span>
+</footer>
+
+<!-- ===== 详情抽屉（题目解析 / 公式 / 错题共用） ===== -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer glass" id="drawer" hidden aria-modal="true" role="dialog"></aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="module" src="assets/js/app.js?v=20261007f"></script>
+</body>
+</html>

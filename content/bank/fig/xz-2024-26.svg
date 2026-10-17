@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" role="img" aria-label="抛物线 y=x^2+bx+c 与直线 y=-x+5 交于 A、B 两点，P 在抛物线上且位于直线 AB 下方">
+  <title>抛物线与直线交于 A、B，P 在直线 AB 下方</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M35 215 H222"/>
+    <path d="M50 262 V45"/>
+    <path d="M222 215 l-9 -5 v10 z" fill="currentColor" stroke="none"/>
+    <path d="M50 45 l-5 9 h10 z" fill="currentColor" stroke="none"/>
+    <path d="50.0 65.0 L65.0 132.5 L80.0 185.0 L95.0 222.5 L110.0 245.0 L125.0 252.5 L140.0 245.0 L155.0 222.5 L170.0 185.0 L185.0 132.5 L200.0 65.0"/>
+    <path d="35.0 50.0 L50.0 65.0 L110.0 125.0 L170.0 185.0 L200.0 215.0"/>
+    <path d="110.0 245.0 L50.0 65.0" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="110.0 245.0 L170.0 185.0" stroke-dasharray="4 3" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="42" y="231" text-anchor="middle">O</text>
+    <text x="64" y="61" text-anchor="middle">A</text>
+    <text x="184" y="183" text-anchor="middle">B</text>
+    <text x="100" y="259" text-anchor="middle">P</text>
+    <circle cx="50" cy="65" r="2.2"/>
+    <circle cx="170" cy="185" r="2.2"/>
+    <circle cx="110" cy="245" r="2.2"/>
+  </g>
+</svg>

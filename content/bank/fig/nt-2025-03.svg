@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" role="img" aria-label="将 △ABC 沿射线 BC 平移到 △DEF，BC=6，EC=4">
+  <title>△ABC 沿射线 BC 平移到 △DEF，BC=6、EC=4</title>
+  <!-- 30px/单位：B(60,110) C(240,110) BC=180=6*30；E(120,110) BE=60=2*30、EC=120=4*30
+       F(300,110) A(150,40) D(210,40) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 40 L60 110 L240 110 Z"/>
+    <path d="M210 40 L120 110 L300 110 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 40 L210 40" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M60 110 L120 110" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M240 110 L300 110" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M90.0 105.0 L90.0 115.0" stroke-width="1.2"/>
+<path d="M180.0 35.0 L180.0 45.0" stroke-width="1.2"/>
+<path d="M270.0 105.0 L270.0 115.0" stroke-width="1.2"/>
+
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="150" y="30" text-anchor="middle" font-size="13">A</text>
+    <text x="50" y="116" text-anchor="middle" font-size="13">B</text>
+    <text x="240" y="128" text-anchor="middle" font-size="13">C</text>
+    <text x="210" y="30" text-anchor="middle" font-size="13">D</text>
+    <text x="120" y="128" text-anchor="middle" font-size="13">E</text>
+    <text x="300" y="128" text-anchor="middle" font-size="13">F</text>
+  </g>
+</svg>

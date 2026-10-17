@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 240" role="img" aria-label="AB∥CD，AC 为截线，∠1=65°，∠2=120°（D 处外角），求∠3">
+  <title>AB∥CD，AC 为截线，∠1=65°，∠2=120°（D 处外角），求∠3</title>
+<polyline points="45,56.27 157.02,56.27" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="90,200 289.5,200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="157.02,56.27 90,200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="157.02,56.27 240,200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="183.02,56.27 182.93,58.45 182.66,60.6 182.21,62.73 181.58,64.81 180.78,66.83 179.82,68.78 178.69,70.64 177.41,72.4 176,74.05 174.45,75.57 172.77,76.96 170.99,78.2 169.11,79.29 167.14,80.22 165.11,80.98 163.02,81.57 160.88,81.99 158.72,82.22 156.55,82.27 154.38,82.14 152.23,81.83 150.11,81.34 148.04,80.67 146.03,79.84" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="141.81,88.9 143.12,89.48 144.46,90.01 145.82,90.49 147.2,90.91 148.59,91.27 150,91.58 151.41,91.84 152.84,92.03 154.27,92.17 155.71,92.25 157.15,92.27 158.59,92.24 160.03,92.15 161.46,92 162.88,91.79 164.3,91.53 165.7,91.21 167.09,90.84 168.47,90.41 169.82,89.92 171.16,89.38 172.47,88.79 173.76,88.15 175.02,87.45" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="225,174.02 226.85,173.04 228.76,172.18 230.73,171.47 232.74,170.89 234.79,170.46 236.86,170.16 238.95,170.02 241.05,170.02 243.14,170.16 245.21,170.46 247.26,170.89 249.27,171.47 251.24,172.18 253.15,173.04 255,174.02 256.78,175.13 258.47,176.36 260.07,177.71 261.58,179.16 262.98,180.72 264.27,182.37 265.44,184.1 266.49,185.92 267.41,187.8 268.19,189.74 268.84,191.73 269.34,193.76 269.71,195.82 269.93,197.91 270,200" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="45" y="44.27" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">B</text>
+<text x="157.02" y="44.27" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">A</text>
+<text x="90" y="220" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">C</text>
+<text x="240" y="220" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">D</text>
+<text x="128" y="74" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">1</text>
+<text x="158" y="100" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">3</text>
+<text x="262" y="178" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">2</text>
+</svg>

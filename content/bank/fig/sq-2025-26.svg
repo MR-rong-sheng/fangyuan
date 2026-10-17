@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 250" role="img" aria-label="路程差y与甲行走时间t的函数图象：0至6分钟由0升至360米，6至18分钟降到0，18至50分钟升至960米，50至66分钟再降到0">
+  <title>路程差 y(m) 与甲行走时间 t(min) 的函数图象</title>
+  <!-- 横轴 4px/min、纵轴 0.19px/m，原点 O(60,210)
+       折线 (0,0)-(6,360)-(18,0)-(50,960)-(66,0)：6min 时差 360m，18min 乙追上，50min 乙到达 N，66min 甲到达 N -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M45 210 H340"/>
+    <path d="M334 205 L340 210 L334 215"/>
+    <path d="M60 210 V25"/>
+    <path d="M55 31 L60 25 L65 31"/>
+    <path d="M60 210 L84 141.6 L132 210 L260 27.6 L324 210"/>
+    <path d="M84 206 V210"/>
+    <path d="M132 206 V210"/>
+    <path d="M260 206 V210"/>
+    <path d="M324 206 V210"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="84" cy="141.6" r="2.2"/>
+    <circle cx="132" cy="210" r="2.2"/>
+    <circle cx="260" cy="27.6" r="2.2"/>
+    <circle cx="324" cy="210" r="2.2"/>
+    <text x="48" y="224" text-anchor="end">O</text>
+    <text x="346" y="224" text-anchor="start">t</text>
+    <text x="66" y="20" text-anchor="start">y</text>
+    <text x="84" y="226" text-anchor="middle">6</text>
+    <text x="132" y="226" text-anchor="middle">18</text>
+    <text x="260" y="226" text-anchor="middle">50</text>
+    <text x="324" y="226" text-anchor="middle">66</text>
+    <text x="92" y="134" text-anchor="start" font-size="12">360</text>
+    <text x="252" y="20" text-anchor="end" font-size="12">960</text>
+  </g>
+</svg>

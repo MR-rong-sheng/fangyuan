@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" role="img" aria-label="△ABC 中 BA=BC，以 AB 为直径的 ⊙O 交 AC 于 D，DE⊥BC 于 E，延长 DE 交 AB 延长线于 F">
+  <title>⊙O 中 AB 为直径，D 在圆上，DE⊥BC 并延长交 AB 的延长线于 F</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="130" cy="150" r="60"/>
+    <path d="M70 150 L310 150"/>
+    <path d="M190 150 L230 36.9"/>
+    <path d="M230 36.9 L70 150"/>
+    <path d="M150 93.4 L310 150"/>
+    <path d="M193.9 109 L190.6 118.4 L200 121.7" stroke-width="1.2"/>
+    <path d="M141.8 99.2 L147.6 107.4 L155.8 101.6" stroke-width="1.2"/>
+    <path d="M130 145 L130 155" stroke-width="1.2"/>
+    <path d="M205.3 91.8 L214.7 95.1" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="130" cy="150" r="2.2"/>
+    <circle cx="150" cy="93.4" r="2.2"/>
+    <circle cx="203.3" cy="112.3" r="2.2"/>
+    <text x="60" y="170" text-anchor="middle">A</text>
+    <text x="190" y="170" text-anchor="middle">B</text>
+    <text x="240" y="32" text-anchor="start">C</text>
+    <text x="140" y="88" text-anchor="end">D</text>
+    <text x="196" y="106" text-anchor="end">E</text>
+    <text x="306" y="142" text-anchor="end">F</text>
+    <text x="124" y="142" text-anchor="end">O</text>
+  </g>
+</svg>

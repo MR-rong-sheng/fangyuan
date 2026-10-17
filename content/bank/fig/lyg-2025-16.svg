@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 230" role="img" aria-label="菱形 ABCD 中 AC=4、BD=2，E 是 AC 上的动点，四边形 DAEF 是平行四边形，连 BE、BF">
+  <title>菱形 ABCD（AC=4，BD=2），E 在 AC 上，DAEF 为平行四边形</title>
+  <!-- 坐标：对角线交点 O=(170,120)，50px/单位。A(-2,0)→(70,120)、B(0,-1)→(170,170)、
+       C(2,0)→(270,120)、D(0,1)→(170,70)；AC=200px=4、BD=100px=2。
+       E 取 AC 上 t=-2/3 处 → (136.7,120)（此时 BE+BF 最小）；
+       DAEF 为平行四边形 → F = D + E - A = (4/3,1) → (236.7,70)（与 D 同高，DF∥AE=AC）。
+       复算：|AC|=4、|BD|=2、DAFE 两组对边平行且相等、BE+BF 最小值 = √13。 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 120 L170 170 L270 120 L170 70 Z"/>
+    <path d="M70 120 H270"/>
+    <path d="M170 70 V170"/>
+    <path d="M170 70 L236.7 70"/>
+    <path d="M136.7 120 L236.7 70"/>
+    <path d="M136.7 120 L170 170"/>
+    <path d="M236.7 70 L170 170"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+    <path d="M122.0 141.0 L118.0 149.0"/>
+    <path d="M218.0 141.0 L222.0 149.0"/>
+    <path d="M218.0 99.0 L222.0 91.0"/>
+    <path d="M122.0 99.0 L118.0 91.0"/>
+    <path d="M184.7 91.0 L188.7 99.0"/>
+    <path d="M100.8 115.5 L100.8 124.5 M105.8 115.5 L105.8 124.5"/>
+    <path d="M200.8 65.5 L200.8 74.5 M205.8 65.5 L205.8 74.5"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="62" y="124" text-anchor="middle">A</text>
+    <text x="170" y="188" text-anchor="middle">B</text>
+    <text x="278" y="124" text-anchor="middle">C</text>
+    <text x="170" y="60" text-anchor="middle">D</text>
+    <text x="129" y="134" text-anchor="middle">E</text>
+    <text x="246" y="66" text-anchor="start">F</text>
+  </g>
+</svg>

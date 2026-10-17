@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="AB 与 CD 相交于点 E，EC=ED，AC∥BD">
+  <title>AB 与 CD 相交于 E，EC=ED，AC∥BD</title>
+<g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M222.0 64.0 L138.0 176.0"/>
+<path d="M138.0 64.0 L222.0 176.0"/>
+<path d="M222.0 64.0 L138.0 64.0"/>
+<path d="M138.0 176.0 L222.0 176.0"/>
+</g>
+<g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round">
+<path d="M184.0 117.0 L176.0 123.0"/>
+<path d="M184.0 123.0 L176.0 117.0"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+<circle cx="180.0" cy="120.0" r="2.2"/>
+<text x="230.0" y="58.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">A</text>
+<text x="130.0" y="58.0" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">C</text>
+<text x="130.0" y="190.0" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">B</text>
+<text x="230.0" y="190.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">D</text>
+<text x="188.0" y="116.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">E</text>
+</g>
+</svg>

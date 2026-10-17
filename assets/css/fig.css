@@ -1,0 +1,48 @@
+/* ==========================================================================
+   方圆 · fig.css —— 题图（原创 SVG）的容器样式
+   图本身用 currentColor 画，所以这里只管留白、边框与最大宽度；
+   颜色跟着 .fig 的 color 走（默认次要文字色，暗色/赛博主题下自动变浅）。
+   ========================================================================== */
+
+.fig { display: none }                      /* 有图才会被 JS 加上 .fig--on */
+
+.fig--on {
+  display: block;
+  margin: 14px auto 6px;
+  padding: 10px 12px;
+  max-width: 420px;
+  color: var(--ink-2);
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  border: 1px solid var(--glass-line);
+  border-radius: var(--r, 12px);
+}
+
+.fig--on svg { width: 100%; height: auto; display: block }
+
+/* 列表行里只用一个小小的「图」标记，不铺大图（手机一屏才放得下） */
+.bk-chip--fig {
+  border-color: var(--accent-line, currentColor);
+  color: var(--accent);
+  letter-spacing: .04em;
+}
+
+/* 做卷时图要跟题干贴在一起 */
+.papers-stem + .fig--on, .papers-stem ~ .fig--on { margin-top: 10px }
+.papers-work .fig--on { max-width: 100% }
+
+/* 可打印卷面 / 一页纸 */
+.printable__fig { margin: 6px 0 10px; max-width: 340px; color: #000 }
+.printable__fig svg { width: 100%; height: auto; display: block }
+.printable--wrongs .printable__fig { max-width: 132px; margin: 2px 0 4px; float: none }
+.printable__row .printable__fig { display: inline-block; vertical-align: top }
+
+@media print {
+  .fig--on, .printable__fig {
+    color: #000;
+    background: none;
+    border: 0;
+    padding: 0;
+    max-width: 300px;
+    break-inside: avoid;
+  }
+}

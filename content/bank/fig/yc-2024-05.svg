@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 220" role="img" aria-label="正方体展开图：中间一行“湿地城都”，上方“盐”、下方“之”">
+  <title>正方体的一种平面展开图（六个面上分别是“盐城湿地之都”）</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="84" y="24" width="56" height="56"/>
+    <rect x="28" y="80" width="56" height="56"/>
+    <rect x="84" y="80" width="56" height="56"/>
+    <rect x="140" y="80" width="56" height="56"/>
+    <rect x="196" y="80" width="56" height="56"/>
+    <rect x="84" y="136" width="56" height="56"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="112" y="58" text-anchor="middle" font-size="17">盐</text>
+    <text x="56" y="114" text-anchor="middle" font-size="17">湿</text>
+    <text x="112" y="114" text-anchor="middle" font-size="17">地</text>
+    <text x="168" y="114" text-anchor="middle" font-size="17">城</text>
+    <text x="224" y="114" text-anchor="middle" font-size="17">都</text>
+    <text x="112" y="170" text-anchor="middle" font-size="17">之</text>
+  </g>
+</svg>

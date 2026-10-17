@@ -1,0 +1,298 @@
+{
+  "province": "江苏",
+  "city": "无锡",
+  "year": 2025,
+  "paper": "2025年江苏省无锡市中考数学试卷",
+  "source": "https://www.renrendoc.com/paper/467074896.html",
+  "coverage": "已收 16 题 / 全卷 28 题（10 选择 + 8 填空 + 10 解答）",
+  "note": "未收：第 7、8、9 题（选项含分式/图形，原文残缺）与第 18、19、20、23、24、25、26、27、28 题（条件式或多问答案在公开原文中以图片呈现）。第 1～10 题答案核对过公开答案页（依次为 C A B A D B C A C B）。第 16、17 题原文只给出条件、答案缺失，由笔者独立计算得到。来源为公开全文预览页，并与原创力文档同卷预览互校。",
+  "questions": [
+    {
+      "id": "wx-2025-01",
+      "no": 1,
+      "kind": "选择",
+      "stem": "计算 -2+3 的结果为",
+      "choices": [
+        "A．-5",
+        "B．-1",
+        "C．1",
+        "D．5"
+      ],
+      "answer": "C",
+      "solution": "-2+3 即从 -2 出发向右移动 3 个单位，得 1。",
+      "unit": "u1",
+      "level": 1,
+      "tags": [
+        "有理数加法"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-02",
+      "no": 2,
+      "kind": "选择",
+      "stem": "2025 年春节期间，无锡市 65 家备案博物馆接待游客总数约 819000 人次。数据 819000 用科学记数法表示为",
+      "choices": [
+        "A．8.19×10^5",
+        "B．81.9×10^4",
+        "C．0.819×10^5",
+        "D．0.819×10^6"
+      ],
+      "answer": "A",
+      "solution": "819000=8.19×100000=8.19×10^5。",
+      "unit": "u1",
+      "level": 1,
+      "tags": [
+        "科学记数法"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-03",
+      "no": 3,
+      "kind": "选择",
+      "stem": "下列运算正确的是",
+      "choices": [
+        "A．a^2+a^4=a^6",
+        "B．a^2·a^4=a^6",
+        "C．(a^2)^4=a^6",
+        "D．a^4÷a^4=a^4"
+      ],
+      "answer": "B",
+      "solution": "A 中 a^2 与 a^4 不是同类项，不能合并；B 中同底数幂相乘指数相加，a^2·a^4=a^6，正确；C 中幂的乘方指数相乘，(a^2)^4=a^8；D 中同底数幂相除，a^4÷a^4=1。",
+      "unit": "u2",
+      "level": 1,
+      "tags": [
+        "整式运算",
+        "幂的运算"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-04",
+      "no": 4,
+      "kind": "选择",
+      "stem": "一组数据：13，14，14，16，18，这组数据的平均数和众数分别是",
+      "choices": [
+        "A．15，14",
+        "B．14，15",
+        "C．14，14",
+        "D．15，15"
+      ],
+      "answer": "A",
+      "solution": "平均数 =(13+14+14+16+18)÷5=75÷5=15；14 出现 2 次、其余各 1 次，众数是 14。",
+      "unit": "",
+      "level": 1,
+      "tags": [
+        "平均数",
+        "众数",
+        "统计"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-05",
+      "no": 5,
+      "kind": "选择",
+      "stem": "在 △ABC 中，D、E 分别是 AB、AC 的中点。若 DE=4，则 BC 的长为",
+      "choices": [
+        "A．2",
+        "B．4",
+        "C．6",
+        "D．8"
+      ],
+      "answer": "D",
+      "solution": "DE 是 △ABC 的中位线，所以 BC=2DE=8。",
+      "unit": "u7",
+      "level": 1,
+      "tags": [
+        "三角形中位线"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-06",
+      "no": 6,
+      "kind": "选择",
+      "stem": "已知圆弧所在圆的半径为 6，该弧所对的圆心角为 90°，则这条弧的长为",
+      "choices": [
+        "A．2π",
+        "B．3π",
+        "C．4π",
+        "D．6π"
+      ],
+      "answer": "B",
+      "solution": "弧长公式 l=\\frac{nπr}{180}，代入 n=90、r=6，得 l=\\frac{90×π×6}{180}=3π。",
+      "unit": "",
+      "level": 1,
+      "tags": [
+        "弧长公式"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-10",
+      "no": 10,
+      "kind": "选择",
+      "stem": "若函数 y_1 的图象上存在点 P，函数 y_2 的图象上存在点 Q，且 P、Q 关于 y 轴对称，则称函数 y_1 和 y_2 具有“对偶关系”，此时点 P 或点 Q 的纵坐标称为“对偶值”。下列结论：①函数 y_1=2x+3 与函数 y_2=-x+1 不具有“对偶关系”；②函数 y_1=2x+3 与函数 y_2=-x+1 的“对偶值”为 -1；③若 1 是函数 y_1=kx+3 与函数 y_2=\\frac{1}{x} 的“对偶值”，则 k=2；④若函数 y_1=-2x+b（-2≤x≤-1）与函数 y_2=\\frac{1}{x}（x>0）具有“对偶关系”，则 3≤b≤\\frac{9}{2}。其中正确的是",
+      "choices": [
+        "A．①④",
+        "B．②③",
+        "C．①③④",
+        "D．②③④"
+      ],
+      "answer": "B",
+      "solution": "“对偶关系”即存在横坐标互为相反数的两点纵坐标相同；“对偶值”是该公共纵坐标。①令 2x+3=-(-x)+1，得 x=-2，此时两函数值都为 -1，说明具有对偶关系，①错；②由①知对偶值为 -1，②正确；③对偶值为 1：y_2=\\frac{1}{x}=1 得 x=1，对应 x=-1 代入 y_1=kx+3 得 -k+3=1，解得 k=2，③正确；④需存在 x_p∈[-2,-1] 使 -2x_p+b=\\frac{1}{-x_p}。令 u=-x_p∈[1,2]，则 b=\\frac{1}{u}-2u，该式在 [1,2] 上递减，值域为 [-\\frac{7}{2},-1]，与 3≤b≤\\frac{9}{2} 不符，④错。故选 B。",
+      "unit": "",
+      "level": 3,
+      "tags": [
+        "新定义",
+        "函数图象",
+        "轴对称"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-11",
+      "no": 11,
+      "kind": "填空",
+      "stem": "|-3|=____",
+      "answer": "3",
+      "solution": "负数的绝对值等于它的相反数，|-3|=3。",
+      "unit": "u1",
+      "level": 1,
+      "tags": [
+        "绝对值"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-12",
+      "no": 12,
+      "kind": "填空",
+      "stem": "函数 y=\\frac{1}{x-4} 中的自变量 x 的取值范围是____",
+      "answer": "x≠4",
+      "solution": "分式有意义的条件是分母不为 0，故 x-4≠0，即 x≠4。",
+      "unit": "u1",
+      "level": 1,
+      "tags": [
+        "分式有意义的条件",
+        "函数自变量取值范围"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-13",
+      "no": 13,
+      "kind": "填空",
+      "stem": "请写出单项式 a^2b 的一个同类项：____",
+      "answer": "11a^2b（答案不唯一）",
+      "solution": "同类项要求所含字母相同且相同字母的指数也相同，所以只要是形如 ka^2b（k 为常数）的单项式都可以，例如 11a^2b。",
+      "unit": "u2",
+      "level": 1,
+      "tags": [
+        "同类项",
+        "开放题"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-14",
+      "no": 14,
+      "kind": "填空",
+      "stem": "请写出命题“若 a>b，则 a+1>b+1”的逆命题：____",
+      "answer": "若 a+1>b+1，则 a>b",
+      "solution": "把原命题的题设与结论互换，即得逆命题：若 a+1>b+1，则 a>b。",
+      "unit": "u4",
+      "level": 1,
+      "tags": [
+        "命题",
+        "逆命题"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-15",
+      "no": 15,
+      "kind": "填空",
+      "stem": "正七边形的内角和为____度",
+      "answer": "900",
+      "solution": "n 边形内角和为 (n-2)×180°。取 n=7，得 (7-2)×180°=900°。",
+      "unit": "",
+      "level": 1,
+      "tags": [
+        "多边形内角和"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-16",
+      "no": 16,
+      "kind": "填空",
+      "stem": "如图，AB 与 ⊙O 相切于点 B，连接 BO，过点 O 作 BO 的垂线 OC，交 ⊙O 于点 C，连接 AC，交线段 OB 于点 D。若 AB=3，OC=2，则 tanA 的值为____",
+      "answer": "\\frac{2}{5}",
+      "solution": "因为 OB=OC=2，切线得 OB⊥AB；又 OC⊥OB，所以 OC∥AB，△ODC∽△BDA，得 OD÷BD=OC÷BA=2÷3。又 OD+BD=OB=2，所以 OD=\\frac{4}{5}，BD=\\frac{6}{5}。在 Rt△ABD 中 tanA=BD÷AB=\\frac{6}{5}÷3=\\frac{2}{5}。（也可用坐标法：取 O(0,0)、B(0,2)、A(-3,2)、C(2,0)，直线 AC 交 OB 于 D(0,0.8)，BD=1.2，tanA=1.2÷3=\\frac{2}{5}。）",
+      "fig": "content/bank/fig/wx-2025-16.svg",
+      "figAlt": "AB 与 ⊙O 相切于点 B，OC⊥OB 交 ⊙O 于 C，AC 交线段 OB 于 D",
+      "unit": "",
+      "level": 3,
+      "tags": [
+        "圆的切线",
+        "相似三角形",
+        "锐角三角函数"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-17",
+      "no": 17,
+      "kind": "填空",
+      "stem": "如图，菱形 ABCD 的边长为 2，∠ABC=60°，对角线 AC、BD 相交于点 M。过点 D 作 AC 的平行线交 BC 的延长线于点 N，连接 MN，则 MN 的长为____",
+      "answer": "√(7)",
+      "solution": "菱形中 ∠ABC=60°，AB=BC=2，所以 △ABC 是等边三角形，AC=2，CM=1，∠ACB=60°。过 M 作 MH⊥BN 于 H，在 Rt△CMH 中 CH=CM·cos60°=\\frac{1}{2}，MH=CM·sin60°=\\frac{√(3)}{2}。又 DN∥AC 且 AD∥CN，四边形 ACND 是平行四边形，CN=AD=2，故 NH=CH+CN=\\frac{1}{2}+2=\\frac{5}{2}。在 Rt△MNH 中 MN=√(MH^2+NH^2)=√(\\frac{3}{4}+\\frac{25}{4})=√(7)。",
+      "fig": "content/bank/fig/wx-2025-17.svg",
+      "figAlt": "菱形 ABCD 边长为 2、∠ABC=60°，对角线 AC、BD 交于 M，过 D 作 AC 的平行线交 BC 的延长线于 N，连接 MN",
+      "unit": "",
+      "level": 3,
+      "tags": [
+        "菱形",
+        "勾股定理",
+        "平行四边形"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-21",
+      "no": 21,
+      "kind": "解答",
+      "stem": "如图，在矩形 ABCD 中，点 E 在 CB 的延长线上，点 F 在 BC 的延长线上，且 BE=CF，连接 AE、DF。求证：（1）△ABE≌△DCF；（2）∠EAD=∠FDA。",
+      "answer": "（1）△ABE≌△DCF（SAS）；（2）∠EAD=∠FDA",
+      "solution": "（1）矩形中 AB=DC，∠ABE=∠DCF=90°；又 BE=CF，由 SAS 得 △ABE≌△DCF。（2）由（1）得 AE=DF，△EAD 与 △FDA 中 AE=DF、AD 公共、DE=AF（由 AB=DC、BE=CF 平移可得），所以 △EAD≌△FDA，故 ∠EAD=∠FDA。",
+      "fig": "content/bank/fig/wx-2025-21.svg",
+      "figAlt": "矩形 ABCD 中 E 在 CB 的延长线上、F 在 BC 的延长线上，BE=CF，连接 AE、DF",
+      "unit": "u7",
+      "level": 2,
+      "tags": [
+        "矩形",
+        "全等三角形"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    },
+    {
+      "id": "wx-2025-22",
+      "no": 22,
+      "kind": "解答",
+      "stem": "一只不透明的袋子中装有标号分别为 1，2，3，4 的 4 个球，这些球除标号外都相同。（1）将球搅匀，从中任意摸出 1 个球，摸到标号为 2 的球的概率是____；（2）将球搅匀，从中任意摸出 1 个球，记录标号后不放回，再从袋子中任意摸出 1 个球，记录标号。求两次摸到的球标号均小于 3 的概率。",
+      "answer": "（1）\\frac{1}{4}；（2）\\frac{1}{6}",
+      "solution": "（1）共 4 种等可能结果，标号为 2 的只有 1 种，概率为 \\frac{1}{4}。（2）不放回地摸两次，共有 4×3=12 种等可能结果；标号均小于 3 即两次都从 {1,2} 中取且不同，（1，2）、（2，1）共 2 种，概率为 \\frac{2}{12}=\\frac{1}{6}。",
+      "unit": "",
+      "level": 2,
+      "tags": [
+        "概率",
+        "树状图",
+        "不放回"
+      ],
+      "src": "https://www.renrendoc.com/paper/467074896.html"
+    }
+  ]
+}

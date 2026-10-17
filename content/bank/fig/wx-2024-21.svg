@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 200" role="img" aria-label="矩形 ABCD 中 E 是 BC 的中点，连接 AE、DE">
+  <title>矩形 ABCD：E 为 BC 中点，连 AE、DE</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="60" y="60" width="160" height="100"/>
+    <path d="M60 60 L220 110"/>
+    <path d="M60 160 L220 110"/>
+    <path d="M60 70 h10 v-10"/>
+    <path d="M210 60 h10 v10"/>
+    <path d="M220 150 h-10 v10"/>
+    <path d="M70 160 h-10 v-10"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="58" y="50" text-anchor="middle">A</text>
+    <text x="220" y="50" text-anchor="middle">B</text>
+    <text x="234" y="166" text-anchor="middle">C</text>
+    <text x="46" y="166" text-anchor="middle">D</text>
+    <text x="242" y="100" text-anchor="middle">E</text>
+  </g>
+</svg>

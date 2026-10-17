@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="矩形 ABCD（AD=9m，AB=6m）内接矩形 EFCG，BG=DF=x">
+  <title>矩形 ABCD 与内接矩形 EFCG，BG=DF=x</title>
+  <!-- 25px/单位：A(70,250) B(220,250) C(220,25) D(70,25)；x=3 时 E(145,175) F(145,25) G(220,175) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 250 L220 250 L220 25 L70 25 Z"/>
+    <path d="M145 175 L145 25 L220 25 L220 175 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 250 L220 175" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M70 25 L145 25" stroke-dasharray="4 3" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="62" y="266" text-anchor="end" font-size="13">A</text>
+    <text x="220" y="266" text-anchor="middle" font-size="13">B</text>
+    <text x="228" y="22" text-anchor="start" font-size="13">C</text>
+    <text x="62" y="22" text-anchor="end" font-size="13">D</text>
+    <text x="139" y="192" text-anchor="end" font-size="13">E</text>
+    <text x="139" y="22" text-anchor="end" font-size="13">F</text>
+    <text x="228" y="178" text-anchor="start" font-size="13">G</text>
+  </g>
+</svg>

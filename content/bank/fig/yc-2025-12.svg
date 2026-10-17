@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 250" role="img" aria-label="⊙O 的内接四边形 ABCD，∠A=110°，连 OB、OD，∠BOD=140°">
+  <title>四边形 ABCD 内接于 ⊙O，连接 OB、OD</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="175" cy="120" r="90"/>
+    <path d="M85 120 L130 42.1 L259.6 89.2 L159.4 208.6 L85 120"/>
+    <path d="M175 120 L130 42.1"/>
+    <path d="M175 120 L159.4 208.6"/>
+    <path d="M98 97.5 A26 26 0 0 1 101.7 139.9" stroke-width="1.2"/>
+    <path d="M162 97.5 A26 26 0 0 0 170.5 145.6" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="175" cy="120" r="2.2"/>
+    <text x="70" y="126" text-anchor="end">A</text>
+    <text x="122" y="30" text-anchor="middle">B</text>
+    <text x="272" y="86" text-anchor="start">C</text>
+    <text x="154" y="228" text-anchor="middle">D</text>
+    <text x="168" y="110" text-anchor="end">O</text>
+    <text x="135" y="122" text-anchor="end" font-size="12">110°</text>
+    <text x="175" y="100" text-anchor="middle" font-size="12">140°</text>
+  </g>
+</svg>

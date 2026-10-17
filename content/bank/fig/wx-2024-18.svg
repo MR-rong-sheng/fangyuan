@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="△ABC 中 AC=2、AB=3，CM∥AB，E 在 BC 上，射线 AE 交 CM 于 D，在射线 AE 上取 P 使 AP=2ED，PQ∥AB 交 AC 于 Q">
+  <title>CM∥AB，射线 AE 交 CM 于 D，PQ∥AB</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60.0 190.0 L240.0 190.0"/>
+    <path d="M240.0 190.0 L120.0 86.1"/>
+    <path d="M60.0 190.0 L120.0 86.1"/>
+    <path d="M120.0 86.1 L300 86.1"/>
+    <path d="M60.0 190.0 L179.9 86.1"/>
+    <path d="M89.9 138.2 L119.8 138.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="50" y="194" text-anchor="middle">A</text>
+    <text x="248" y="194" text-anchor="middle">B</text>
+    <text x="110" y="80.08" text-anchor="middle">C</text>
+    <text x="193.908" y="88.08" text-anchor="middle">D</text>
+    <text x="154" y="104" text-anchor="middle">E</text>
+    <text x="107.815" y="132.16" text-anchor="middle">P</text>
+    <text x="75.9307" y="148.16" text-anchor="middle">Q</text>
+    <text x="296" y="76.08" text-anchor="middle">M</text>
+  </g>
+</svg>

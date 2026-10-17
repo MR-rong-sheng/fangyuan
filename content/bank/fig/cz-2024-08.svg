@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img" aria-label="小华 5km 骑行配速散点图：纵轴配速 0 到 6（min/km），横轴为第 1 到第 5km；第 1km 配速最大，第 2、第 3km 相同，第 5km 最小">
+  <title>配速（min/km）与路程（每 1km）的散点图</title>
+  <!-- 纵轴 0~6，每 1 min/km 一格虚线（24px）；横轴五个位置对应第 1~第 5km。
+       各点高度按公开原图量测：4.6、3.0、3.0、3.7、2.3 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 210 H348"/>
+    <path d="M70 210 V40"/>
+    <path d="M342 205 L348 210 L342 215"/>
+    <path d="M65 46 L70 40 L75 46"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M70 186.0 H332"/>
+    <path d="M70 162.0 H332"/>
+    <path d="M70 138.0 H332"/>
+    <path d="M70 114.0 H332"/>
+    <path d="M70 90.0 H332"/>
+    <path d="M70 66.0 H332"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 205 V215"/>
+    <path d="M165 205 V215"/>
+    <path d="M220 205 V215"/>
+    <path d="M275 205 V215"/>
+    <path d="M330 205 V215"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <circle cx="110" cy="99.6" r="3.3"/>
+    <circle cx="165" cy="138.0" r="3.3"/>
+    <circle cx="220" cy="138.0" r="3.3"/>
+    <circle cx="275" cy="121.2" r="3.3"/>
+    <circle cx="330" cy="154.8" r="3.3"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="62" y="190.0" text-anchor="end">1</text>
+    <text x="62" y="166.0" text-anchor="end">2</text>
+    <text x="62" y="142.0" text-anchor="end">3</text>
+    <text x="62" y="118.0" text-anchor="end">4</text>
+    <text x="62" y="94.0" text-anchor="end">5</text>
+    <text x="62" y="70.0" text-anchor="end">6</text>
+    <text x="62" y="214" text-anchor="end">0</text>
+    <text x="110" y="232" text-anchor="middle">第1 km</text>
+    <text x="165" y="232" text-anchor="middle">第2 km</text>
+    <text x="220" y="232" text-anchor="middle">第3 km</text>
+    <text x="275" y="232" text-anchor="middle">第4 km</text>
+    <text x="330" y="232" text-anchor="middle">第5 km</text>
+    <text x="74" y="32" text-anchor="start">配速</text>
+    <text x="352" y="216" text-anchor="start">路程</text>
+  </g>
+</svg>

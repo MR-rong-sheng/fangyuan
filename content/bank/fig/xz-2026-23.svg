@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img" aria-label="△ABC 中 AD 是中线，E、F 在 AD 及其延长线上，BE∥CF，连接 CE、BF">
+  <title>△ABC：AD 为中线，E、F 在 AD 及其延长线，BE∥CF</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180 50 L80 150 L280 150 Z"/>
+    <path d="M180 50 L180 150"/>
+    <path d="M80 150 L180 90"/>
+    <path d="M280 150 L180 210"/>
+    <path d="M180 90 L280 150"/>
+    <path d="M180 210 L80 150"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="180" y="40" text-anchor="middle">A</text>
+    <text x="66" y="156" text-anchor="middle">B</text>
+    <text x="294" y="156" text-anchor="middle">C</text>
+    <text x="196" y="162" text-anchor="middle">D</text>
+    <text x="196" y="88" text-anchor="middle">E</text>
+    <text x="196" y="226" text-anchor="middle">F</text>
+    <circle cx="180" cy="150" r="2.2"/>
+  </g>
+</svg>

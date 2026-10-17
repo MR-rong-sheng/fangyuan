@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 280" role="img" aria-label="两条等宽矩形纸条叠放，交叠部分为四边形 ABCD">
+  <title>两条等宽矩形纸条叠放，交叠部分为四边形 ABCD</title>
+<polygon points="40,190 332.5,190 332.5,100 40,100" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="183.7,264.93 296.2,70.07 218.26,25.07 105.76,219.93" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="123.04,190 226.96,190 278.92,100 175,100" fill="none" stroke="currentColor" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="117.04" y="182" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">A</text>
+<text x="230.96" y="182" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="start">B</text>
+<text x="288.92" y="104" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="start">C</text>
+<text x="167" y="94" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">D</text>
+<line x1="37" y1="145" x2="43" y2="145" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="159.41" y1="121" x2="164.61" y2="124" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+</svg>

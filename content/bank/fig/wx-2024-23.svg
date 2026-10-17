@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 230" role="img" aria-label="麦穗长度频数分布直方图，4.7≤x＜5.4 一组待补充">
+  <title>麦穗长度频数分布直方图（4.7≤x＜5.4 一组待补全）</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36 200 H322"/>
+    <path d="M36 200 V56"/>
+    <rect x="48" y="188" width="44" height="12"/>
+    <path d="M100 200 V158" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <rect x="152" y="65" width="44" height="135"/>
+    <rect x="204" y="110" width="44" height="90"/>
+    <rect x="256" y="173" width="44" height="27"/>
+    <path d="M32 170 h4"/>
+    <path d="M32 140 h4"/>
+    <path d="M32 110 h4"/>
+    <path d="M32 80 h4"/>
+    <path d="M32 50 h4"/>
+    <path d="M36 200 v4"/>
+    <path d="M92 200 v4"/>
+    <path d="M148 200 v4"/>
+    <path d="M204 200 v4"/>
+    <path d="M260 200 v4"/>
+    <path d="M316 200 v4"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="28" y="69" text-anchor="end">45</text>
+    <text x="28" y="114" text-anchor="end">30</text>
+    <text x="28" y="174" text-anchor="end">10</text>
+    <text x="28" y="204" text-anchor="end">O</text>
+  </g>
+</svg>

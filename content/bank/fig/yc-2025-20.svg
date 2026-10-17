@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 250" role="img" aria-label="▱ABCD 中 E、F 在 AC 上，连 BE、ED、DF、FB">
+  <title>▱ABCD 的对角线 AC 上取点 E、F，连成四边形 BEDF</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 190 L260 190 L320 70 L120 70 L60 190"/>
+    <path d="M60 190 L320 70"/>
+    <path d="M260 190 L151 148 L120 70 L229 112 L260 190"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="151" cy="148" r="2.2"/>
+    <circle cx="229" cy="112" r="2.2"/>
+    <text x="48" y="196" text-anchor="end">A</text>
+    <text x="268" y="196" text-anchor="start">B</text>
+    <text x="328" y="74" text-anchor="start">C</text>
+    <text x="112" y="62" text-anchor="end">D</text>
+    <text x="140" y="140" text-anchor="end">E</text>
+    <text x="236" y="106" text-anchor="start">F</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 290" role="img" aria-label="△ABC 绕点 A 旋转得 △AB′C′，点 C′ 落在 AB 上">
+  <title>△ABC 绕点 A 旋转，C′ 落在 AB 上</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 150 L220 150 L203.5 243.5 Z"/>
+    <path d="M70 150 L192.9 64.0 L233.0 150.0 Z"/>
+    <path d="M231.4 172.7 A163.0 163.0 0 0 1 209.7 233.9" stroke-width="1.2" stroke-dasharray="4 3"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="62" y="154" text-anchor="middle">A</text>
+    <text x="226" y="144" text-anchor="middle">B</text>
+    <text x="213.515" y="249.489" text-anchor="middle">C</text>
+    <text x="186.873" y="55.9635" text-anchor="middle">B′</text>
+    <text x="244.992" y="144" text-anchor="middle">C′</text>
+  </g>
+</svg>

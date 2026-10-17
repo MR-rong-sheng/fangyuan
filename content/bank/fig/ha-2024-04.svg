@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 200" role="img" aria-label="AB∥CD，E 在 AB 上，F、G 在 CD 上，∠FEG=90°，∠EGF=28°">
+  <title>AB∥CD，∠FEG=90°，∠EGF=28°，求 ∠AEF</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 55.5 L312 55.5"/>
+    <path d="M25 155 L310 155"/>
+    <path d="M97.9 55.5 L45 155"/>
+    <path d="M97.9 55.5 L285 155"/>
+    <path d="M93.2 64.3 L102 69 L106.7 60.2" stroke-width="1.2"/>
+    <path d="M245 155 A40 40 0 0 1 249.7 136.2" stroke-width="1.2"/>
+    <path d="M67.9 55.5 A30 30 0 0 0 83.8 82" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="14" y="48" text-anchor="start">A</text>
+    <text x="306" y="48" text-anchor="end">B</text>
+    <text x="25" y="172" text-anchor="middle">C</text>
+    <text x="310" y="172" text-anchor="middle">D</text>
+    <text x="45" y="172" text-anchor="middle">F</text>
+    <text x="285" y="172" text-anchor="middle">G</text>
+    <text x="88" y="50" text-anchor="end">E</text>
+    <text x="258" y="124" text-anchor="middle" font-size="12">28°</text>
+  </g>
+</svg>

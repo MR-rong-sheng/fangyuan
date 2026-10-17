@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" role="img" aria-label="边长为 4 的等边三角形 ABC，AD 为中线，DA 绕 D 顺时针旋转 60° 得 DE">
+  <title>等边 △ABC 边长 4，AD 中线，DA 绕 D 顺时针旋转 60° 得 DE</title>
+  <!-- 复算：等边边长 4，D 为 BC 中点，AD=2√3；DA 绕 D 顺时针 60°⇒E 在 C 右侧
+       50px/单位：B(60,240) C(260,240) A(160,66.8) D(160,240) E(310,153.4) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 240 L260 240 L160 66.8 Z"/>
+    <path d="M160 66.8 L160 240"/>
+    <path d="M160 240 L310 153.4"/>
+    <path d="M60 240 L310 153.4"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110.0 235.0 L110.0 245.0" stroke-width="1.2"/>
+<path d="M210.0 235.0 L210.0 245.0" stroke-width="1.2"/>
+
+    <path d="M165.0 153.4 L155.0 153.4" stroke-width="1.2"/>
+<path d="M232.5 192.4 L237.5 201.0" stroke-width="1.2"/>
+
+    <path d="M160.0 228.0 L172.0 228.0 L172.0 240.0"/>
+
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="160" y="56" text-anchor="middle" font-size="13">A</text>
+    <text x="48" y="246" text-anchor="middle" font-size="13">B</text>
+    <text x="266" y="246" text-anchor="middle" font-size="13">C</text>
+    <text x="148" y="256" text-anchor="end" font-size="13">D</text>
+    <text x="318" y="150" text-anchor="start" font-size="13">E</text>
+  </g>
+</svg>

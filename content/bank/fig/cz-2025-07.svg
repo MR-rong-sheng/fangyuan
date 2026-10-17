@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" role="img" aria-label="两块相同的直角三角尺按图摆放：上面的三角尺长直角边（带刻度）是 AB，下面的长直角边是 CD，两块三角尺的斜边同在一条直线 AD 上，所以 ∠A=∠D，AB∥CD">
+  <title>两块相同的直角三角尺，斜边同在直线 AD 上</title>
+  <!-- 1 单位 = 130px：A(0,0)、B(√3,0)、V(√3,-1) 为第一块三角尺；
+       第二块 = 第一块绕 M(1.039,-0.6) 旋转 180°（A↔D、B↔C、V↔U），
+       两斜边 AV、UD 同落在直线 AD 上，AB=CD=√3，∠A=∠D=30° -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30.0 40.0 L255.2 40.0"/>
+    <path d="M255.2 40.0 L255.2 170.0"/>
+    <path d="M30.0 40.0 L300.2 196.0"/>
+    <path d="M75.0 66.0 L75.0 196.0"/>
+    <path d="M75.0 196.0 L300.2 196.0"/>
+    <path d="M134.6 66.0 L229.2 66.0 L229.2 120.6 L134.6 66.0"/>
+    <path d="M195.6 170.0 L101.0 115.4 L101.0 170.0 L195.6 170.0"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.1">
+    <path d="M45.0 40 V46"/>
+    <path d="M60.0 40 V46"/>
+    <path d="M75.0 40 V46"/>
+    <path d="M90.0 40 V46"/>
+    <path d="M105.0 40 V46"/>
+    <path d="M120.0 40 V46"/>
+    <path d="M135.0 40 V46"/>
+    <path d="M150.0 40 V46"/>
+    <path d="M165.0 40 V46"/>
+    <path d="M180.0 40 V46"/>
+    <path d="M195.0 40 V46"/>
+    <path d="M210.0 40 V46"/>
+    <path d="M225.0 40 V46"/>
+    <path d="M95.0 196 V190"/>
+    <path d="M110.0 196 V190"/>
+    <path d="M125.0 196 V190"/>
+    <path d="M140.0 196 V190"/>
+    <path d="M155.0 196 V190"/>
+    <path d="M170.0 196 V190"/>
+    <path d="M185.0 196 V190"/>
+    <path d="M200.0 196 V190"/>
+    <path d="M215.0 196 V190"/>
+    <path d="M230.0 196 V190"/>
+    <path d="M245.0 196 V190"/>
+    <path d="M260.0 196 V190"/>
+    <path d="M275.0 196 V190"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="26" y="32" text-anchor="end">A</text>
+    <text x="261" y="34" text-anchor="start">B</text>
+    <text x="69" y="212" text-anchor="end">C</text>
+    <text x="306" y="212" text-anchor="start">D</text>
+  </g>
+</svg>

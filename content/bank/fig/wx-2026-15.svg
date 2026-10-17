@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 240" role="img" aria-label="平面直角坐标系中以原点为圆心、1 为半径的圆，点 A 在圆上">
+  <title>与原点距离为 1 的点都在单位圆上</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 120 H222"/>
+    <path d="M120 34 V212"/>
+    <path d="M222 120 l-9 -5 v10 z" fill="currentColor" stroke="none"/>
+    <path d="M120 34 l-5 9 h10 z" fill="currentColor" stroke="none"/>
+    <circle cx="120" cy="120" r="80" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M120 120 L200 120"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="110" y="138" text-anchor="middle">O</text>
+    <text x="210" y="112" text-anchor="middle">A</text>
+    <text x="228" y="124" text-anchor="middle">x</text>
+    <text x="112" y="42" text-anchor="middle">y</text>
+    <circle cx="200" cy="120" r="2.2"/>
+  </g>
+</svg>

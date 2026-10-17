@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 290" role="img" aria-label="矩形 ABCD 沿 BE 折叠，点 C 落在 AD 上的 F，连 BF、EF">
+  <title>矩形 ABCD 沿 BE 折叠，使点 C 落在 AD 上的点 F</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 250 L188 250"/>
+    <path d="M80 250 L80 70"/>
+    <path d="M80 70 L128 70"/>
+    <path d="M188 250 L80 106"/>
+    <path d="M128 70 L80 106"/>
+    <path d="M188 250 L128 70"/>
+    <path d="M128 70 L188 70" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M188 70 L188 250" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M90 250 L90 240 L80 240" stroke-width="1.2"/>
+    <path d="M86 114 L94 108 L88 100" stroke-width="1.2"/>
+    <path d="M130 181 L138 175" stroke-width="1.2"/>
+    <path d="M183 160 L193 160" stroke-width="1.2"/>
+    <path d="M115 86 L109 78" stroke-width="1.2"/>
+    <path d="M99 98 L93 90" stroke-width="1.2"/>
+    <path d="M148 65 L148 75" stroke-width="1.2"/>
+    <path d="M168 65 L168 75" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="80" cy="106" r="2.2"/>
+    <circle cx="128" cy="70" r="2.2"/>
+    <text x="72" y="266" text-anchor="middle">A</text>
+    <text x="196" y="266" text-anchor="middle">B</text>
+    <text x="196" y="58" text-anchor="middle">C</text>
+    <text x="72" y="58" text-anchor="middle">D</text>
+    <text x="128" y="58" text-anchor="middle">E</text>
+    <text x="70" y="110" text-anchor="end">F</text>
+  </g>
+</svg>

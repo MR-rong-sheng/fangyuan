@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="△ABC 绕点 A 顺时针旋转得到 △AB′C′，∠BAC=30°、∠B′AC=110°">
+  <title>△ABC 绕点 A 顺时针旋转得 △AB′C′</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150.0 60.0 L227.9 105.0 L231.0 60.0 Z"/>
+    <path d="M150.0 60.0 L119.2 144.6 L164.1 139.8 Z"/>
+    <path d="M189.4 66.9 A40 40 0 0 0 163.7 97.6" stroke-width="1.2" stroke-dasharray="4 3"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="142" y="64" text-anchor="middle">A</text>
+    <text x="239.942" y="111" text-anchor="middle">B</text>
+    <text x="237" y="78" text-anchor="middle">C</text>
+    <text x="111.218" y="160.572" text-anchor="middle">B′</text>
+    <text x="158.066" y="155.769" text-anchor="middle">C′</text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-label="窗棂外框是正六边形，标出它的一条边延长线与其邻边所成的外角">
+  <title>正六边形外框（窗棂图案），标出外角</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M222.0 128.0 L176.0 207.7 L84.0 207.7 L38.0 128.0 L84.0 48.3 L176.0 48.3 Z"/>
+    <path d="M222.0 128.0 L245.0 88.2" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <path d="M207.0 102.0 A30 30 0 0 1 237.0 102.0" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+  <g fill="currentColor" stroke="none"></g>
+
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" role="img" aria-label="将 △ABC 折叠使点 A 落在 BC 上的 D 处，折痕为 CE">
+  <title>折叠 △ABC 使 A 落在 BC 上的 D，折痕 CE</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200.0 73.4 L70.0 170.0 L290.0 170.0 Z"/>
+    <path d="M290.0 170.0 L151.2 109.6"/>
+    <path d="M290.0 170.0 L158.0 170.0"/>
+    <path d="M290.0 170.0 L200.0 73.4"/>
+    <path d="M200.0 73.4 L158.0 170.0" stroke-dasharray="4 3" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="212" y="67.4" text-anchor="middle">A</text>
+    <text x="58" y="176" text-anchor="middle">B</text>
+    <text x="298" y="176" text-anchor="middle">C</text>
+    <text x="158" y="188" text-anchor="middle">D</text>
+    <text x="137.242" y="103.631" text-anchor="middle">E</text>
+  </g>
+</svg>

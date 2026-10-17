@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img" aria-label="双曲线y1=8/x与y2=-12/x，点A、B在y1上，直线AB交x轴于C、y轴于D、与y2交于E，连接OA、OB">
+  <title>双曲线 y1=8/x(x&gt;0) 与 y2=-12/x(x&lt;0)，直线交 x 轴于 C、y 轴于 D、交 y2 于 E</title>
+  <!-- 20px/单位，原点 O(100,200)：A(2,4)、B(8,1)、C(10,0)、D(0,5)、E(-2,6)
+       校核：S△AOC=20、AB=3BC、AD=DE、k2=xE·yE=-12（k1=8） -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 200 H330"/>
+    <path d="M324 195 L330 200 L324 205"/>
+    <path d="M100 200 V45"/>
+    <path d="M95 51 L100 45 L105 51"/>
+    <path d="M60 80 L300 200"/>
+    <path d="M100 200 L140 120"/>
+    <path d="M100 200 L260 180"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="124.0 66.67 131.92 99.76 139.85 119.69 147.77 133.01 155.69 142.54 163.62 149.7 171.54 155.27 179.46 159.73 187.38 163.38 195.31 166.42 203.23 169.0 211.15 171.21 219.08 173.13 227.0 174.8 234.92 176.28 242.85 177.6 250.77 178.78 258.69 179.84 266.62 180.79 274.54 181.67 282.46 182.46 290.38 183.19 298.31 183.86 306.23 184.48 314.15 185.06 322.08 185.59 330.0 186.09"/>
+    <polyline points="20.0 140.0 23.43 137.31 26.86 134.38 30.29 131.15 33.71 127.59 37.14 123.64 40.57 119.23 44.0 114.29 47.43 108.7 50.86 102.33 54.29 95.0 57.71 86.49 61.14 76.47 64.57 64.52 68.0 50.0"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="144" y="110" text-anchor="start">A</text>
+    <text x="268" y="174" text-anchor="start">B</text>
+    <text x="306" y="215" text-anchor="start">C</text>
+    <text x="92" y="96" text-anchor="end">D</text>
+    <text x="50" y="74" text-anchor="end">E</text>
+    <text x="88" y="216" text-anchor="end">O</text>
+    <text x="336" y="215" text-anchor="start">x</text>
+    <text x="106" y="40" text-anchor="start">y</text>
+    <text x="172" y="92" text-anchor="start" font-size="12">y₁</text>
+    <text x="40" y="62" text-anchor="end" font-size="12">y₂</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 210" role="img" aria-label="正方形 ABCD 中 E 在 BD 的延长线上，连接 EA、EC">
+  <title>正方形 ABCD：E 在 BD 延长线上，连 EA、EC</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 60 L190 60 L190 150 L100 150 Z"/>
+    <path d="M190 60 L100 150"/>
+    <path d="M159.1 84.9 L140.9 125.1"/>
+    <path d="M100 150 L78.8 171.2"/>
+    <path d="M78.8 171.2 L100 60"/>
+    <path d="M78.8 171.2 L190 150"/>
+    <path d="M100 70 h10 v-10"/>
+    <path d="M180 60 h10 v10"/>
+    <path d="M190 140 h-10 v10"/>
+    <path d="M110 150 h-10 v-10"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="90" y="52" text-anchor="middle">A</text>
+    <text x="190" y="52" text-anchor="middle">B</text>
+    <text x="204" y="156" text-anchor="middle">C</text>
+    <text x="88" y="156" text-anchor="middle">D</text>
+    <text x="62" y="186" text-anchor="middle">E</text>
+  </g>
+</svg>

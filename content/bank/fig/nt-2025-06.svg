@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 260" role="img" aria-label="圆锥的三视图，图中尺寸单位 cm，底面圆半径 3cm">
+  <title>圆锥三视图：底面圆半径 3cm</title>
+  <!-- 15px/单位：主视图底=6cm=90px，俯视图半径=3cm=45px -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M65 115 L155 115 L110 40 Z"/>
+    <path d="M205 115 L295 115 L250 40 Z"/>
+    <circle cx="110" cy="195" r="45"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 195 H155" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="110" cy="195" r="2"/>
+    <text x="110" y="132" text-anchor="middle" font-size="13">6</text>
+    <text x="110" y="150" text-anchor="middle" font-size="13">主视图</text>
+    <text x="250" y="150" text-anchor="middle" font-size="13">左视图</text>
+    <text x="138" y="192" text-anchor="start" font-size="13">3</text>
+    <text x="110" y="258" text-anchor="middle" font-size="13">俯视图</text>
+  </g>
+</svg>

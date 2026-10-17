@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 190" role="img" aria-label="矩形 ABCD 中 E、F 在 AD 上且 AE=DF，BE、CF 的延长线相交于点 G">
+  <title>矩形 ABCD：E、F 在 AD 上，AE=DF，BE 与 CF 延长交于 G</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="120" y="70" width="180" height="70"/>
+    <path d="M90 105 L300 70"/>
+    <path d="M90 105 L300 140"/>
+    <path d="M120 80 h10 v-10"/>
+    <path d="M290 70 h10 v10"/>
+    <path d="M300 130 h-10 v10"/>
+    <path d="M130 140 h-10 v-10"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="112" y="62" text-anchor="middle">A</text>
+    <text x="300" y="62" text-anchor="middle">B</text>
+    <text x="312" y="146" text-anchor="middle">C</text>
+    <text x="108" y="152" text-anchor="middle">D</text>
+    <text x="112" y="96" text-anchor="middle">E</text>
+    <text x="112" y="120" text-anchor="middle">F</text>
+    <text x="76" y="104" text-anchor="middle">G</text>
+  </g>
+</svg>

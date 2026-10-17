@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 220" role="img" aria-label="⊙O 中 AB 是直径，C、D 在圆上，连接 AD、BD、AC、BC，其中 ∠DCB=45°、AD=1">
+  <title>⊙O 的直径 AB，弦 CD，∠DCB=45°、AD=1</title>
+  <!-- 圆心 O(150,115)，半径 77.8px（√2/2 单位，1 单位=110px）；
+       A(72.2,115)、B(227.8,115)、D(150,37.2)（AD=1）、C 取圆上 240° 处 → ∠DCB=45° -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="150.0" cy="115.0" r="77.78"/>
+    <path d="M72.2 115.0 L227.8 115.0"/>
+    <path d="M72.2 115.0 L150.0 37.2"/>
+    <path d="M150.0 37.2 L227.8 115.0"/>
+    <path d="M72.2 115.0 L111.1 182.4"/>
+    <path d="M111.1 182.4 L227.8 115.0"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="150.0" cy="115.0" r="2.2"/>
+    <text x="64.2" y="120.0" text-anchor="end">A</text>
+    <text x="235.8" y="120.0" text-anchor="start">B</text>
+    <text x="150.0" y="28.2" text-anchor="middle">D</text>
+    <text x="105.1" y="198.4" text-anchor="end">C</text>
+    <text x="146.0" y="130.0" text-anchor="end">O</text>
+  </g>
+</svg>

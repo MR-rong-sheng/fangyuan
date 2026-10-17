@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="圆 O 中 AB 为直径，弦 CD，连接 AD、BC、BD">
+  <title>⊙O：AB 为直径，CD 为弦，连接 AD、BC、BD</title>
+  <!-- 圆与直径 AB（A(110,120) B(250,120)，O(180,120)，半径 70） -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="180" cy="120" r="70"/>
+    <path d="M110 120 H250"/>
+    <!-- 弦 CD：C 在右下（229.5,169.5），D 在左上（145,59.4） -->
+    <path d="M229.5 169.5 L145 59.4"/>
+    <!-- 连接 AD、BC、BD -->
+    <path d="M110 120 L145 59.4"/>
+    <path d="M250 120 L229.5 169.5"/>
+    <path d="M250 120 L145 59.4"/>
+  </g>
+  <!-- 圆心 O 与字母标注 -->
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="180" cy="120" r="2.2"/>
+    <text x="176" y="112" text-anchor="end">O</text>
+    <text x="98" y="124" text-anchor="middle">A</text>
+    <text x="258" y="124" text-anchor="middle">B</text>
+    <text x="238" y="184" text-anchor="middle">C</text>
+    <text x="139" y="50" text-anchor="middle">D</text>
+  </g>
+</svg>

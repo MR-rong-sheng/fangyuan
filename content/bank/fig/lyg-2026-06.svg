@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 230" role="img" aria-label="扇形 OAB 中 ∠AOB=60°，点 C 在弧 AB 上">
+  <title>扇形 OAB 中 ∠AOB=60°，C 在弧 AB 上</title>
+<g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M135.0 112.1 A90 90 0 0 1 225.0 112.1"/>
+<path d="M180.0 190.0 L135.0 112.1"/>
+<path d="M180.0 190.0 L225.0 112.1"/>
+<path d="M180.0 100.0 L135.0 112.1"/>
+<path d="M180.0 100.0 L225.0 112.1"/>
+<path d="M167.0 167.5 A26 26 0 0 1 193.0 167.5" stroke-width="1.2"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+<circle cx="180.0" cy="190.0" r="2.4"/>
+<text x="186.0" y="194.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">O</text>
+<text x="125.0" y="124.1" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">A</text>
+<text x="235.0" y="124.1" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">B</text>
+<text x="180.0" y="92.0" text-anchor="middle" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">C</text>
+<text x="174.0" y="158.0" text-anchor="end" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">60°</text>
+</g>
+</svg>

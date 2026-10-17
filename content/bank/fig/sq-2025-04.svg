@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 215" role="img" aria-label="几何体的三视图：主视图、左视图、俯视图都是长方形">
+  <title>三视图：主视图、左视图、俯视图都是长方形</title>
+  <!-- 长方体 长80、高50、宽40；三个视图都是矩形（长对正、高平齐、宽相等） -->
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round">
+    <path d="M140 40 H200"/>
+    <path d="M140 90 H200"/>
+    <path d="M60 90 V140"/>
+    <path d="M140 90 V140"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="60" y="40" width="80" height="50"/>
+    <rect x="200" y="40" width="40" height="50"/>
+    <rect x="60" y="140" width="80" height="40"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">
+    <text x="100" y="106">主视图</text>
+    <text x="220" y="106">左视图</text>
+    <text x="100" y="196">俯视图</text>
+  </g>
+</svg>

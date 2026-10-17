@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" role="img" aria-label="竹子原高 1 丈（10 尺），折断后顶端触到墙上距地面 9 尺的点，墙脚离竹根 3 尺">
+  <title>折竹：竹高 10 尺，折断后触墙 9 尺处，墙脚距竹根 3 尺</title>
+<g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M40 230.0 H210.0"/>
+<path d="M114.0 68.0 V230.0"/>
+<path d="M60.0 230.0 V140.0"/>
+<path d="M60.0 140.0 L114.0 68.0"/>
+<path d="M105.0 230.0 L105.0 221.0 L114.0 221.0"/>
+</g>
+<g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round">
+<path d="M60.0 230.0 V50.0"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+<circle cx="60.0" cy="140.0" r="2.2"/>
+<text x="54.0" y="144.0" text-anchor="end" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">折断处</text>
+<text x="66.0" y="248.0" text-anchor="start" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">竹根</text>
+<text x="120.0" y="72.0" text-anchor="start" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">9 尺</text>
+<text x="87.0" y="248.0" text-anchor="middle" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">3 尺</text>
+<text x="120.0" y="224.0" text-anchor="start" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">墙</text>
+<text x="54.0" y="54.0" text-anchor="end" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">原高 10 尺</text>
+</g>
+</svg>

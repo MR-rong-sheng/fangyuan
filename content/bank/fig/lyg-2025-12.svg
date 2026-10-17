@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="墙、地面与梯子构成直角三角形，梯长 3 m，底端离墙脚 1.8 m，顶端高 h">
+  <title>梯子靠在墙上，底端离墙脚 1.8 m，梯长 3 m，求顶端高 h</title>
+<g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M132.0 210.0 H310.0"/>
+<path d="M280.0 216.0 V58.0"/>
+<path d="M172.0 210.0 L280.0 66.0"/>
+<path d="M271.0 210.0 L271.0 201.0 L280.0 201.0"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+<text x="172.0" y="230.0" text-anchor="middle" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">1.8 m</text>
+<text x="288.0" y="138.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">h</text>
+<text x="212.0" y="130.0" text-anchor="end" fill="currentColor" font-size="12" font-family="ui-sans-serif, system-ui, sans-serif">3 m</text>
+</g>
+</svg>

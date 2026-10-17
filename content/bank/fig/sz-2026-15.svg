@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="抛物线 y=x²-2mx+m²+1 与直线 y=a 交于 A、B，过顶点作 x 轴的平行线 l，AM、BN⊥l">
+  <title>抛物线 y=x²-2mx+m²+1 与直线 y=a 交于 A、B，过顶点作 x 轴的平行线 l，AM、BN⊥l</title>
+<line x1="22" y1="270" x2="278" y2="270" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="150" y1="294" x2="150" y2="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<text x="286" y="282" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">x</text>
+<text x="138" y="10" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">y</text>
+<polyline points="60,27.5 62.57,38.91 65.14,49.98 67.71,60.73 70.29,71.14 72.86,81.22 75.43,90.98 78,100.4 80.57,109.49 83.14,118.25 85.71,126.68 88.29,134.78 90.86,142.55 93.43,149.99 96,157.1 98.57,163.88 101.14,170.32 103.71,176.44 106.29,182.23 108.86,187.68 111.43,192.81 114,197.6 116.57,202.06 119.14,206.2 121.71,210 124.29,213.47 126.86,216.61 129.43,219.42 132,221.9 134.57,224.05 137.14,225.87 139.71,227.36 142.29,228.51 144.86,229.34 147.43,229.83 150,230 152.57,229.83 155.14,229.34 157.71,228.51 160.29,227.36 162.86,225.87 165.43,224.05 168,221.9 170.57,219.42 173.14,216.61 175.71,213.47 178.29,210 180.86,206.2 183.43,202.06 186,197.6 188.57,192.81 191.14,187.68 193.71,182.23 196.29,176.44 198.86,170.32 201.43,163.88 204,157.1 206.57,149.99 209.14,142.55 211.71,134.78 214.29,126.68 216.86,118.25 219.43,109.49 222,100.4 224.57,90.98 227.14,81.22 229.71,71.14 232.29,60.73 234.86,49.98 237.43,38.91 240,27.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="38" y1="230" x2="262" y2="230" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round"/>
+<line x1="42" y1="70" x2="258" y2="70" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round"/>
+<polygon points="70,70 230,70 230,230 70,230" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="79,230 79,239 70,239" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="221,230 221,239 230,239" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="150" cy="230" r="2.2" fill="currentColor"/>
+<text x="60" y="74" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">A</text>
+<text x="240" y="74" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">B</text>
+<text x="60" y="234" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">M</text>
+<text x="240" y="234" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">N</text>
+<text x="160" y="234" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="start">顶点</text>
+<text x="50" y="224" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">l</text>
+</svg>

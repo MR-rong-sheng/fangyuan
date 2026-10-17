@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" role="img" aria-label="转盘被分成 5 个面积相等的扇形，其中 3 个涂红色、2 个涂黄色">
+  <title>转盘 5 个等面积扇形，3 红 2 黄</title>
+<path d="M150.0 125.0 L150.0 33.0 A92 92 0 0 1 237.5 96.6 Z" fill="currentColor" fill-opacity="0.32" stroke="currentColor" stroke-width="1.4"/>
+<text x="183.5" y="78.9" text-anchor="middle" fill="currentColor" font-size="14" font-family="ui-sans-serif, system-ui, sans-serif">红</text>
+<path d="M150.0 125.0 L237.5 96.6 A92 92 0 0 1 204.1 199.4 Z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="204.2" y="142.6" text-anchor="middle" fill="currentColor" font-size="14" font-family="ui-sans-serif, system-ui, sans-serif">黄</text>
+<path d="M150.0 125.0 L204.1 199.4 A92 92 0 0 1 95.9 199.4 Z" fill="currentColor" fill-opacity="0.32" stroke="currentColor" stroke-width="1.4"/>
+<text x="150.0" y="182.0" text-anchor="middle" fill="currentColor" font-size="14" font-family="ui-sans-serif, system-ui, sans-serif">红</text>
+<path d="M150.0 125.0 L95.9 199.4 A92 92 0 0 1 62.5 96.6 Z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="95.8" y="142.6" text-anchor="middle" fill="currentColor" font-size="14" font-family="ui-sans-serif, system-ui, sans-serif">黄</text>
+<path d="M150.0 125.0 L62.5 96.6 A92 92 0 0 1 150.0 33.0 Z" fill="currentColor" fill-opacity="0.32" stroke="currentColor" stroke-width="1.4"/>
+<text x="116.5" y="78.9" text-anchor="middle" fill="currentColor" font-size="14" font-family="ui-sans-serif, system-ui, sans-serif">红</text>
+<circle cx="150.0" cy="125.0" r="3" fill="currentColor" stroke="none"/>
+<g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M143.0 17.0 L157.0 17.0 L150.0 37.0 Z"/>
+<path d="M150.0 17.0 V7.0"/>
+</g>
+</svg>

@@ -1,0 +1,146 @@
+/* ==========================================================================
+   方圆 · papers.css —— 组卷 + 错题一页纸 的样式
+   类名一律 .papers- 前缀；取值全部走 glass.css 的设计令牌（--ink/--accent/…），
+   不写死浅色。打印与「白纸预览」在 print.css 里，那里才显式转为黑白。
+   通用基元（.card/.btn/.field/.seg/.chips/.metric/.empty/.view-head…）由 app.css 提供；
+   这里对它们只做 :where() 零特异性兜底，app.css 在场时自动让位。
+   ========================================================================== */
+
+.papers { display: flex; flex-direction: column; gap: 16px; }
+/* app.css 的 .card + .card 也留了 16px，和上面的 gap 叠加成 32px —— 收掉 */
+.papers > .card + .card { margin-top: 0; }
+
+/* ---- 通用基元的零特异性兜底 ---- */
+:where(.papers .view-head) { margin-bottom: 4px; }
+:where(.papers .view-head .kicker) { font-size: 12px; letter-spacing: .16em; color: var(--accent); }
+:where(.papers .view-head h2) { font-family: var(--font-serif); font-size: 24px; line-height: 1.4; color: var(--ink); margin: 4px 0 6px; }
+:where(.papers .view-head p) { font-size: 13.5px; color: var(--ink-3); line-height: 1.85; max-width: 56ch; }
+:where(.papers .card__label) { font-size: 12px; letter-spacing: .14em; color: var(--ink-3); }
+:where(.papers .papers-card) { padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+
+/* ---- 模式切换 ---- */
+.papers-modeseg { align-self: flex-start; }
+.papers-modeseg button { font-family: inherit; }
+
+/* ---- 出卷范围 ---- */
+.papers-filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.papers-f { margin: 0; min-width: 0; }
+.papers-f__k { flex: 0 0 auto; font-size: 12px; color: var(--ink-3); white-space: nowrap; }
+.papers-f select,
+.papers-f input { font: inherit; font-size: 13.5px; color: var(--ink); background: transparent; border: 0; outline: 0; min-width: 0; width: 100%; }
+.papers-f select { cursor: pointer; }
+.papers-f select option { color: #1c2026; background: #fff; }   /* 原生下拉在深色下也要能读 */
+.papers-f--q { grid-column: 1 / -1; }
+@media (max-width: 560px) { .papers-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ---- 操作条 ---- */
+.papers-bar { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.papers-count { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; margin-right: auto; }
+.papers-num { width: auto; flex: 0 0 auto; }
+.papers-num input { width: 3.4em; text-align: center; }
+
+/* ---- 已选胶囊 ---- */
+.papers-selchips { gap: 7px; }
+.papers-selchips:empty { display: none; }
+.papers-chip { font-size: 12px; padding-right: 4px; gap: 4px; max-width: 100%; }
+.papers-chip__x {
+  display: inline-grid; place-items: center; width: 18px; height: 18px; padding: 0;
+  border: 0; border-radius: 50%; cursor: pointer; color: inherit;
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+}
+.papers-chip__x:hover { background: color-mix(in srgb, var(--ink) 22%, transparent); }
+.papers-chip__x .ic { width: 11px; height: 11px; stroke-width: 2; }
+.papers-hint { font-size: 12.5px; color: var(--ink-3); line-height: 1.8; margin: 0; }
+.papers-hint--work { padding: 6px 0; }
+
+/* ---- 候选题列表 ---- */
+.papers-list { display: flex; flex-direction: column; max-height: 46vh; overflow-y: auto; }
+@media (max-width: 560px) { .papers-list { max-height: 52vh; } }
+.papers-item {
+  display: flex; align-items: flex-start; gap: 10px; padding: 10px 8px; cursor: pointer;
+  border-bottom: 1px dashed color-mix(in srgb, var(--ink) 10%, transparent);
+  transition: background .2s var(--ease);
+}
+.papers-item:last-child { border-bottom: 0; }
+.papers-item:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+.papers-item.is-on { background: var(--accent-soft); }
+.papers-item__ck { flex: 0 0 auto; margin-top: 4px; width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; }
+.papers-item__stem { flex: 1 1 auto; min-width: 0; font-size: 13.5px; color: var(--ink); line-height: 1.7; word-break: break-word; }
+.papers-item__meta { flex: 0 0 auto; font-size: 11.5px; color: var(--ink-3); white-space: nowrap; padding-top: 2px; }
+@media (max-width: 560px) {
+  .papers-item { flex-wrap: wrap; }
+  .papers-item__meta { flex-basis: 100%; padding-left: 26px; padding-top: 0; white-space: normal; }
+}
+.papers-more { font-size: 12px; color: var(--ink-3); padding: 10px 4px; }
+
+/* ======================================================================
+   做卷
+   ====================================================================== */
+.papers-work { display: flex; flex-direction: column; gap: 12px; }
+.papers-work__top { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.papers-chip2 {
+  font-size: 12.5px; color: var(--ink-2); padding: 3px 10px; border-radius: 999px;
+  background: var(--accent-soft); border: 1px solid var(--accent-line);
+}
+.papers-chip2--dim { color: var(--ink-3); background: color-mix(in srgb, var(--ink) 5%, transparent); border-color: color-mix(in srgb, var(--ink) 12%, transparent); }
+.papers-timer { margin-left: auto; font-size: 15px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: .04em; }
+
+.papers-progressbar { height: 6px; border-radius: 999px; overflow: hidden; background: color-mix(in srgb, var(--ink) 9%, transparent); }
+.papers-progressbar > i { display: block; height: 100%; width: 0; border-radius: 999px; background: var(--accent); transition: width .3s var(--ease); }
+
+.papers-stem { font-family: var(--font-serif); font-size: 20px; line-height: 1.55; color: var(--ink); word-break: break-word; }
+@media (min-width: 560px) { .papers-stem { font-size: 23px; } }
+
+.papers-choices { display: grid; grid-template-columns: 1fr; gap: 8px; }
+@media (min-width: 560px) { .papers-choices { grid-template-columns: 1fr 1fr; } }
+.papers-choice {
+  display: flex; align-items: center; gap: 10px; text-align: left; font: inherit; font-size: 14.5px;
+  color: var(--ink); cursor: pointer; padding: 11px 13px; border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  transition: background .2s var(--ease), border-color .2s var(--ease);
+}
+.papers-choice:hover { border-color: var(--accent-line); }
+.papers-choice b { color: var(--accent); font-weight: 600; }
+
+.papers-answer { display: flex; gap: 10px; align-items: stretch; }
+.papers-input {
+  flex: 1 1 auto; min-width: 0; font: inherit; font-size: 16px; color: var(--ink);
+  padding: 11px 14px; border-radius: var(--r-sm); outline: none;
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+  transition: border-color .2s var(--ease), box-shadow .2s var(--ease);
+}
+.papers-input::placeholder { color: var(--ink-4); }
+.papers-input:focus { border-color: var(--accent-line); box-shadow: 0 0 0 3px var(--accent-soft); }
+.papers-input:disabled { opacity: .55; }
+
+.papers-judge { margin: 0; min-height: 1.4em; font-size: 14px; line-height: 1.8; color: var(--ink-2); }
+.papers-judge.is-ok { color: var(--accent); }
+.papers-judge.is-no { color: var(--ink); }
+
+/* ======================================================================
+   成绩 / 错题回顾
+   ====================================================================== */
+.papers-result:empty { display: none; }
+.papers-score { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
+@media (max-width: 560px) { .papers-score { grid-template-columns: repeat(2, 1fr); } }
+.papers-score .metric { text-align: center; padding: 10px 4px; border-radius: var(--r-sm); background: color-mix(in srgb, var(--ink) 4%, transparent); }
+.papers-score .metric .n span { font-size: 13px; color: var(--ink-3); }
+
+.papers-wronglist { display: flex; flex-direction: column; }
+.papers-wrongitem { padding: 10px 0; border-top: 1px dashed color-mix(in srgb, var(--ink) 10%, transparent); }
+.papers-wrongitem:first-child { border-top: 0; }
+.papers-wrongitem__stem { font-size: 14px; color: var(--ink); line-height: 1.7; }
+.papers-wrongitem__meta { font-size: 12.5px; color: var(--ink-3); margin-top: 4px; }
+.papers-wrongitem__why { font-size: 12.5px; color: var(--ink-3); margin-top: 4px; line-height: 1.75; }
+
+/* ======================================================================
+   窄屏：留白与触区
+   ====================================================================== */
+@media (max-width: 560px) {
+  :where(.papers .papers-card) { padding: 15px; }
+  .papers-stem { font-size: 19px; }
+  .papers-answer { flex-wrap: wrap; }
+  .papers-answer .btn { flex: 1 1 100%; }
+}

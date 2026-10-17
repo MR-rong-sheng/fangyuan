@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img" aria-label="行车速度 v 与视野角度 f 的散点图及近似反比例曲线">
+  <title>行车速度 v 与视野角度 f 的散点图及近似反比例曲线</title>
+<line x1="41.2" y1="270" x2="296.4" y2="270" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="50" y1="278.8" x2="50" y2="23.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<text x="304.4" y="282" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">v</text>
+<text x="40" y="35.6" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">f</text>
+<line x1="94" y1="275.5" x2="94" y2="264.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="94" y="286" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">20</text>
+<line x1="44.5" y1="226" x2="55.5" y2="226" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="42" y="231" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">20</text>
+<line x1="138" y1="275.5" x2="138" y2="264.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="138" y="286" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">40</text>
+<line x1="44.5" y1="182" x2="55.5" y2="182" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="42" y="187" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">40</text>
+<line x1="182" y1="275.5" x2="182" y2="264.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="182" y="286" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">60</text>
+<line x1="44.5" y1="138" x2="55.5" y2="138" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="42" y="143" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">60</text>
+<line x1="226" y1="275.5" x2="226" y2="264.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="226" y="286" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">80</text>
+<line x1="44.5" y1="94" x2="55.5" y2="94" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="42" y="99" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">80</text>
+<line x1="270" y1="275.5" x2="270" y2="264.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="270" y="286" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">100</text>
+<line x1="44.5" y1="50" x2="55.5" y2="50" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+<text x="42" y="55" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="end">100</text>
+<polyline points="130.08,28.24 131.88,33.55 133.68,38.64 135.48,43.51 137.28,48.18 139.08,52.66 140.87,56.96 142.67,61.1 144.47,65.07 146.27,68.9 148.07,72.59 149.87,76.15 151.67,79.58 153.47,82.89 155.27,86.09 157.07,89.18 158.87,92.17 160.66,95.06 162.46,97.86 164.26,100.57 166.06,103.19 167.86,105.74 169.66,108.21 171.46,110.61 173.26,112.93 175.06,115.19 176.86,117.39 178.66,119.52 180.46,121.6 182.25,123.62 184.05,125.58 185.85,127.49 187.65,129.36 189.45,131.17 191.25,132.94 193.05,134.66 194.85,136.34 196.65,137.98 198.45,139.58 200.25,141.14 202.04,142.67 203.84,144.16 205.64,145.61 207.44,147.03 209.24,148.42 211.04,149.78 212.84,151.11 214.64,152.41 216.44,153.68 218.24,154.92 220.04,156.14 221.83,157.33 223.63,158.5 225.43,159.64 227.23,160.76 229.03,161.86 230.83,162.94 232.63,163.99 234.43,165.03 236.23,166.04 238.03,167.04 239.83,168.01 241.62,168.97 243.42,169.91 245.22,170.83 247.02,171.74 248.82,172.63 250.62,173.5 252.42,174.36 254.22,175.2 256.02,176.03 257.82,176.84 259.62,177.64 261.42,178.43 263.21,179.2 265.01,179.96 266.81,180.71 268.61,181.44 270.41,182.16 272.21,182.88 274.01,183.57 275.81,184.26 277.61,184.94 279.41,185.61 281.21,186.26 283,186.91 284.8,187.55 286.6,188.18 288.4,188.79 290.2,189.4 292,190" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="138" cy="50" r="3" fill="currentColor"/>
+<circle cx="149" cy="74.2" r="3" fill="currentColor"/>
+<circle cx="171" cy="109.4" r="3" fill="currentColor"/>
+<circle cx="204" cy="144.6" r="3" fill="currentColor"/>
+<circle cx="226" cy="160" r="3" fill="currentColor"/>
+<circle cx="270" cy="182" r="3" fill="currentColor"/>
+<text x="204" y="182" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="start">f≈4000/v</text>
+</svg>

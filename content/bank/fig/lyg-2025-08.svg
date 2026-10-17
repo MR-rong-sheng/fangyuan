@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 250" role="img" aria-label="△ABC 中 ∠ACB=90°、∠CAB=30°，AD 平分 ∠CAB，BE⊥AD 于 E">
+  <title>Rt△ABC 中 ∠ACB=90°、∠CAB=30°，AD 平分 ∠CAB，BE⊥AD</title>
+<g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70.0 32.0 L167.0 200.0 L70.0 200.0 Z"/>
+<path d="M70.0 32.0 L115.0 200.0"/>
+<path d="M167.0 200.0 L118.5 213.0"/>
+<path d="M70.0 191.0 L79.0 191.0 L79.0 200.0"/>
+<path d="M116.4 205.3 L124.2 203.2 L126.2 210.9"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+<text x="70.0" y="24.0" text-anchor="middle" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">A</text>
+<text x="175.0" y="214.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">B</text>
+<text x="62.0" y="216.0" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">C</text>
+<text x="115.0" y="218.0" text-anchor="middle" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">D</text>
+<text x="124.5" y="229.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">E</text>
+</g>
+</svg>

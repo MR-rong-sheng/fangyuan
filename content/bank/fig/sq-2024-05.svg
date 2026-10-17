@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="正方体表面展开图：上格“自”，中间一行“科、技、强、立”，下格“自”">
+  <title>正方体表面展开图：自／科技强立／自</title>
+  <!-- 1-4-1 十字形展开图，方格边长 48：中间一行四格折成侧面，
+       “科”(左)与“强”(右)相对，“技”(前)与“立”(后)相对，两处“自”相对 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="108" y="50" width="48" height="48"/>
+    <rect x="60" y="98" width="48" height="48"/>
+    <rect x="108" y="98" width="48" height="48"/>
+    <rect x="156" y="98" width="48" height="48"/>
+    <rect x="204" y="98" width="48" height="48"/>
+    <rect x="156" y="146" width="48" height="48"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" text-anchor="middle">
+    <text x="132" y="81">自</text>
+    <text x="84" y="129">科</text>
+    <text x="132" y="129">技</text>
+    <text x="180" y="129">强</text>
+    <text x="228" y="129">立</text>
+    <text x="180" y="177">自</text>
+  </g>
+</svg>

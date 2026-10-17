@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 250" role="img" aria-label="旗杆测量：Rt△ABC 中 ∠C=90°，∠B=60°，BC=6m">
+  <title>旗杆高度：Rt△ABC，∠C=90°，∠B=60°，BC=6m</title>
+  <!-- 18px/m：C(180,220) B(72,220) A(180,220-6√3*18=32.9) -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M72 220 L180 220 L180 33 Z"/>
+    <path d="M40 220 H250" stroke-width="1.2"/>
+    <path d="M168.0 220.0 L168.0 208.0 L180.0 208.0"/>
+
+    <path d="M132.0 220.0 A60 60 0 0 0 102.0 168.0" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="180" y="26" text-anchor="middle" font-size="13">A</text>
+    <text x="58" y="226" text-anchor="middle" font-size="13">B</text>
+    <text x="180" y="240" text-anchor="middle" font-size="13">C</text>
+    <text x="108" y="208" text-anchor="middle" font-size="13">60°</text>
+    <text x="180" y="130" text-anchor="start" font-size="13">6√(3)</text>
+    <text x="126" y="236" text-anchor="middle" font-size="13">6m</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 265 220" role="img" aria-label="四边形 ABCD 中，对角线 AC、BD 相交于点 O，AB=2、AD=1，OB=OD、AC=BD，且在 △ACD 中 CD²=AD²+AC²（即 ∠DAC=90°）">
+  <title>四边形 ABCD，对角线 AC、BD 交于 O，AB=2、AD=1，OB=OD、AC=BD</title>
+  <!-- 1 单位 = 55px：A(0,0)、D(0,1)、B(√3,-1)、C(√7,0)、O(√3/2,0)；
+       满足 AB=2、AD=1、OB=OD、AC=BD=√7、∠DAC=90° -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90.0 130.0 L185.3 185.0"/>
+    <path d="M185.3 185.0 L235.5 130.0"/>
+    <path d="M235.5 130.0 L90.0 75.0"/>
+    <path d="M90.0 75.0 L90.0 130.0"/>
+    <path d="M90.0 130.0 L235.5 130.0"/>
+    <path d="M185.3 185.0 L90.0 75.0"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M90.0 119.0 L101.0 119.0 L101.0 130.0"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <circle cx="137.6" cy="130.0" r="2.4"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="81.0" y="146.0" text-anchor="end">A</text>
+    <text x="179.3" y="202.0" text-anchor="end">B</text>
+    <text x="243.5" y="146.0" text-anchor="start">C</text>
+    <text x="88.0" y="67.0" text-anchor="end">D</text>
+    <text x="131.6" y="148.0" text-anchor="end">O</text>
+  </g>
+</svg>

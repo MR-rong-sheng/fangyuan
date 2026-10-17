@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 250" role="img" aria-label="把一块直角三角板摆放在直尺上：三角板的直角顶点落在直尺下边，两条直角边分别与直尺的上边、下边相交，∠1 是右边与上边的夹角，∠2 是左边与下边的夹角">
+  <title>直角三角板放在直尺上，∠1=55°，求 ∠2</title>
+  <!-- 按题干重画：直尺 = 矩形 (55,150)-(440,205)，上边缘画刻度线。
+       三角板：直角顶点 P(300,205) 在直尺下边上；右直角边与水平成 55°（∠1 就在它与直尺上边的交点处，
+       度数 55°）；左直角边与水平成 35°（∠2 在 P 处、左直角边与下边之间）。
+       复算：两直角边夹角 90°；∠2 = 180°−90°−55° = 35°，与答案 B 一致。 -->
+  <rect x="55" y="150" width="385" height="55" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+    <path d="M87 150 V156 M102 150 V156 M117 150 V156 M132 150 V156 M162 150 V156 M177 150 V156 M192 150 V156 M207 150 V156 M237 150 V156 M252 150 V156 M267 150 V156 M282 150 V156 M312 150 V156 M327 150 V156 M342 150 V156 M357 150 V156 M387 150 V156 M402 150 V156 M417 150 V156 M432 150 V156"/>
+    <path d="M72 150 V161 M147 150 V161 M222 150 V161 M297 150 V161 M372 150 V161"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 205 L386 82.1 L54.3 32.9 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+    <path d="M360.5 150 A22 22 0 0 0 351.1 132"/>
+    <path d="M274.0 205 A26 26 0 0 1 278.7 190.1"/>
+  </g>
+  <path d="M290.2 198.1 L297.1 188.3 L306.9 195.2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="369" y="138" text-anchor="middle">1</text>
+    <text x="262" y="197" text-anchor="middle">2</text>
+  </g>
+</svg>

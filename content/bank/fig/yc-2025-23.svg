@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 250" role="img" aria-label="图1 2024年中学生近视率折线统计图：七 60%、八 70%、九 70%、高一 82%、高二 88%、高三 86%；图2 影响视力的主要因素条形统计图：A 395 人、B 887 人、C 656 人、D 198 人、E 296 人">
+  <title>图1 近视率折线统计图（七~高三：60%、70%、70%、82%、88%、86%）；图2 影响视力主要因素条形统计图（A395 B887 C656 D198 E296）</title>
+  <!-- 数据全部照原卷统计图读出（不编造）：
+       图1 纵轴 0~100%（每 10% 一格虚线、每 20% 标数字），1.45px/% ，基线 y=190；
+            六个数据点 60,70,70,82,88,86 —— 整体上升、高二到高三略降。
+       图2 纵轴人数（原图只给每根柱顶标注的人数）：A395 B887 C656 D198 E296，最多为 B（0.16px/人）。 -->
+  <!-- 图1 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-dasharray="4 3">
+    <path d="M60 45 H250 M60 59.5 H250 M60 74 H250 M60 88.5 H250 M60 103 H250 M60 117.5 H250 M60 132 H250 M60 146.5 H250 M60 161 H250 M60 175.5 H250"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 190 V40 M60 190 H256"/>
+    <path d="M55 46 L60 38 L65 46"/>
+    <path d="M250 185 L258 190 L250 195"/>
+    <path d="M75 103 L105 88.5 L135 88.5 L165 71.1 L195 62.4 L225 65.3"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <circle cx="75" cy="103" r="2.4"/><circle cx="105" cy="88.5" r="2.4"/><circle cx="135" cy="88.5" r="2.4"/>
+    <circle cx="165" cy="71.1" r="2.4"/><circle cx="195" cy="62.4" r="2.4"/><circle cx="225" cy="65.3" r="2.4"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10">
+    <text x="150" y="26" text-anchor="middle" font-size="11">图 1  2024 年中学生近视率折线统计图</text>
+    <text x="56" y="196" text-anchor="end">0</text>
+    <text x="56" y="165" text-anchor="end">20%</text>
+    <text x="56" y="136" text-anchor="end">40%</text>
+    <text x="56" y="107" text-anchor="end">60%</text>
+    <text x="56" y="78" text-anchor="end">80%</text>
+    <text x="56" y="49" text-anchor="end">100%</text>
+    <text x="75" y="204" text-anchor="middle">七</text>
+    <text x="105" y="204" text-anchor="middle">八</text>
+    <text x="135" y="204" text-anchor="middle">九</text>
+    <text x="165" y="204" text-anchor="middle">高一</text>
+    <text x="195" y="204" text-anchor="middle">高二</text>
+    <text x="225" y="204" text-anchor="middle">高三</text>
+    <text x="264" y="204" text-anchor="start">年级</text>
+  </g>
+  <!-- 图2 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M330 190 V40 M330 190 H542"/>
+    <path d="M325 46 L330 38 L335 46"/>
+    <path d="M536 185 L544 190 L536 195"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="345" y="126.8" width="26" height="63.2"/>
+    <rect x="381" y="48.1" width="26" height="141.9"/>
+    <rect x="417" y="85" width="26" height="105"/>
+    <rect x="453" y="158.3" width="26" height="31.7"/>
+    <rect x="489" y="142.6" width="26" height="47.4"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10">
+    <text x="430" y="26" text-anchor="middle" font-size="11">图 2  影响视力的主要因素条形统计图</text>
+    <text x="336" y="52" text-anchor="middle" font-size="11">人数</text>
+    <text x="358" y="121" text-anchor="middle">395</text>
+    <text x="394" y="42.5" text-anchor="middle">887</text>
+    <text x="430" y="79.5" text-anchor="middle">656</text>
+    <text x="466" y="152.8" text-anchor="middle">198</text>
+    <text x="502" y="137" text-anchor="middle">296</text>
+    <text x="358" y="204" text-anchor="middle">A</text>
+    <text x="394" y="204" text-anchor="middle">B</text>
+    <text x="430" y="204" text-anchor="middle">C</text>
+    <text x="466" y="204" text-anchor="middle">D</text>
+    <text x="502" y="204" text-anchor="middle">E</text>
+    <text x="550" y="204" text-anchor="start">选项</text>
+    <text x="285" y="230" text-anchor="middle" font-size="9">（A 不认真做眼保健操　B 长时间连续用眼　C 课间只在教室休息　D 饮食不均衡　E 睡眠时间不足）</text>
+  </g>
+</svg>

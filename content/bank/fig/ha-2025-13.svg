@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 230" role="img" aria-label="▱ABCD 的对角线 AC、BD 交于 O，AC⊥AB，E、F 是 BC、CD 的中点，连 AE、OF">
+  <title>▱ABCD 中 AC⊥AB，E、F 为中点，连 AE、OF</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 185 L288 185 L160 89 L32 89 L160 185"/>
+    <path d="M160 185 L160 89"/>
+    <path d="M288 185 L32 89"/>
+    <path d="M160 185 L224 137"/>
+    <path d="M160 137 L96 89"/>
+    <path d="M170 185 L170 175 L160 175" stroke-width="1.2"/>
+    <path d="M253 165 L259 157" stroke-width="1.2"/>
+    <path d="M189 117 L195 109" stroke-width="1.2"/>
+    <path d="M128 94 L128 84" stroke-width="1.2"/>
+    <path d="M64 94 L64 84" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="160" cy="137" r="2.2"/>
+    <circle cx="224" cy="137" r="2.2"/>
+    <circle cx="96" cy="89" r="2.2"/>
+    <text x="150" y="205" text-anchor="middle">A</text>
+    <text x="296" y="205" text-anchor="middle">B</text>
+    <text x="170" y="80" text-anchor="start">C</text>
+    <text x="20" y="80" text-anchor="end">D</text>
+    <text x="232" y="150" text-anchor="start">E</text>
+    <text x="88" y="80" text-anchor="end">F</text>
+    <text x="150" y="128" text-anchor="end">O</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 270" role="img" aria-label="Rt△ABC 中 ∠ACB=90°、BC=6，以 A、B 为圆心画弧交于 D、E，直线 DE 交 AB 于 F、AC 于 G，连 CF">
+  <title>Rt△ABC 中 ∠ACB=90°、BC=6，以 A、B 为圆心画弧交于 D、E，直线 DE 交 AB 于 F、AC 于 G，连 CF</title>
+<polygon points="50,240 338,240 50,24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="265.64,36.48 113,240" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="201.2,137.4 206.6,130.2 199.4,124.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="294.67,28.39 289.76,29.46 284.87,30.64 280.01,31.93 275.19,33.33 270.39,34.85 265.64,36.48 260.92,38.22 256.25,40.07 251.62,42.02 247.04,44.09 242.5,46.26 238.02,48.53" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="261.8,66.37 262.73,61.43 263.55,56.47 264.24,51.49 264.82,46.5 265.29,41.5 265.64,36.48 265.87,31.46 265.99,26.44 265.98,21.41 265.87,16.38 265.63,11.36 265.28,6.35" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="126.2,197.63 125.27,202.57 124.45,207.53 123.76,212.51 123.18,217.5 122.71,222.5 122.36,227.52 122.13,232.54 122.01,237.56 122.02,242.59 122.13,247.62 122.37,252.64 122.72,257.65" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="93.33,235.61 98.24,234.54 103.13,233.36 107.99,232.07 112.81,230.67 117.61,229.15 122.36,227.52 127.08,225.78 131.75,223.93 136.38,221.98 140.96,219.91 145.5,217.74 149.98,215.47" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="38" y="258" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">C</text>
+<text x="346" y="258" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">A</text>
+<text x="38" y="22" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">B</text>
+<text x="192" y="122" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">F</text>
+<text x="115" y="258" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">G</text>
+<text x="275.64" y="34.48" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">D</text>
+<text x="120.36" y="243.52" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">E</text>
+</svg>

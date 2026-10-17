@@ -1,0 +1,198 @@
+/* ==========================================================================
+   方圆 · formulas.css —— 公式速查（views/formulas.js 专用）
+   类名一律 .fx- 前缀。复用 glass.css 的设计令牌（--ink / --accent / --r …）。
+   注：站点基元 app.css 当前缺失（HTTP 404），所以这一页自带版式，不依赖它。
+   移动优先：先排窄屏，再往上加宽。
+   ========================================================================== */
+
+.fx{
+  max-width:720px;
+  margin:0 auto;
+  padding:22px 16px 40px;
+}
+
+/* ---------- 页头 ---------- */
+.fx-kicker{
+  font-size:11.5px; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--accent); margin-bottom:6px;
+}
+.fx-head h2{
+  font-family:var(--font-serif); font-weight:600;
+  font-size:26px; line-height:1.25; letter-spacing:.01em; color:var(--ink);
+}
+.fx-head p{
+  margin-top:8px; font-size:13.5px; line-height:1.8; color:var(--ink-3);
+}
+
+/* ---------- 提示条 ---------- */
+.fx-note{
+  margin-top:14px; padding:12px 14px; border-radius:var(--r-sm);
+  font-size:13px; line-height:1.8; color:var(--ink-2);
+  background:color-mix(in srgb, var(--ink) 5%, transparent);
+  border:1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+}
+.fx-note--err{
+  color:var(--ink); background:color-mix(in srgb, var(--accent) 8%, transparent);
+  border-color:var(--accent-line);
+}
+
+/* ---------- 搜索栏 ---------- */
+.fx-searchbar{
+  position:sticky; top:0; z-index:5; margin-top:16px; padding:10px 0 8px;
+  background:linear-gradient(180deg,
+    color-mix(in srgb, var(--paper-1) 88%, transparent) 60%, transparent);
+  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+}
+.fx-search{
+  display:flex; align-items:center; gap:9px;
+  padding:0 12px; height:46px; border-radius:999px;
+  background:color-mix(in srgb, var(--glass-tint) 70%, transparent);
+  border:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  box-shadow:var(--shadow-1);
+  transition:border-color .2s var(--ease), box-shadow .2s var(--ease);
+}
+.fx-search:focus-within{
+  border-color:var(--accent-line);
+  box-shadow:0 0 0 3px var(--accent-soft);
+}
+.fx-search__ic{ width:17px; height:17px; flex:0 0 auto; color:var(--ink-3) }
+.fx-search input{
+  flex:1; min-width:0; height:100%; border:0; outline:0; background:transparent;
+  font:inherit; font-size:15px; color:var(--ink);
+}
+.fx-search input::placeholder{ color:var(--ink-4) }
+.fx-search input::-webkit-search-cancel-button{ display:none }
+.fx-search__clear{
+  flex:0 0 auto; display:inline-flex; align-items:center; justify-content:center;
+  width:28px; height:28px; border-radius:50%; border:0; cursor:pointer;
+  color:var(--ink-3); background:color-mix(in srgb, var(--ink) 7%, transparent);
+}
+.fx-search__clear .ic{ width:15px; height:15px }
+.fx-search__clear:hover{ color:var(--ink) }
+.fx-search__clear[hidden]{ display:none }
+
+.fx-count{
+  margin-top:9px; padding:0 4px; font-size:12px; letter-spacing:.02em; color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+
+/* ---------- 章节分组 ---------- */
+.fx-body{ margin-top:6px }
+.fx-group{ margin-top:24px }
+.fx-group[hidden]{ display:none }
+.fx-group__head{
+  display:flex; align-items:baseline; gap:9px; flex-wrap:wrap;
+  padding-left:11px; margin-bottom:12px;
+  border-left:3px solid var(--accent);
+}
+.fx-group__title{
+  font-family:var(--font-serif); font-weight:600; font-size:16px;
+  letter-spacing:.01em; color:var(--ink);
+}
+.fx-group__grade{
+  font-size:11.5px; letter-spacing:.04em; color:var(--accent);
+  padding:1px 9px; border-radius:999px;
+  background:var(--accent-soft); border:1px solid var(--accent-line);
+}
+
+/* ---------- 公式条目 ---------- */
+.fx-list{ display:grid; gap:9px }
+.fx-item{ display:block }
+.fx-item[hidden]{ display:none }
+.fx-item__btn{
+  width:100%; display:flex; align-items:center; gap:12px; text-align:left;
+  padding:13px 14px; border-radius:var(--r);
+  font:inherit; color:var(--ink); cursor:pointer;
+  background:color-mix(in srgb, var(--glass-tint) 55%, transparent);
+  border:1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+  box-shadow:inset 0 1px 0 var(--glass-hl);
+  transition:border-color .2s var(--ease), background .2s var(--ease), transform .12s var(--ease);
+}
+.fx-item__btn:hover{
+  border-color:var(--accent-line);
+  background:color-mix(in srgb, var(--accent) 6%, transparent);
+}
+.fx-item__btn:active{ transform:scale(.994) }
+.fx-item__btn:focus-visible{ outline:2px solid var(--accent-line); outline-offset:2px }
+.fx-item__text{ flex:1; min-width:0; display:flex; flex-direction:column; gap:7px }
+.fx-item__name{
+  font-size:14px; font-weight:600; color:var(--ink); line-height:1.4;
+}
+.fx-item__body{
+  font-family:var(--font-serif); font-size:15.5px; line-height:2;
+  color:var(--ink-2); word-break:break-word;
+}
+.fx-item__chev{ flex:0 0 auto; color:var(--ink-4) }
+.fx-item__chev .ic{ width:17px; height:17px; display:block }
+
+/* ---------- 空状态 ---------- */
+.fx-empty{
+  margin-top:22px; padding:26px 20px; text-align:center;
+  border-radius:var(--r); border:1px dashed color-mix(in srgb, var(--ink) 16%, transparent);
+  background:color-mix(in srgb, var(--glass-tint) 40%, transparent);
+}
+.fx-empty[hidden]{ display:none }
+.fx-empty b{ display:block; font-size:15px; color:var(--ink); font-weight:600 }
+.fx-empty span{ display:block; margin-top:6px; font-size:13px; color:var(--ink-3); line-height:1.9 }
+.fx-empty code{
+  font-family:"Cascadia Code","Consolas",monospace; font-size:12.5px;
+  padding:1px 6px; border-radius:6px; color:var(--accent);
+  background:var(--accent-soft);
+}
+
+/* ==========================================================================
+   数学标记（mathfmt.js 的输出）—— 分式 / 根号 / 上下标
+   ========================================================================== */
+.fx-math sup,
+.fx-math sub{ font-size:.72em; line-height:0 }
+
+/* 分式：分子 / 细线 / 分母，上下堆叠 */
+.fx-frac{
+  display:inline-flex; flex-direction:column; align-items:stretch;
+  vertical-align:middle; margin:0 .18em; text-align:center; line-height:1.15;
+  font-size:.9em; transform:translateY(-.04em);
+}
+.fx-frac__n{ padding:0 .34em .06em }
+.fx-frac__d{ padding:.06em .34em 0; border-top:1.3px solid currentColor }
+
+/* 根号：一个 √ 号 + 带上方横线的被开方体 */
+.fx-rad{
+  display:inline-flex; align-items:flex-start; vertical-align:-.1em;
+}
+.fx-rad__sign{
+  font-size:1.02em; line-height:1.12; margin-right:.02em;
+}
+.fx-rad__body{
+  border-top:1.3px solid currentColor; padding:.04em .22em 0;
+  margin-top:.02em; line-height:1.2;
+}
+
+/* ==========================================================================
+   抽屉里的公式详情（内容由本视图注入，同样用 .fx- 前缀）
+   ========================================================================== */
+.fx-drawer__formula{
+  font-family:var(--font-serif); font-size:17px; line-height:2.1; color:var(--ink);
+  word-break:break-word;
+}
+.fx-chapter{
+  margin-top:12px; font-size:12.5px; letter-spacing:.03em; color:var(--accent);
+}
+.fx-sec{ margin-top:16px }
+.fx-sec__label{
+  font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-3); margin-bottom:5px;
+}
+.fx-sec__text{ font-size:14px; line-height:1.95; color:var(--ink-2); word-break:break-word }
+.fx-sec__text--eg{
+  font-family:var(--font-serif); font-size:15px; color:var(--ink);
+  padding:11px 13px; border-radius:var(--r-sm);
+  background:color-mix(in srgb, var(--accent) 6%, transparent);
+  border:1px solid var(--accent-line);
+}
+
+/* ---------- 窄屏微调 ---------- */
+@media (max-width:380px){
+  .fx{ padding-left:13px; padding-right:13px }
+  .fx-head h2{ font-size:23px }
+  .fx-item__body{ font-size:15px }
+}

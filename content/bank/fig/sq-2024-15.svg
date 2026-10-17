@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 250" role="img" aria-label="正六边形ABCDEF边长为2，以顶点E为圆心、EF为半径的圆，圆被正六边形截得的弧">
+  <title>正六边形 ABCDEF 与以 E 为圆心、EF 为半径的圆</title>
+  <!-- 正六边形边长 60px=2 单位，外接圆半径 60；E(138.038,155)
+       |EF|=|ED|=60，∠DEF=120°，圆的这段弧所对圆心角 120°（弧长 4π/3） -->
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="138.038" cy="155" r="60"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M190 65 L241.962 95 L241.962 155 L190 185 L138.038 155 L138.038 95 Z"/>
+    <path d="M138.038 95 A60 60 0 0 1 190 185" stroke-width="1.8"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="138.038" cy="155" r="2.2"/>
+    <text x="190" y="53" text-anchor="middle">A</text>
+    <text x="254" y="91" text-anchor="start">B</text>
+    <text x="254" y="159" text-anchor="start">C</text>
+    <text x="190" y="202" text-anchor="middle">D</text>
+    <text x="126" y="160" text-anchor="end">E</text>
+    <text x="126" y="91" text-anchor="end">F</text>
+  </g>
+</svg>

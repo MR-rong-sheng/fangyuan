@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="Rt△ABC，∠ACB=90°，AC>BC">
+  <title>Rt△ABC：∠ACB=90°，AC>BC</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 170 L100 60 L255.6 170 Z"/>
+    <path d="M100 158 h12 v12"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="258" y="186" text-anchor="middle">A</text>
+    <text x="100" y="50" text-anchor="middle">B</text>
+    <text x="84" y="176" text-anchor="middle">C</text>
+  </g>
+</svg>

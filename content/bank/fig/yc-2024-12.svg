@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="⊙O 中 △ABC 内接，∠C=40°，连接 OA、OB">
+  <title>⊙O 的内接三角形 ABC，连接 OA、OB</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="180" cy="120" r="78"/>
+    <path d="M120.2 69.9 L219 52.5 L180 198 L120.2 69.9"/>
+    <path d="M180 120 L120.2 69.9"/>
+    <path d="M180 120 L219 52.5"/>
+    <path d="M169.9 176.2 A24 24 0 0 1 186.2 174.8" stroke-width="1.2"/>
+    <path d="M160.1 103.3 A26 26 0 0 1 193 97.5" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="180" cy="120" r="2.2"/>
+    <text x="109.5" y="60.9" text-anchor="middle">A</text>
+    <text x="226" y="40.3" text-anchor="middle">B</text>
+    <text x="180" y="216" text-anchor="middle">C</text>
+    <text x="172" y="111" text-anchor="end">O</text>
+    <text x="180" y="178" text-anchor="middle" font-size="12">40°</text>
+    <text x="180" y="150" text-anchor="middle" font-size="12">80°</text>
+  </g>
+</svg>

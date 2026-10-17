@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="AB 平行 CD，AC 垂直 AD，∠ACD=50°，求 ∠α">
+  <title>AB∥CD，AC⊥AD，∠ACD=50°，求 ∠α</title>
+  <!-- 条件复算：∠ACD=50°、AC⊥AD ⇒ ∠CAD=90°、∠BAC=130° ⇒ ∠α=∠BAD=40°
+       坐标按此构造：A(120,190)、C(53,110)、D(215,110)，上下两线相距 80 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- AB（下方直线）与 CD（上方直线，互相平行） -->
+    <path d="M80 190 H330"/>
+    <path d="M20 110 H330"/>
+    <!-- AC 与 AD -->
+    <path d="M120 190 L53 110"/>
+    <path d="M120 190 L215 110"/>
+    <!-- A 处的 ∠α（夹在 AB 与 AD 之间） -->
+    <path d="M150 190 A30 30 0 0 0 141 171" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="120" y="208" text-anchor="middle">A</text>
+    <text x="332" y="196" text-anchor="start">B</text>
+    <text x="41" y="102" text-anchor="middle">C</text>
+    <text x="215" y="102" text-anchor="middle">D</text>
+    <text x="157" y="183" text-anchor="start">α</text>
+  </g>
+</svg>

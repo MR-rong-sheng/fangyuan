@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><title>方圆 · 自检</title>
+<style>
+  body{font:13px/1.9 ui-monospace,Consolas,monospace;padding:16px;background:#1d2026;color:#dfe6ee}
+  iframe{width:1100px;height:760px;border:1px solid #444;margin-top:12px;background:#fff}
+  pre{white-space:pre-wrap}
+</style>
+</head>
+<body>
+<pre id="T">运行中…</pre>
+<iframe id="f" src="index.html"></iframe>
+<script type="module">
+/* 方圆自检：驱动真实页面（同源 iframe），逐项断言，结果写在 ###TEST### / ###END### 之间。
+   用法：/_selftest.html?dev=<令牌>   （令牌由 python serve.py dev on 生成） */
+const log = [];
+const flush = () => { const t = document.getElementById('T'); if (t) t.textContent = `###TEST###\n${log.join('\n')}\n###END###`; };
+const ok = (name, cond, extra = '') => { log.push(`${cond ? 'PASS' : 'FAIL'} | ${name}${extra ? ' :: ' + extra : ''}`); flush(); };
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const until = async (fn, tries = 300, ms = 60) => { for (let i = 0; i < tries; i++) { try { if (fn()) return true; } catch {} await sleep(ms); } return false; };
+
+const f = document.getElementById('f');
+await new Promise(r => f.addEventListener('load', r, { once: true }));
+const w = f.contentWindow, d = w.document;
+const view = () => d.querySelector('#view');
+const text = () => (view() ? view().textContent : '');
+
+/* 1. 外壳 */
+await until(() => d.documentElement && d.documentElement.dataset.ready === '1');
+await until(() => d.querySelectorAll('#nav a').length > 0);
+const navN = d.querySelectorAll('#nav a').length;
+const navNames = [...d.querySelectorAll('#nav a')].map(a => a.textContent.trim());
+ok('外壳启动：导航生成（9 项，含题库/组卷/打卡）', navN >= 9, '实际 ' + navN + ' :: ' + navNames.join('/'));
+for (const need of ['题库', '组卷', '打卡']) {
+  ok(`导航里有「${need}」`, navNames.some(n => n.includes(need)), navNames.join('/'));
+}
+const chip = d.querySelector('#btn-user');
+ok('顶栏账号按钮带着用户名', !!chip && !!chip.getAttribute('title') && chip.getAttribute('title') !== '账号',
+   chip ? chip.getAttribute('title') : '无此元素');
+
+/* 1b. 导航：每一项都真的能跳转并渲染出内容（含新增的三项） */
+const navHrefs = [...d.querySelectorAll('#nav a')].map(a => a.getAttribute('href') || '').filter(h => h.startsWith('#/'));
+const navBad = [];
+for (const href of navHrefs) {
+  const link = [...d.querySelectorAll('#nav a')].find(a => (a.getAttribute('href') || '') === href);
+  if (!link) continue;
+  link.click();
+  const good = await until(() => w.location.hash === href && (d.querySelector('#view') || { textContent: '' }).textContent.trim().length > 30, 250);
+  if (!good) navBad.push(href);
+}
+ok(`导航：${navHrefs.length} 项全部可跳转且渲染出内容`, navBad.length === 0, navBad.length ? '失败：' + navBad.join(' ') : navHrefs.join(' '));
+
+/* 2. 今日 */
+w.location.hash = '#/today';
+await until(() => d.querySelector('[data-q-stem]'));
+ok('今日：一日一题有题干', !!d.querySelector('[data-q-stem]'),
+   (d.querySelector('[data-q-stem]') || {}).textContent ? d.querySelector('[data-q-stem]').textContent.slice(0, 30) : '');
+ok('今日：一日一公式有正文', !!d.querySelector('[data-f-body]'));
+ok('今日：今日小记可输入', !!d.querySelector('[data-note]'));
+ok('今日：进度统计存在', text().includes('待复习错题'));
+
+/* 3. 今日作答 → 判分 + 错题入本 */
+const wrongsBefore = JSON.parse(w.localStorage.getItem('fangyuan:wrongs') || '[]').length;
+const input = d.querySelector('[data-q-input]');
+if (input) {
+  input.value = '__自检的错答案__';
+  input.dispatchEvent(new w.Event('input', { bubbles: true }));
+  d.querySelector('[data-q-submit]').click();
+  const judged = await until(() => ((d.querySelector('[data-q-result]') || {}).textContent || '').trim().length > 0, 120);
+  ok('今日：提交后给出判分反馈', judged,
+     ((d.querySelector('[data-q-result]') || {}).textContent || '').trim().slice(0, 40));
+  await sleep(400);
+  /* 断言要幂等：同一个错题重复提交时错题本按 id 去重，计数不一定涨；
+     所以判定「我这次答的那条在错题本里」或「总数涨了」二者之一成立即可。 */
+  const wlist = JSON.parse(w.localStorage.getItem('fangyuan:wrongs') || '[]');
+  const mineHit = wlist.some(x => String(x.mine || '').indexOf('__自检的错答案__') >= 0);
+  ok('今日：答错自动进错题本', mineHit || wlist.length > wrongsBefore,
+     `错题 ${wrongsBefore} → ${wlist.length}${mineHit ? ' · 这次答的那条已在错题本里（重复跑不会重复计）' : ''}`);
+} else {
+  ok('今日：提交后给出判分反馈', false, '今日这题是选择题，没有输入框（改用手动判定）');
+}
+
+/* 4. 七个模块的根元素 */
+for (const [id, sel, name] of [['drill', '[data-drill]', '练习'], ['bank', '[data-bank]', '题库'],
+                               ['papers', '[data-papers]', '组卷'], ['formulas', '[data-fx]', '公式'],
+                               ['plot', '[data-plot]', '图像'], ['notebook', '[data-nb]', '错题'],
+                               ['streak', '[data-streak]', '打卡']]) {
+  w.location.hash = '#/' + id;
+  const hit = await until(() => d.querySelector(sel), 400);
+  ok(`模块「${name}」渲染出根元素 ${sel}`, !!hit);
+}
+
+/* 4b. 题库：与索引对账、真题渲染、筛选、抽屉、跨视图送组卷 */
+w.location.hash = '#/bank';
+await until(() => d.querySelector('[data-bank-item]'), 500);
+const idx = await w.fetch('/content/bank/index.json').then(r => r.json()).catch(() => null);
+const idxTotal = (idx && idx.total) || 0;
+const bankRows = d.querySelectorAll('[data-bank-item]').length;
+ok('题库：列表条目数与索引 total 一致', idxTotal > 0 && bankRows === idxTotal, `${bankRows} 条 / 索引 ${idxTotal} 题`);
+const bcnt = (d.querySelector('[data-bank-count]') || {}).textContent || '';
+ok('题库：计数文字与索引对得上', bcnt.includes(`共 ${idxTotal} 题`), bcnt.trim().replace(/\s+/g, ' '));
+const texLeft = ((d.querySelector('#view') || { textContent: '' }).textContent.match(/\\[a-zA-Z]+/) || [''])[0];
+ok('题库：渲染后没有残留的 LaTeX 命令', !texLeft, texLeft ? '残留 ' + texLeft : '干净');
+const nFrac = d.querySelectorAll('.fx-frac').length;
+ok('题库：\\frac 渲染成了上下堆叠的分式', nFrac > 0, nFrac + ' 处');
+
+const citySel = d.querySelector('[data-bank-city]');
+const njExpect = idx ? (((idx.cities || []).find(c => c.city === '南京') || {}).count) : null;
+let njOk = false;
+if (citySel && njExpect != null) {
+  citySel.value = '南京';
+  citySel.dispatchEvent(new w.Event('change', { bubbles: true }));
+  njOk = await until(() => ((d.querySelector('[data-bank-count]') || {}).textContent || '').includes(`命中 ${njExpect} 题`), 200);
+  const got = ((d.querySelector('[data-bank-count]') || {}).textContent || '').trim().replace(/\s+/g, ' ');
+  citySel.value = '';
+  citySel.dispatchEvent(new w.Event('change', { bubbles: true }));
+  await sleep(150);
+  ok('题库：按城市筛选后的命中数与索引一致', njOk, got);
+} else {
+  ok('题库：按城市筛选后的命中数与索引一致', false, '没找到城市下拉或索引里没有南京');
+}
+
+const openBtn = d.querySelector('[data-bank-item] [data-bank-open]');
+if (openBtn) openBtn.click();
+const drawerOn = await until(() => {
+  const dr = d.getElementById('drawer');
+  return dr && !dr.hidden && ((dr.querySelector('.drawer__body') || {}).textContent || '').trim().length > 10;
+}, 150);
+ok('题库：点条目在抽屉里打开题目', !!drawerOn,
+   drawerOn ? ((d.querySelector('#drawer .drawer__title') || {}).textContent || '').trim() : '抽屉没打开');
+const closeBtn = d.querySelector('#drawer [data-close]');
+if (closeBtn) closeBtn.click();
+await sleep(150);
+
+/* 4c. 题图：索引计数、列表标记、抽屉里内联 SVG（颜色靠 currentColor 继承主题） */
+const figN = (idx && idx.figs) || 0;
+const figMarks = d.querySelectorAll('.bk-chip--fig').length;
+ok('题库：带「图」标记的行数与索引 figs 一致', figMarks === figN, `${figMarks} 个标记 / 索引 ${figN} 张图`);
+
+let figInline = false, figDetail = '题库里还没有带图的题';
+const figRow = [...d.querySelectorAll('[data-bank-item]')].find(el => el.querySelector('.bk-chip--fig'));
+if (figRow) {
+  figRow.querySelector('[data-bank-open]').click();
+  figInline = await until(() => {
+    const g = d.querySelector('#drawer .fig--on svg g');
+    return !!g && w.getComputedStyle(g).stroke !== 'none';
+  }, 400);
+  const g = d.querySelector('#drawer .fig--on svg g');
+  const box = d.querySelector('#drawer .fig--on svg');
+  figDetail = g
+    ? 'stroke=' + w.getComputedStyle(g).stroke + ' · ' + Math.round(box.getBoundingClientRect().width) + 'px 宽'
+    : '抽屉里没有内联 SVG';
+  const cb2 = d.querySelector('#drawer [data-close]');
+  if (cb2) cb2.click();
+  await sleep(150);
+}
+ok('题图：抽屉把 SVG 内联渲染（颜色继承主题 currentColor）', figInline, figDetail);
+
+const ck = d.querySelector('[data-bank-item] [data-bank-pick]');
+if (ck) { ck.click(); ck.dispatchEvent(new w.Event('change', { bubbles: true })); }
+await sleep(200);
+const pickedN = ((d.querySelector('[data-bank-picked]') || {}).textContent || '').trim();
+const buildBtn = d.querySelector('[data-bank-build]');
+ok('题库：勾选后「拿去组卷」按钮解禁', !!buildBtn && !buildBtn.disabled, '已勾选 ' + pickedN + ' 题');
+if (buildBtn && !buildBtn.disabled) buildBtn.click();
+const jumped = await until(() => w.location.hash === '#/papers', 300);
+ok('题库 → 组卷：跨视图送题 openWith() 跳转成功', jumped, 'hash=' + w.location.hash);
+
+/* 4c. 组卷：模式、抽题、做卷判分、交卷成绩、一页纸、print.css */
+await until(() => d.querySelector('[data-papers]'), 500);
+const pRoot = d.querySelector('[data-papers]');
+ok('组卷：根元素带 data-papers-mode', !!(pRoot && pRoot.dataset.papersMode), pRoot ? 'mode=' + pRoot.dataset.papersMode : '无');
+const carried = await until(() => ((d.querySelector('[data-papers-count]') || {}).textContent || '').includes('已选 1 题'), 300);
+ok('组卷：题库送来的题已进入「已选」', carried, ((d.querySelector('[data-papers-count]') || {}).textContent || '').trim().replace(/\s+/g, ' '));
+
+const randBtn = d.querySelector('[data-papers-random]');
+if (randBtn) randBtn.click();
+const cand = await until(() => d.querySelectorAll('[data-papers-item]').length > 0, 400);
+ok('组卷：智能抽题后有候选题', cand, d.querySelectorAll('[data-papers-item]').length + ' 条候选');
+
+const startBtn = d.querySelector('[data-papers-start]');
+if (startBtn) startBtn.click();
+const workOn = await until(() => d.querySelector('[data-pw-stem]'), 300);
+ok('组卷：开始做卷后出现逐题作答界面', workOn,
+   ((d.querySelector('[data-papers-work] .papers-chip2') || {}).textContent || '').trim());
+
+const wrongsBefore2 = JSON.parse(w.localStorage.getItem('fangyuan:wrongs') || '[]').length;
+const pwIn = d.querySelector('[data-pw-input]');
+if (pwIn) {
+  pwIn.value = '__自检的错答案__';
+  pwIn.dispatchEvent(new w.Event('input', { bubbles: true }));
+  d.querySelector('[data-pw-submit]').click();
+  const judged2 = await until(() => ((d.querySelector('[data-pw-judge]') || {}).textContent || '').trim().length > 0, 200);
+  ok('组卷：作答后给出判分与正确答案', judged2,
+     ((d.querySelector('[data-pw-judge]') || {}).textContent || '').trim().slice(0, 46));
+  await sleep(300);
+  const wl2 = JSON.parse(w.localStorage.getItem('fangyuan:wrongs') || '[]');
+  const mineHit2 = wl2.some(x => String(x.mine || '').indexOf('__自检的错答案__') >= 0);
+  ok('组卷：答错自动进错题本', mineHit2 || wl2.length > wrongsBefore2,
+     `错题 ${wrongsBefore2} → ${wl2.length}${mineHit2 ? ' · 已在错题本里' : ''}`);
+  const endBtn = d.querySelector('[data-pw-end]');
+  if (endBtn) endBtn.click();
+  const scored = await until(() => ((d.querySelector('[data-papers-result]') || {}).textContent || '').includes('正确率'), 250);
+  ok('组卷：交卷后给出成绩', scored,
+     ((d.querySelector('[data-papers-result]') || {}).textContent || '').replace(/\s+/g, ' ').trim().slice(0, 56));
+} else {
+  ok('组卷：作答后给出判分与正确答案', false, '没找到作答输入框 [data-pw-input]');
+}
+
+const wTab = d.querySelector('[data-papers-modetab="wrongs"]');
+if (wTab) wTab.click();
+const wrongsMode = await until(() => pRoot.dataset.papersMode === 'wrongs', 200);
+ok('一页纸：切到错题一页纸模式', wrongsMode, 'mode=' + pRoot.dataset.papersMode);
+const sheet = d.querySelector('[data-wrongs-sheet]');
+const rows2 = sheet ? sheet.querySelectorAll('.printable__row').length : 0;
+ok('一页纸：错题排进了可打印区 .printable', rows2 > 0,
+   rows2 + ' 行 · ' + ((d.querySelector('[data-papers-wrongscount]') || {}).textContent || '').trim());
+let printSheet = false, printRule = false;
+for (const s of d.styleSheets) {
+  if (!s.href || !s.href.includes('print.css')) continue;
+  printSheet = true;
+  try { for (const r of s.cssRules) if (((r.conditionText || '') + (r.cssText || '')).includes('print')) printRule = true; } catch (e) {}
+}
+ok('一页纸：print.css 已加载且含 @media print 规则', printSheet && printRule,
+   printSheet ? (printRule ? '有 @media print' : '样式表在，但没有 print 规则') : 'print.css 没加载');
+
+/* 4d. 打卡：连续天数、30 格热力条、今日计入 */
+w.location.hash = '#/streak';
+await until(() => d.querySelector('[data-streak]'), 400);
+const nowTxt = ((d.querySelector('[data-streak-now]') || {}).textContent || '').trim();
+const cells = d.querySelectorAll('[data-day]');
+ok('打卡：连续天数是个数字', /^\d+$/.test(nowTxt), '连续 ' + nowTxt + ' 天');
+ok('打卡：30 天热力条渲染出 30 格', cells.length === 30, cells.length + ' 格');
+const todayCell = d.querySelector('[data-day].is-today') || cells[cells.length - 1];
+ok('打卡：今天已计入（自检里做过题、也错过题）', !!(todayCell && todayCell.hasAttribute('data-on')),
+   todayCell ? `${todayCell.dataset.day} → ${todayCell.hasAttribute('data-on') ? '已打卡' : '未打卡'}` : '没找到今日格');
+ok('打卡：今日状态区有文案', !!d.querySelector('[data-streak-today]'),
+   ((d.querySelector('[data-streak-today]') || {}).textContent || '').replace(/\s+/g, ' ').trim().slice(0, 30));
+
+/* 5. 设置页 */
+w.location.hash = '#/settings';
+ok('设置页渲染', await until(() => /偏好|主题|字号/.test(text()), 300));
+
+/* 5b. 契约一致：前端不能残留另一个站点的前缀/头（抄骨架漏改会直接 403） */
+const CHECKED = ['login.html', 'assets/js/login.js', 'assets/js/api.js', 'assets/js/activity.js', 'assets/js/core.js'];
+const FORBID = ['yanchi-fetch', 'yanchi_sid', 'X-Yanchi-Dev', 'yanchi:'];
+const leaked = [];
+let loginJs = '';
+for (const f of CHECKED) {
+  const t = await w.fetch('/' + f).then(r => (r.ok ? r.text() : '')).catch(() => '');
+  if (f.endsWith('login.js')) loginJs = t;
+  for (const bad of FORBID) if (t.includes(bad)) leaked.push(f + ' 里的 ' + bad);
+}
+ok('契约一致：前端没有残留砚池的键/头', leaked.length === 0, leaked.length ? leaked.join('；') : `已查 ${CHECKED.length} 个文件`);
+const hasNew = loginJs.includes("'fangyuan-fetch'");
+const hasOld = loginJs.includes('yanchi-fetch');
+ok('契约一致：登录页发的是 fangyuan-fetch（服务端认的那个头）', hasNew && !hasOld,
+   `fangyuan-fetch ${hasNew ? '有' : '缺'} · 旧头名 ${hasOld ? '还在' : '已清'}`);
+
+/* 5b. 切页竞态：异步 mount 迟到写入不该把当前页盖成「这个模块没能打开」 */
+for (const r of ['today', 'drill', 'bank', 'papers', 'formulas', 'plot', 'notebook', 'streak', 'settings']) {
+  w.location.hash = '#/' + r;
+  await sleep(40);                       // 故意切得比数据加载快，逼出竞态
+}
+await sleep(2600);
+w.location.hash = '#/notebook';
+await until(() => d.querySelector('[data-nb]'), 300);
+const broke = [...d.querySelectorAll('#view .empty b')].map(b => b.textContent).filter(t => t.indexOf('没能打开') >= 0);
+ok('切页竞态：快速连切 9 页后没有「没能打开」', broke.length === 0,
+   broke.length ? broke.join('；') : '9 页连切 · 最后停在错题且正常渲染');
+
+/* 6. 账号与操作存档 */
+const me = await w.fetch('/api/me').then(r => r.json()).catch(() => null);
+ok('接口 /api/me 返回当前账号', !!(me && me.user), me && me.user ? me.user.name + '/' + me.user.role : '未登录');
+if (me && me.user) {
+  w.dispatchEvent(new w.CustomEvent('fangyuan:flush'));
+  await sleep(1500);
+  const r = await w.fetch('/api/admin/archive/get?user=' + encodeURIComponent(me.user.name) + '&tail=500')
+    .then(x => x.json()).catch(() => null);
+  const lines = (r && (r.items || r.lines)) || [];
+  ok('操作存档：这次自检的动作记进了存档', lines.length > 0, lines.length + ' 行');
+}
+
+log.push('合计 ' + log.filter(l => l.startsWith('PASS')).length + ' 通过 / ' + log.filter(l => l.startsWith('FAIL')).length + ' 失败');
+flush();
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 230" role="img" aria-label="矩形 ABCD 各边中点 E、F、G、H 依次连接成四边形 EFGH">
+  <title>矩形 ABCD：E、F、G、H 为各边中点，四边形 EFGH</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="90" y="60" width="90" height="120"/>
+    <path d="M135 60 L180 120 L135 180 L90 120 Z"/>
+    <path d="M90 70 h10 v-10"/>
+    <path d="M170 60 h10 v10"/>
+    <path d="M180 170 h-10 v10"/>
+    <path d="M100 180 h-10 v-10"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="88" y="52" text-anchor="middle">A</text>
+    <text x="180" y="52" text-anchor="middle">B</text>
+    <text x="200" y="186" text-anchor="middle">C</text>
+    <text x="72" y="186" text-anchor="middle">D</text>
+    <text x="135" y="52" text-anchor="middle">E</text>
+    <text x="200" y="120" text-anchor="middle">F</text>
+    <text x="135" y="196" text-anchor="middle">G</text>
+    <text x="72" y="120" text-anchor="middle">H</text>
+  </g>
+</svg>

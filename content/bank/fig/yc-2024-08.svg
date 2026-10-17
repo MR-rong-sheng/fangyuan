@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" role="img" aria-label="甲公司 2019—2023 年利润折线统计图（100、120、135、170、210 万元）与乙公司利润折线统计图（120、130、140、150、160 万元），两图纵轴单位都是万元">
+  <title>甲、乙两家公司 2019—2023 年利润折线统计图（甲 100→210，乙 120→160，单位万元）</title>
+  <!-- 数值取自原卷统计图：甲 100,120,135,170,210；乙 120,130,140,150,160（万元）。
+       左图纵轴 0~250（每 50 一格，0.6px/万元），坐标原点 (60,190)，年份点 x=80 起每 40px 一年；
+       右图纵轴 100~160（每 10 一格，2.5px/万元），原点 (330,190)，年份点 x=345 起每 40px 一年。
+       复算：甲逐年增幅 20,15,35,40；乙逐年增幅 10,10,10,10；甲始终快于乙 → 选 A。 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3">
+    <path d="M60 40 H245 M60 70 H245 M60 100 H245 M60 130 H245 M60 160 H245"/>
+    <path d="M330 40 H515 M330 65 H515 M330 90 H515 M330 115 H515 M330 140 H515 M330 165 H515"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 190 V36 M60 190 H250"/>
+    <path d="M55 42 L60 34 L65 42"/>
+    <path d="M244 185 L252 190 L244 195"/>
+    <path d="M330 190 V36 M330 190 H520"/>
+    <path d="M325 42 L330 34 L335 42"/>
+    <path d="M514 185 L522 190 L514 195"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 130 L120 118 L160 109 L200 88 L240 64"/>
+    <path d="M345 140 L385 115 L425 90 L465 65 L505 40"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <circle cx="80" cy="130" r="2.4"/><circle cx="120" cy="118" r="2.4"/><circle cx="160" cy="109" r="2.4"/>
+    <circle cx="200" cy="88" r="2.4"/><circle cx="240" cy="64" r="2.4"/>
+    <circle cx="345" cy="140" r="2.4"/><circle cx="385" cy="115" r="2.4"/><circle cx="425" cy="90" r="2.4"/>
+    <circle cx="465" cy="65" r="2.4"/><circle cx="505" cy="40" r="2.4"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10">
+    <text x="56" y="24" text-anchor="middle" font-size="11">利润/万元</text>
+    <text x="56" y="194" text-anchor="end">0</text>
+    <text x="56" y="164" text-anchor="end">50</text>
+    <text x="56" y="134" text-anchor="end">100</text>
+    <text x="56" y="104" text-anchor="end">150</text>
+    <text x="56" y="74" text-anchor="end">200</text>
+    <text x="56" y="44" text-anchor="end">250</text>
+    <text x="80" y="203" text-anchor="middle">2019</text>
+    <text x="120" y="203" text-anchor="middle">2020</text>
+    <text x="160" y="203" text-anchor="middle">2021</text>
+    <text x="200" y="203" text-anchor="middle">2022</text>
+    <text x="240" y="203" text-anchor="middle">2023</text>
+    <text x="150" y="226" text-anchor="middle" font-size="11">甲公司</text>
+    <text x="326" y="24" text-anchor="middle" font-size="11">利润/万元</text>
+    <text x="326" y="194" text-anchor="end">100</text>
+    <text x="326" y="169" text-anchor="end">110</text>
+    <text x="326" y="144" text-anchor="end">120</text>
+    <text x="326" y="119" text-anchor="end">130</text>
+    <text x="326" y="94" text-anchor="end">140</text>
+    <text x="326" y="69" text-anchor="end">150</text>
+    <text x="326" y="44" text-anchor="end">160</text>
+    <text x="345" y="203" text-anchor="middle">2019</text>
+    <text x="385" y="203" text-anchor="middle">2020</text>
+    <text x="425" y="203" text-anchor="middle">2021</text>
+    <text x="465" y="203" text-anchor="middle">2022</text>
+    <text x="505" y="203" text-anchor="middle">2023</text>
+    <text x="420" y="226" text-anchor="middle" font-size="11">乙公司</text>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 375" role="img" aria-label="同一块直角三角形木板（直角边 BC=2m、AC=1.5m，斜边 AB=2.5m）上的四种桌面设计：图1 正方形一边在 BC 上、对角顶点在 AB 上；图2 正方形一边在斜边 AB 上、另两顶点在 AC、BC 上；图3 长方形 DE 在 BC 上（D 与直角顶点重合）；图4 长方形 DE 在斜边 AB 上、另两顶点在 AC、BC 上">
+  <title>直角三角形木板上四种正方形/长方形桌面设计（图1—图4）</title>
+  <!-- 坐标系：每格 60px = 1m，四块木板形状一致（直角在 C，BC=2m 水平、CA=1.5m 竖直、AB=2.5m）。
+       图1：正方形一边在 CB 上、对角顶点落在 AB 上 → 边长 6/7 m = 51.4px。
+       图2：正方形一边在 AB 上、另两顶点 P(在AC)、Q(在BC) → 边长 30/37 m = 48.6px。
+       图3：长方形一边 DE 在 CB 上（D 就是直角顶点 C），取 x=DE=1m，另一边 0.75m。
+       图4：长方形一边 DE 在 AB 上，取 x=DE=1.25m，另一边 0.6m（两顶点落在 AC、BC 上）。
+       复算见 verify_figs.py：6/7>30/37，图3、图4 面积均为 0.75 m²（最大）。 -->
+  <!-- ============ 图 1 ============ -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 150 H180 L60 60 Z"/>
+    <path d="M60 150 H111.4 V98.6 H60 Z"/>
+    <path d="M60 150 h9 v-9"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">
+    <text x="51" y="54" text-anchor="middle">A</text>
+    <text x="188" y="155" text-anchor="start">B</text>
+    <text x="50" y="161" text-anchor="middle">C</text>
+    <text x="120" y="205" text-anchor="middle" font-size="11">图 1</text>
+  </g>
+  <!-- ============ 图 2 ============ -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 150 H370 L250 60 Z"/>
+    <path d="M279.2 81.9 L318.1 111.1 L288.9 150 L250 120.8 Z"/>
+    <path d="M250 150 h9 v-9"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">
+    <text x="243" y="54" text-anchor="middle">A</text>
+    <text x="378" y="155" text-anchor="start">B</text>
+    <text x="240" y="161" text-anchor="middle">C</text>
+    <text x="310" y="205" text-anchor="middle" font-size="11">图 2</text>
+  </g>
+  <!-- ============ 图 3 ============ -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 330 H180 L60 240 Z"/>
+    <path d="M60 330 H120 V285 H60 Z"/>
+    <path d="M60 330 h9 v-9"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">
+    <text x="51" y="233" text-anchor="middle">A</text>
+    <text x="188" y="335" text-anchor="start">B</text>
+    <text x="60" y="348" text-anchor="middle">C(D)</text>
+    <text x="120" y="348" text-anchor="middle">E</text>
+    <text x="120" y="366" text-anchor="middle" font-size="11">图 3</text>
+  </g>
+  <!-- ============ 图 4 ============ -->
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 330 H370 L250 240 Z"/>
+    <path d="M271.6 256.2 L331.6 301.2 L310 330 L250 285 Z"/>
+    <path d="M250 330 h9 v-9"/>
+    <path d="M280.4 262.8 L273.8 271.6 L265.0 265.0"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">
+    <text x="243" y="233" text-anchor="middle">A</text>
+    <text x="378" y="336" text-anchor="start">B</text>
+    <text x="243" y="348" text-anchor="middle">C</text>
+    <text x="281" y="246" text-anchor="middle">D</text>
+    <text x="344" y="297" text-anchor="start">E</text>
+    <text x="310" y="366" text-anchor="middle" font-size="11">图 4</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-label="月洞门示意图：内廓为弧 ABC 与线段 CD、DE、EA，AE、CD⊥地面 l，最高点 B 距地面 21 分米">
+  <title>月洞门示意图：内廓为弧 ABC 与线段 CD、DE、EA，AE、CD⊥地面 l，最高点 B 距地面 21 分米</title>
+<line x1="48" y1="235" x2="192" y2="235" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+<polyline points="60,205 61.29,205.95 62.6,206.89 63.93,207.8 65.27,208.69 66.62,209.56 67.99,210.41 69.37,211.24 70.76,212.04 72.17,212.82 73.59,213.58 75.02,214.31 76.46,215.03 77.92,215.71 79.38,216.38 80.86,217.02 82.34,217.64 83.84,218.23 85.34,218.8 86.86,219.35 88.38,219.87 89.91,220.36 91.45,220.84 92.99,221.28 94.54,221.71 96.1,222.1 97.67,222.47 99.24,222.82 100.81,223.14 102.4,223.44 103.98,223.71 105.57,223.95 107.17,224.17 108.76,224.37 110.36,224.53 111.96,224.68 113.57,224.79 115.18,224.88 116.78,224.95 118.39,224.99 120,225 121.61,224.99 123.22,224.95 124.82,224.88 126.43,224.79 128.04,224.68 129.64,224.53 131.24,224.37 132.83,224.17 134.43,223.95 136.02,223.71 137.6,223.44 139.19,223.14 140.76,222.82 142.33,222.47 143.9,222.1 145.46,221.71 147.01,221.28 148.55,220.84 150.09,220.36 151.62,219.87 153.14,219.35 154.66,218.8 156.16,218.23 157.66,217.64 159.14,217.02 160.62,216.38 162.08,215.71 163.54,215.03 164.98,214.31 166.41,213.58 167.83,212.82 169.24,212.04 170.63,211.24 172.01,210.41 173.38,209.56 174.73,208.69 176.07,207.8 177.4,206.89 178.71,205.95 180,205" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="60,235 60,205" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="180,205 180,235" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="120,125 120,25" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="120,125 180,205" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="120,125 60,205" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="69,235 69,244 60,244" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="171,235 171,244 180,244" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="120" cy="125" r="2.2" fill="currentColor"/>
+<text x="50" y="207" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">A</text>
+<text x="120" y="17" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">B</text>
+<text x="190" y="207" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">C</text>
+<text x="182" y="251" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">D</text>
+<text x="58" y="251" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">E</text>
+<text x="128" y="127" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="start">O</text>
+<text x="120" y="244" fill="currentColor" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">l</text>
+</svg>

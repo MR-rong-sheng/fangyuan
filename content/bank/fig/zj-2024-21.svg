@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" role="img" aria-label="∠C=∠D=90°，∠CBA=∠DAB，AB 为公共边，△ABC≌△BAD">
+  <title>∠C=∠D=90°，∠CBA=∠DAB，AB 为公共边</title>
+<g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M60.0 140.0 L240.0 140.0"/>
+<path d="M60.0 140.0 L105.0 217.9 L240.0 140.0"/>
+<path d="M60.0 140.0 L195.0 62.1 L240.0 140.0"/>
+<path d="M101.0 211.0 L107.9 207.0 L111.9 213.9"/>
+<path d="M188.1 66.1 L192.1 73.0 L199.0 69.0"/>
+</g>
+<g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+<text x="52.0" y="144.0" text-anchor="end" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">A</text>
+<text x="248.0" y="144.0" text-anchor="start" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">B</text>
+<text x="105.0" y="209.9" text-anchor="middle" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">C</text>
+<text x="195.0" y="80.1" text-anchor="middle" fill="currentColor" font-size="13" font-family="ui-sans-serif, system-ui, sans-serif">D</text>
+</g>
+</svg>

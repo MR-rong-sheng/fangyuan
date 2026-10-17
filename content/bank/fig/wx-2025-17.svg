@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" role="img" aria-label="菱形 ABCD 边长为 2、∠ABC=60°，对角线交于 M，DN∥AC 交 BC 的延长线于 N，连 MN">
+  <title>菱形 ABCD：DN∥AC 交 BC 延长线于 N</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180.0 30.0 L110.7 70.0 L180.0 110.0 L249.3 70.0 Z"/>
+    <path d="M180.0 30.0 L180.0 110.0"/>
+    <path d="M110.7 70.0 L249.3 70.0"/>
+    <path d="M249.3 70.0 L249.3 150.0"/>
+    <path d="M110.7 70.0 L249.3 150.0"/>
+    <path d="M180.0 70.0 L249.3 150.0"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="180" y="22" text-anchor="middle">A</text>
+    <text x="102.718" y="64" text-anchor="middle">B</text>
+    <text x="192" y="116" text-anchor="middle">C</text>
+    <text x="261.282" y="64" text-anchor="middle">D</text>
+    <text x="259.282" y="156" text-anchor="middle">N</text>
+    <text x="170" y="62" text-anchor="middle">M</text>
+    <circle cx="180" cy="70" r="2.2"/>
+  </g>
+</svg>

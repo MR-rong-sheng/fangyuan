@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-label="两条平行直线AB、CD被直线MN所截，交点为E、F，图中标出∠1与∠2">
+  <title>AB∥CD，MN 交 AB 于 E、交 CD 于 F，∠1=40°，∠2=140°</title>
+  <!-- AB:y=86，CD:y=196；E(120,86)，F(251.093,196)
+       截线方向与 AB 成 40°：∠BEF=∠1=40°，∠DFE=∠2=140°（同旁内角互补） -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 86 H330"/>
+    <path d="M50 196 H330"/>
+    <path d="M67.563 42 L303.53 240"/>
+    <path d="M196 79 L202 86 L196 93" stroke-width="1.2"/>
+    <path d="M196 189 L202 196 L196 203" stroke-width="1.2"/>
+    <path d="M146 86 A26 26 0 0 1 139.917 102.712" stroke-width="1.2"/>
+    <path d="M277.093 196 A26 26 0 0 0 231.176 179.288" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="44" y="80" text-anchor="end">A</text>
+    <text x="336" y="80" text-anchor="start">B</text>
+    <text x="44" y="190" text-anchor="end">C</text>
+    <text x="336" y="190" text-anchor="start">D</text>
+    <text x="58" y="36" text-anchor="end">M</text>
+    <text x="310" y="246" text-anchor="start">N</text>
+    <text x="127" y="78" text-anchor="start">E</text>
+    <text x="259" y="214" text-anchor="start">F</text>
+    <text x="153.829" y="98.313" text-anchor="middle">∠1</text>
+    <text x="263.406" y="162.171" text-anchor="middle">∠2</text>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="矩形 ABCD 中 BE=CF，E 在 CB 的延长线上、F 在 BC 的延长线上，连接 AE、DF">
+  <title>矩形 ABCD：E 在 CB 延长线、F 在 BC 延长线，BE=CF</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="80" y="70" width="160" height="100"/>
+    <path d="M240 40 L80 70 L80 170 L240 200"/>
+    <path d="M70 80 h10 v-10"/>
+    <path d="M230 70 h10 v10"/>
+    <path d="M240 160 h-10 v10"/>
+    <path d="M80 160 h-10 v-10"/>
+    <path d="M231 55 l6 -3"/>
+    <path d="M231 189 l6 3"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="80" y="58" text-anchor="middle">A</text>
+    <text x="240" y="58" text-anchor="middle">B</text>
+    <text x="240" y="186" text-anchor="middle">C</text>
+    <text x="80" y="186" text-anchor="middle">D</text>
+    <text x="240" y="30" text-anchor="middle">E</text>
+    <text x="240" y="216" text-anchor="middle">F</text>
+  </g>
+</svg>

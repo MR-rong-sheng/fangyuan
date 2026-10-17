@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" role="img" aria-label="数轴：点 A、B 在原点左侧，点 C 在原点右侧，A、B、C 分别对应实数 a、b、c，a 在 b 左边且 b 在 0 左边，c 在 0 右边">
+  <title>数轴上 A(a)、B(b)、C(c) 三点，a&lt;b&lt;0&lt;c 且 |a|&gt;|b|&gt;|c|</title>
+  <!-- 按原卷图重画：单位长度 36px，原点 O 在 x=220。
+       A 在 −5（x=40）、B 在 −3（x=112）、C 在 2（x=292），
+       与官方解析“a<b<0<c，|a|>|b|>|c|”一致；此时 |a+b|=8>|c|=2。
+       四选项复算：A |a|<|c| 假、B |b|>|c| 真、C |a|<|b| 假、D |c|>|a+b| 假 → 选 B。 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 65 H370"/>
+    <path d="M364 60 L372 65 L364 70"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <circle cx="40" cy="65" r="2.6"/>
+    <circle cx="112" cy="65" r="2.6"/>
+    <circle cx="220" cy="65" r="2.6"/>
+    <circle cx="292" cy="65" r="2.6"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="40" y="53" text-anchor="middle">A</text>
+    <text x="112" y="53" text-anchor="middle">B</text>
+    <text x="292" y="53" text-anchor="middle">C</text>
+    <text x="40" y="87" text-anchor="middle">a</text>
+    <text x="112" y="87" text-anchor="middle">b</text>
+    <text x="220" y="87" text-anchor="middle">0</text>
+    <text x="292" y="87" text-anchor="middle">c</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 290" role="img" aria-label="△ABC 中 ∠A=50°、∠B=70°，以 A、B 为端点作弧落在三角形内，圆心 O">
+  <title>△ABC 中弧 AB 落在三角形内，圆心 O</title>
+  <!-- 复算：∠A=50° ∠B=70°；160px/单位：A(80,180) B(240,180)
+       C=A+1.085·(cos50,sin50)→(191.6,47)；圆心 O 在 AB 中垂线上(O=(160,247.1))，R=104.4 -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 180 L240 180 L191.6 47 Z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <path d="M80.0 180.0 L83.0 176.6 L86.2 173.3 L89.5 170.1 L92.9 167.1 L96.4 164.3 L100.1 161.6 L103.9 159.0 L107.8 156.7 L111.8 154.5 L115.9 152.5 L120.0 150.6 L124.3 149.0 L128.6 147.5 L133.0 146.3 L137.4 145.2 L141.9 144.3 L146.4 143.6 L150.9 143.1 L155.4 142.8 L160.0 142.7 L164.6 142.8 L169.1 143.1 L173.6 143.6 L178.1 144.3 L182.6 145.2 L187.0 146.3 L191.4 147.5 L195.7 149.0 L200.0 150.6 L204.1 152.5 L208.2 154.5 L212.2 156.7 L216.1 159.0 L219.9 161.6 L223.6 164.3 L227.1 167.1 L230.5 170.1 L233.8 173.3 L237.0 176.6 L240.0 180.0"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 247.1 L80 180" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <path d="M160 247.1 L240 180" stroke-dasharray="4 3" stroke-width="1.2"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <circle cx="160" cy="247.1" r="2.2"/>
+    <text x="80" y="172" text-anchor="middle" font-size="13">A</text>
+    <text x="240" y="172" text-anchor="middle" font-size="13">B</text>
+    <text x="191.6" y="38" text-anchor="middle" font-size="13">C</text>
+    <text x="150" y="268" text-anchor="end" font-size="13">O</text>
+    <text x="120" y="192" text-anchor="middle" font-size="12">50°</text>
+    <text x="214" y="176" text-anchor="middle" font-size="12">70°</text>
+  </g>
+</svg>

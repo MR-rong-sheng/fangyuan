@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" role="img" aria-label="大菱形由 16 个全等小菱形铺成，小菱形边长 0.25m">
+  <title>景窗图案：大菱形由 16 个大小相同的小菱形铺成</title>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M41.4 140 L180 220 L318.6 140 L180 60 L41.4 140"/>
+    <path d="M76.1 160 L214.6 80"/>
+    <path d="M110.7 180 L249.3 100"/>
+    <path d="M145.4 200 L283.9 120"/>
+    <path d="M76.1 120 L214.6 200"/>
+    <path d="M110.7 100 L249.3 180"/>
+    <path d="M145.4 80 L283.9 160"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <text x="62" y="182" text-anchor="middle" font-size="12">0.25</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 275" role="img" aria-label="边长为 80cm 的正方形内有一个由 10 个小长方形左右对称组成的图案，阴影部分为正方形去掉这些长方形后剩下的区域，中间缺口标注 20cm">
+  <title>边长 80cm 的正方形内的对称长方形图案（阴影为剩余部分，中间缺口 20cm）</title>
+  <!-- 按题干重画：正方形边长 80cm，2.5px/cm，正方形 (30,25)-(230,225)。
+       图案由 10 个长方形组成（左右各 5 个，左右轴对称），各长方形宽高（cm）：
+       左上 18×9、左 24×15、左中条 30×6、左 30×24、左下 22×12；右侧镜像。
+       阴影 = 正方形减去这 10 个长方形（even-odd 填充）。
+       复算：阴影图形周长 = 正方形周长 + 4×(中条宽30) = 320 + 120 = 440(cm)；
+       中间缺口 = 80 − 2×30 = 20(cm) 与图中标注一致。 -->
+  <path d="M30 25 H230 V225 H30 Z
+           M30 45 H75 V67.5 H30 Z
+           M30 67.5 H90 V105 H30 Z
+           M30 105 H105 V120 H30 Z
+           M30 120 H105 V180 H30 Z
+           M30 180 H85 V210 H30 Z
+           M185 45 H230 V67.5 H185 Z
+           M170 67.5 H230 V105 H170 Z
+           M155 105 H230 V120 H155 Z
+           M155 120 H230 V180 H155 Z
+           M175 180 H230 V210 H175 Z"
+        fill="currentColor" fill-opacity="0.16" fill-rule="evenodd"
+        stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+    <path d="M105 112.5 H114"/>
+    <path d="M146 112.5 H155"/>
+    <path d="M110 109.5 L105 112.5 L110 115.5"/>
+    <path d="M150 109.5 L155 112.5 L150 115.5"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+    <path d="M30 250 H230"/>
+    <path d="M35 245 L30 250 L35 255"/>
+    <path d="M225 245 L230 250 L225 255"/>
+  </g>
+  <g fill="currentColor" stroke="none" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">
+    <text x="130" y="121" text-anchor="middle">20cm</text>
+    <text x="130" y="244" text-anchor="middle">80cm</text>
+  </g>
+</svg>
